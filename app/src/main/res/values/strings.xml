@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HuntShowdown wiki</string>
+    <string name="news">News</string>
+    <string name="stats">Weapon stats</string>
+    <string name="traits">Traits</string>
+    <string name="maps">Maps</string>
+</resources>
