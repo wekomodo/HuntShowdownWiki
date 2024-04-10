@@ -2,6 +2,7 @@ package com.wekomodo.huntshowdownwiki
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             viewModel.steamNews.collect {
                 if (it.status == Status.SUCCESS) {
+                    Log.d("data",it.data.toString())
                     Toast.makeText(this@MainActivity, it.data.toString(), Toast.LENGTH_SHORT).show()
                 }
             }

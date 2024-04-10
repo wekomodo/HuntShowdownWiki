@@ -1,4 +1,4 @@
-package com.wekomodo.huntshowdownwiki.data.model
+package com.wekomodo.huntshowdownwiki.data.model.steam
 
 data class Appnews(
     val appid: Int,

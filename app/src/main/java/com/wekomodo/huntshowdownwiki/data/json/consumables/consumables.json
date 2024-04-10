@@ -1,0 +1,541 @@
+[
+  {
+    "name": "Alert Trip Mines",
+    "desc": "This portable tripwire mine releases firecrackers and a small flare, alerting others to its location. Comes in a pack of four.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": true,
+      "fire": false,
+      "healing": false,
+      "light": true,
+      "noise": true
+    },
+    "weapon_stats": {
+      "damage": 10
+    },
+    "cost": 30,
+    "capacity": "4",
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": null,
+      "effect_duration": null,
+      "effect_radius": null,
+      "fuse_duration": null
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Blank Fire Decoys",
+    "desc": "A decoy that imitates the sound of a gunshot on impact. Useful to distract and confuse enemies.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": true,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": true
+    },
+    "weapon_stats": {
+      "damage": 20
+    },
+    "cost": 45,
+    "capacity": "6",
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": 22,
+      "effect_duration": null,
+      "effect_radius": null,
+      "fuse_duration": null
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Choke Bombs",
+    "desc": "The Choke Bomb exudes a gas that extinguishes any flames within its radius while active-as well as preventing new fires from being lit-and induces heavy coughing. Comes in a pack of two.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": true,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": true
+    },
+    "weapon_stats": {
+      "damage": 1
+    },
+    "cost": 25,
+    "capacity": "2",
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": 22,
+      "effect_duration": 120,
+      "effect_radius": 3,
+      "fuse_duration": null
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Concertina Trip Mines",
+    "desc": "This portable tripwire mine deploys a small concertina bundle perfect for blocking doors and windows. Comes in a pack of two.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": true,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": true
+    },
+    "weapon_stats": {
+      "damage": 32
+    },
+    "cost": 90,
+    "capacity": "2",
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": null,
+      "effect_duration": null,
+      "effect_radius": 2,
+      "fuse_duration": null
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Decoy Fuses",
+    "desc": "Pack of decoy fuses that can be used to breach closed doors and window shutters. It can also imitate the behavior of a lit bomb and can fool your enemies in clearing a space.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": true,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": true
+    },
+    "weapon_stats": {
+      "damage": 40
+    },
+    "cost": 30,
+    "capacity": "3",
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": null,
+      "effect_duration": null,
+      "effect_radius": 2,
+      "fuse_duration": 6
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Decoys",
+    "desc": "A bag of scrap metal and glass. When thrown the noise can be effectively used to distract or divert enemies.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": true,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": true
+    },
+    "weapon_stats": null,
+    "cost": 6,
+    "capacity": "12",
+    "stats": {
+      "damage": 20,
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": 22,
+      "effect_duration": null,
+      "effect_radius": null,
+      "fuse_duration": null
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Derringer Pennyshot",
+    "desc": "A small, light pistol tool that holds two Penny Shot Ammo rounds. Perfect in a pinch.",
+    "category": {
+      "melee": false,
+      "pistol": true,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 63,
+    "capacity": "2/2",
+    "weapon_stats": {
+      "damage": 21,
+      "effective_range": 6,
+      "rpm": 12,
+      "cycle_time": 0.6,
+      "spread": 200,
+      "sway": 113,
+      "vertical_recoil": 35,
+      "reload_speed": 8.1,
+      "muzzle_velocity": 250
+    },
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Dusters",
+    "desc": "A row of metal rings worn on the hand in order to increase the damage caused in hand-to-hand combat.",
+    "category": {
+      "melee": true,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 30,
+    "capacity": "",
+    "weapon_stats": null,
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "stamina_used_light": 8,
+      "stamina_used_heavy": 21
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Electric Lamp",
+    "desc": "A battery-powered light worn on the shoulder. Increases visibility and can be used to blind nearby enemies during night.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": true,
+      "noise": false
+    },
+    "cost": 5,
+    "capacity": "",
+    "weapon_stats": null,
+    "stats": null,
+    "image_url": "null"
+  },
+  {
+    "name": "First Aid kit",
+    "desc": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": true,
+      "light": false,
+      "noise": false
+    },
+    "cost": 30,
+    "capacity": "3",
+    "weapon_stats": null,
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Flare Pistol",
+    "desc": "A small pistol for firing flares into the air, illuminating the area. Can ignite flammable materials.",
+    "category": {
+      "melee": false,
+      "pistol": true,
+      "throwable": false,
+      "placeable": false,
+      "fire": true,
+      "healing": false,
+      "light": true,
+      "noise": false
+    },
+    "cost": 36,
+    "capacity": "1/2",
+    "weapon_stats": {
+      "damage": 26,
+      "effective_range": null,
+      "rpm": 12,
+      "cycle_time": null,
+      "spread": 52.8,
+      "sway": 113,
+      "vertical_recoil": 5,
+      "reload_speed": 4.4,
+      "muzzle_velocity": 75,
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "stats": null,
+    "image_url": "null"
+  },
+  {
+    "name": "Fusees",
+    "desc": "Handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials. Comes in a pack of three.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": true,
+      "healing": false,
+      "light": true,
+      "noise": false
+    },
+    "cost": 10,
+    "capacity": "3",
+    "weapon_stats": {
+      "damage": 11
+    },
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": 22,
+      "effect_duration": 300
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Heavy Knife",
+    "desc": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
+    "category": {
+      "melee": true,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 10,
+    "capacity": "3",
+    "weapon_stats": null,
+    "stats": {
+      "melee": 72,
+      "heavy_melee": 120,
+      "stamina_used_light": 9,
+      "stamina_used_heavy": 25
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Knife",
+    "desc": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
+    "category": {
+      "melee": true,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 40,
+    "capacity": "",
+    "weapon_stats": null,
+    "stats": {
+      "melee": 52,
+      "heavy_melee": 105,
+      "stamina_used_light": 20,
+      "stamina_used_heavy": 25
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Knuckle Knife",
+    "desc": "The savage knuckle knife is a roughshod specialization for close quarters combat, suited for both bludgeoning and brutal thrusting deathblows.",
+    "category": {
+      "melee": true,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 50,
+    "capacity": "",
+    "weapon_stats": null,
+    "stats": {
+      "melee": 58,
+      "heavy_melee": 92,
+      "stamina_used_light": 8,
+      "stamina_used_heavy": 21
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Poison Trip Mines",
+    "desc": "This portable tripwire mine releases a cloud of poison when triggered, disorienting enemies. Comes in a pack of two.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": true,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "weapon_stats": null,
+    "cost": 30,
+    "capacity": "2",
+    "stats": {
+      "tick_damage": 5,
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": null,
+      "effect_duration": 30,
+      "effect_radius": 1,
+      "fuse_duration": null
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Quad Derringer",
+    "desc": "A small, light pistol that is easy to carry and conceal. Holds four shots. Twelve additional rounds carried.",
+    "category": {
+      "melee": false,
+      "pistol": true,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 30,
+    "capacity": "4/12",
+    "weapon_stats": {
+      "damage": 74,
+      "effective_range": 60,
+      "rpm": 40,
+      "cycle_time": 0.4,
+      "spread": 40.0,
+      "sway": 113,
+      "vertical_recoil": 4,
+      "reload_speed": 3.6,
+      "muzzle_velocity": 130
+    },
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "SpyGlass",
+    "desc": "A monocular optical instrument for seeing things far away as if they were nearby.",
+    "category": {
+      "melee": false,
+      "pistol": false,
+      "throwable": false,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 8,
+    "capacity": "",
+    "weapon_stats": {
+      "sway": 69
+    },
+    "stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Throwing Axes",
+    "desc": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.\t",
+    "category": {
+      "melee": true,
+      "pistol": false,
+      "throwable": true,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 50,
+    "capacity": "2",
+    "weapon_stats": {
+      "damage": 162,
+      "spread": 15.0,
+      "muzzle_velocity": 30
+    },
+    "stats": {
+      "melee": 75,
+      "heavy_melee": 142,
+      "throw_range": 85,
+      "sighted_range": 6,
+      "stamina_used_light": 40,
+      "stamina_used_heavy": 55,
+      "stamina_used_throw": 20
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Throwing Knives",
+    "desc": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
+    "category": {
+      "melee": true,
+      "pistol": false,
+      "throwable": true,
+      "placeable": false,
+      "fire": false,
+      "healing": false,
+      "light": false,
+      "noise": false
+    },
+    "cost": 30,
+    "capacity": "6",
+    "weapon_stats": {
+      "damage": 130,
+      "spread": 15.0,
+      "muzzle_velocity": 30
+    },
+    "stats": {
+      "melee": 75,
+      "heavy_melee": 142,
+      "throw_range": 115,
+      "sighted_range": 7.5,
+      "stamina_used_light": 10,
+      "stamina_used_heavy": 25,
+      "stamina_used_throw": 15
+    },
+    "image_url": "null"
+  }
+]
+

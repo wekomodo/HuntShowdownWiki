@@ -1,6 +1,6 @@
 package com.wekomodo.huntshowdownwiki.data.remote
 
-import com.wekomodo.huntshowdownwiki.data.model.News
+import com.wekomodo.huntshowdownwiki.data.model.steam.News
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

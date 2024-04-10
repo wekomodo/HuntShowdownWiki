@@ -1,6 +1,6 @@
 package com.wekomodo.huntshowdownwiki.domain.steam
 
-import com.wekomodo.huntshowdownwiki.data.model.News
+import com.wekomodo.huntshowdownwiki.data.model.steam.News
 import com.wekomodo.huntshowdownwiki.util.Resource
 import javax.inject.Inject
 

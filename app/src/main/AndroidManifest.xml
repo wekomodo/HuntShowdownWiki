@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -15,13 +16,19 @@
         android:theme="@style/Theme.HuntShowdownWiki"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ComposeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_compose"
+            android:theme="@style/Theme.HuntShowdownWiki" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
         </activity>
     </application>
 
