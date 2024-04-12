@@ -21,11 +21,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.wekomodo.huntshowdownwiki.R
 import com.wekomodo.huntshowdownwiki.navigation.Events
-import com.wekomodo.huntshowdownwiki.navigation.navigate
 
 
 @Composable
-fun ItemScreen(onEvent: (Events) -> Unit) {
+fun ArsenalScreen() {
 
     Column(
         modifier = Modifier
@@ -118,5 +117,5 @@ fun ItemScreen(onEvent: (Events) -> Unit) {
 @Preview
 @Composable
 fun ItemScreenPreview() {
-    ItemScreen(onEvent = { } )
+    ArsenalScreen()
 }

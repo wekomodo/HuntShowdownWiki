@@ -15,10 +15,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.wekomodo.huntshowdownwiki.R
+import com.wekomodo.huntshowdownwiki.navigation.Events
+import com.wekomodo.huntshowdownwiki.navigation.Route
 
 
 @Composable
-fun NavBar() {
+fun NavBar(onEvent : (Events) -> Unit) {
     var selectedItem by remember { mutableIntStateOf(0) }
     val icons =
         listOf(R.drawable.ic_news, R.drawable.ic_equipment, R.drawable.ic_traits, R.drawable.ic_map)
@@ -42,7 +44,16 @@ fun NavBar() {
                 alwaysShowLabel = false,
                 label = { Text(item) },
                 selected = selectedItem == index,
-                onClick = { selectedItem = index }
+                onClick = {
+                    when(items[index]){
+                        Route.NEWS ->  onEvent(Events.OnNavigateToNewsEvent)
+                        Route.ARSENAL ->  onEvent(Events.OnNavigateToArsenalEvent)
+                        Route.TRAITS ->  onEvent(Events.OnNavigateToTraitsEvent)
+                        Route.MAPS ->  onEvent(Events.OnNavigateToMapsEvent)
+
+                    }
+                    selectedItem = index
+                }
             )
         }
     }
@@ -51,5 +62,5 @@ fun NavBar() {
 @Preview
 @Composable
 fun NavBarPreview() {
-    NavBar()
+    NavBar(onEvent = {})
 }

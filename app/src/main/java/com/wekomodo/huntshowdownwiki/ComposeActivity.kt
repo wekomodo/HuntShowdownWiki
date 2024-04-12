@@ -14,9 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
 import com.wekomodo.huntshowdownwiki.navigation.Navigation
-import com.wekomodo.huntshowdownwiki.navigation.navigate
 import com.wekomodo.huntshowdownwiki.ui.components.NavBar
-import com.wekomodo.huntshowdownwiki.ui.screens.ItemScreen
+import com.wekomodo.huntshowdownwiki.ui.screens.Dashboard
 import com.wekomodo.huntshowdownwiki.ui.theme.HuntShowdownWikiTheme
 import com.wekomodo.huntshowdownwiki.util.Status
 import dagger.hilt.android.AndroidEntryPoint
@@ -40,10 +39,7 @@ class ComposeActivity : ComponentActivity() {
         setContent {
             HuntShowdownWikiTheme {
                 // A surface container using the 'background' color from the theme
-                Scaffold(bottomBar = { NavBar() }) { it ->
-                    val padding = it
-                    Navigation()
-                }
+               Navigation()
             }
         }
     }
