@@ -6,16 +6,17 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.compose.rememberNavController
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
 import com.wekomodo.huntshowdownwiki.navigation.Navigation
+import com.wekomodo.huntshowdownwiki.navigation.navigate
 import com.wekomodo.huntshowdownwiki.ui.components.NavBar
-import com.wekomodo.huntshowdownwiki.ui.screens.Dashboard
 import com.wekomodo.huntshowdownwiki.ui.theme.HuntShowdownWikiTheme
 import com.wekomodo.huntshowdownwiki.util.Status
 import dagger.hilt.android.AndroidEntryPoint
@@ -38,25 +39,18 @@ class ComposeActivity : ComponentActivity() {
         }
         setContent {
             HuntShowdownWikiTheme {
+                val navController = rememberNavController()
                 // A surface container using the 'background' color from the theme
-               Navigation()
+                // nav bar, scaffold
+                Scaffold(
+                    bottomBar = { NavBar(onEvent = {navigate(it, navController)}) }
+                ) {
+                    Column(modifier = Modifier.padding(it)) {
+                        Navigation(navController)
+                    }
+                    
+                }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    HuntShowdownWikiTheme {
-        Greeting("Android")
     }
 }

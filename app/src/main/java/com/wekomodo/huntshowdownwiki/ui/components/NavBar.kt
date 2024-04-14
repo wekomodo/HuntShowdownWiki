@@ -24,7 +24,7 @@ fun NavBar(onEvent : (Events) -> Unit) {
     var selectedItem by remember { mutableIntStateOf(0) }
     val icons =
         listOf(R.drawable.ic_news, R.drawable.ic_equipment, R.drawable.ic_traits, R.drawable.ic_map)
-    val items = listOf("News", "Equipment", "Traits", "Maps")
+    val items = listOf("News", "Arsenal", "Traits", "Maps")
     NavigationBar {
         items.forEachIndexed { index, item ->
             NavigationBarItem(
@@ -50,7 +50,6 @@ fun NavBar(onEvent : (Events) -> Unit) {
                         Route.ARSENAL ->  onEvent(Events.OnNavigateToArsenalEvent)
                         Route.TRAITS ->  onEvent(Events.OnNavigateToTraitsEvent)
                         Route.MAPS ->  onEvent(Events.OnNavigateToMapsEvent)
-
                     }
                     selectedItem = index
                 }
