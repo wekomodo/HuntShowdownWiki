@@ -48,7 +48,7 @@ fun TraitsScreen() {
     Column {
         LazyColumn {
             itemsIndexed(baseTraitList) { _, item ->
-                TraitsItem(link = item.image, name = item.name, item.desc)
+                TraitsItem(link = item.image, name = item.name, item.desc,item.cost)
             }
         }
         Text("hello?")
