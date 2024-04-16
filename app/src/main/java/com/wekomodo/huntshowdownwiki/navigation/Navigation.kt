@@ -6,9 +6,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.wekomodo.huntshowdownwiki.ui.screens.ArsenalScreen
-import com.wekomodo.huntshowdownwiki.ui.screens.MapsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.NewsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.TraitsScreen
+import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapDetailScreen
+import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapsScreen
 
 @Composable
 fun Navigation(navController : NavHostController) {
@@ -18,17 +19,21 @@ fun Navigation(navController : NavHostController) {
             NewsScreen()
         }
         composable(
-            route = Route.ARSENAL,
-            arguments = listOf(navArgument("userId") { defaultValue = "" })
+            route = Route.ARSENAL
         ) {
             ArsenalScreen()
-           // SettingScreen(onEvent = { navigate(it, navController) })
         }
         composable(route = Route.TRAITS) {
             TraitsScreen()
         }
         composable(route = Route.MAPS) {
-            MapsScreen()
+            MapsScreen(navController)
+        }
+        composable(route = "${Route.MAPDETAILS}/mapName={mapName}",
+            arguments = listOf(navArgument("mapName") { defaultValue = "Lawson Delta" })) {
+            val arguments = requireNotNull(it.arguments)
+            val mapName = arguments.getString("mapName") ?: error("Missing mapName argument")
+            MapDetailScreen(mapName = mapName)
         }
 
     }
@@ -45,9 +50,9 @@ fun navigate(event: Events, navController: NavHostController) {
 
 
 object Route {
-    const val DASHBOARD = "DASHBOARD"
-    const val NEWS = "News"
-    const val ARSENAL = "Arsenal"
-    const val TRAITS = "Traits"
-    const val MAPS = "Maps"
+    const val NEWS = "NEWS"
+    const val ARSENAL = "ARSENAL"
+    const val TRAITS = "TRAITS"
+    const val MAPS = "MAPS"
+    const val MAPDETAILS = "MAPDETAILS"
 }

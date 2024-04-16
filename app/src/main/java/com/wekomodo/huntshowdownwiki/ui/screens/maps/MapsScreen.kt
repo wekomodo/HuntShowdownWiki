@@ -1,27 +1,28 @@
-package com.wekomodo.huntshowdownwiki.ui.screens
+package com.wekomodo.huntshowdownwiki.ui.screens.maps
 
+import android.net.Uri
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.wekomodo.huntshowdownwiki.R
 import com.wekomodo.huntshowdownwiki.data.model.local.ItemMap
+import com.wekomodo.huntshowdownwiki.navigation.Route
 import com.wekomodo.huntshowdownwiki.ui.components.MapsItem
 
 @Composable
-fun MapsScreen() {
+fun MapsScreen(navController: NavController) {
     val maps = listOf(ItemMap("Lawson Delta", R.drawable.lawson_delta_cover),
-        ItemMap("Stillwater Bayou",R.drawable.still_water_bayou_cover),
+        ItemMap("StillWater Bayou",R.drawable.still_water_bayou_cover),
         ItemMap("DeSalle",R.drawable.desalle_cover)
     )
 
@@ -35,7 +36,9 @@ fun MapsScreen() {
         ) {
             itemsIndexed(maps) { _, item ->
                 MapsItem(image = item.img, name = item.name){
-
+                    val mapName = Uri.encode(item.name)
+                    val route = "${Route.MAPDETAILS}/mapName=${mapName}"
+                    navController.navigate(route)
                 }
             }
         }
@@ -48,5 +51,6 @@ fun MapsScreen() {
 @Preview
 @Composable
 fun MapsScreenPreview(){
-    MapsScreen()
+    val navController = rememberNavController()
+    MapsScreen(navController)
 }

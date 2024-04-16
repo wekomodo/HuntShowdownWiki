@@ -1,7 +1,9 @@
 package com.wekomodo.huntshowdownwiki.ui.components
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.gestures.detectTransformGestures
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -10,15 +12,18 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.IntSize
 
 @Composable
 fun ZoomableBox(
     modifier: Modifier = Modifier,
-    minScale: Float = 0.1f,
-    maxScale: Float = 5f,
+    minScale: Float = 1f,
+    maxScale: Float = 3f,
     content: @Composable ZoomableBoxScope.() -> Unit
 ) {
     var scale by remember { mutableStateOf(1f) }
@@ -44,6 +49,23 @@ fun ZoomableBox(
         val scope = ZoomableBoxScopeImpl(scale, offsetX, offsetY)
         scope.content()
     }
+}
+
+@Composable
+fun ZoomableImage(image : Int,scale : Float, offsetX: Float,offsetY: Float){
+    Image(
+        painter = painterResource(id = image), contentDescription = "",
+        modifier = Modifier
+            .graphicsLayer(
+                // adding some zoom limits (min 50%, max 200%)
+                scaleX = maxOf(1f, minOf(3f, scale)),
+                scaleY = maxOf(1f, minOf(3f, scale)),
+                translationX = offsetX,
+                translationY = offsetY
+            )
+            .fillMaxWidth(),
+        contentScale = ContentScale.FillWidth
+    )
 }
 
 interface ZoomableBoxScope {

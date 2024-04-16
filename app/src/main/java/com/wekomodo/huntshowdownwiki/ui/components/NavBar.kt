@@ -7,32 +7,34 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.wekomodo.huntshowdownwiki.R
-import com.wekomodo.huntshowdownwiki.navigation.Events
-import com.wekomodo.huntshowdownwiki.navigation.Route
+import androidx.navigation.NavController
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.rememberNavController
+import com.wekomodo.huntshowdownwiki.BottomBarScreen
 
 
 @Composable
-fun NavBar(onEvent : (Events) -> Unit) {
-    var selectedItem by remember { mutableIntStateOf(0) }
-    val icons =
-        listOf(R.drawable.ic_news, R.drawable.ic_equipment, R.drawable.ic_traits, R.drawable.ic_map)
-    val items = listOf("News", "Arsenal", "Traits", "Maps")
+fun NavBar(navController : NavController) {
+    val screens = listOf(
+        BottomBarScreen.News,
+        BottomBarScreen.Arsenal,
+        BottomBarScreen.Traits,
+        BottomBarScreen.Maps
+    )
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navBackStackEntry?.destination?.route
     NavigationBar {
-        items.forEachIndexed { index, item ->
+        screens.forEachIndexed { _, item ->
             NavigationBarItem(
                 icon = {
                     Icon(
-                        painter = painterResource(id = icons[index]),
+                        painter = painterResource(id = item.icon),
                         modifier = Modifier.size(24.dp),
-                        contentDescription = item
+                        contentDescription = item.title
                     )
                 },
                /*  // to add custom shapes
@@ -42,16 +44,24 @@ fun NavBar(onEvent : (Events) -> Unit) {
                 ),
                 */
                 alwaysShowLabel = false,
-                label = { Text(item) },
-                selected = selectedItem == index,
+                label = { Text(text  = item.title) },
+                selected = currentRoute == item.route,
                 onClick = {
-                    when(items[index]){
-                        Route.NEWS ->  onEvent(Events.OnNavigateToNewsEvent)
-                        Route.ARSENAL ->  onEvent(Events.OnNavigateToArsenalEvent)
-                        Route.TRAITS ->  onEvent(Events.OnNavigateToTraitsEvent)
-                        Route.MAPS ->  onEvent(Events.OnNavigateToMapsEvent)
+                    navController.navigate(item.route) {
+                        // Pop up to the start destination of the graph to
+                        // avoid building up a large stack of destinations
+                        // on the back stack as users select items
+                        navController.graph.startDestinationRoute?.let { route ->
+                            popUpTo(route) {
+                                saveState = true
+                            }
+                        }
+                        // Avoid multiple copies of the same destination when
+                        // re-selecting the same item
+                        launchSingleTop = true
+                        // Restore state when re-selecting a previously selected item
+                        restoreState = true
                     }
-                    selectedItem = index
                 }
             )
         }
@@ -61,5 +71,6 @@ fun NavBar(onEvent : (Events) -> Unit) {
 @Preview
 @Composable
 fun NavBarPreview() {
-    NavBar(onEvent = {})
+    val navController = rememberNavController()
+    NavBar(navController)
 }

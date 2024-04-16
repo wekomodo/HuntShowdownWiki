@@ -2,9 +2,7 @@ package com.wekomodo.huntshowdownwiki
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Column
@@ -13,17 +11,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Menu
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.TopAppBar
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.rememberNavController
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
 import com.wekomodo.huntshowdownwiki.navigation.Navigation
-import com.wekomodo.huntshowdownwiki.navigation.Route
-import com.wekomodo.huntshowdownwiki.navigation.navigate
 import com.wekomodo.huntshowdownwiki.ui.components.NavBar
 import com.wekomodo.huntshowdownwiki.ui.components.TopBar
 import com.wekomodo.huntshowdownwiki.ui.theme.HuntShowdownWikiTheme
@@ -58,17 +50,17 @@ class ComposeActivity : ComponentActivity() {
                              TopBar(title = R.string.app_name, Icons.Rounded.Menu){
                              }
                     },
-                    bottomBar = { NavBar(onEvent = {navigate(it, navController)}) }
+                    bottomBar = { NavBar(navController) }
                 ) {
                     Column(modifier = Modifier.padding(it)) {
                         Navigation(navController)
-                        BackHandler(
+                        /*BackHandler(
                             enabled = true
                         ) {
                             // Navigate where ever you want.
                             //Example;
                             finish()
-                        }
+                        }*/
                     }
                 }
 
