@@ -1,6 +1,6 @@
 package com.wekomodo.huntshowdownwiki.data.model.firebase
 
-data class ConsumablesItem(
+data class Consumable(
     val capacity: String,
     val category: Category,
     val cost: Int,

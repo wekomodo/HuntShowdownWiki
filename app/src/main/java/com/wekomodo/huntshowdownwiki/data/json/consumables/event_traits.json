@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Witness",
+    "pact":"DEATH PACT",
+    "category": "Offensive",
+    "desc": "While in Dark Sight, dead Hunters & Monsters are visible & health restoration is marginally increases when close. Also highlighted in Beetle view.",
+    "image": null
+  },
+  {
+    "name": "Berserker",
+    "pact":"PRIMAL PACT",
+    "category": "Supportive",
+    "desc": "All melee attacks do double damage.",
+    "image": null
+  },
+  {
+    "name": "Peacekeeper",
+    "pact":"LAWFUL PACT",
+    "category": "Supportive",
+    "desc": "Dead teammates can be revived at the cost of burning some of your Health Chunks. Looting a dead Hunter will restore one Health Chunk.",
+    "image": null
+  },
+  {
+    "name": "Signee",
+    "pact":"NONE",
+    "category": "Supportive",
+    "desc": "Boost Event Points by 10%. Please Note: If you have a Hunter with this traits after the end of the event, the trait will be removed and the Upgrade Points will e refunded.",
+    "image": null
+  }
+]

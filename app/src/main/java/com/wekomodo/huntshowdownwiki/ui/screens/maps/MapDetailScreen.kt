@@ -86,7 +86,7 @@ fun MapDetailScreen(
     }
 
     Column(modifier = Modifier
-        .fillMaxSize()) {
+        .fillMaxSize().verticalScroll(rememberScrollState())) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -150,7 +150,7 @@ fun MapDetailScreen(
                 }
             }
         }
-        Column(modifier = Modifier.fillMaxWidth().padding(8.dp).verticalScroll(rememberScrollState())) {
+        Column(modifier = Modifier.fillMaxWidth().padding(8.dp)) {
             Text(modifier = Modifier.padding(8.dp), text = "Map Legend", fontSize = 18.sp)
             MapLegendButton(names, R.drawable.ic_location_names, "Locations") { names = it }
             MapLegendButton(

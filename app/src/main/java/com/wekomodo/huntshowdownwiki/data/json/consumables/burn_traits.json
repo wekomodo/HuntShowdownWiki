@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Death Cheat",
+    "desc": "You will not lose your Hunter if you fail to extract, but equipment and missing Health Chunks will be lost.",
+    "image": null,
+    "category": "Supportive",
+    "stack_limit": 3
+  },
+  {
+    "name": "Rampage",
+    "desc": "Killing an enemy Hunter while at least one Health Chunk is empty triggers a Restoration for your Hunter.",
+    "image": null,
+    "category": "Supportive",
+    "stack_limit": 3
+  },
+  {
+    "name": "Relentless",
+    "desc": "Your Hunter won't lose a Health Chunk when downed.",
+    "image": null,
+    "category": "Supportive",
+    "stack_limit": 3
+  },
+  {
+    "name": "Remedy",
+    "desc": "Using Dark Sight, interact with a Trait Spur within range to trigger a Restoration effect similar to banishing for your team's Hunters. (25m)",
+    "image": null,
+    "category": "Supportive",
+    "stack_limit": 3
+  },
+  {
+    "name": "Shadow",
+    "desc": "Monsters can't see you, but they can still hear you. Burns when your Hunter is downed.",
+    "image": null,
+    "category": "Supportive",
+    "stack_limit": 3
+  }
+]
