@@ -1,4 +1,4 @@
-package com.wekomodo.mnigma.compose.ui.theme
+package com.wekomodo.huntshowdownwiki.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
