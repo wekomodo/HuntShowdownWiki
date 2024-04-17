@@ -43,6 +43,7 @@ fun TraitsScreen() {
     var event by remember {
         mutableStateOf(true)
     }
+    var filteredList: List<Trait> = emptyList()
     val database = Firebase.database.reference.child("traits")
     Log.d("firebaseResult", database.toString())
     LaunchedEffect(Unit) {
@@ -54,6 +55,7 @@ fun TraitsScreen() {
                     trait?.let {
                         traitsList.add(trait)
                     }
+                    filteredList = traitsList.toList()
                     Log.d("firebasetraits", trait.toString())
 
                 }
@@ -61,7 +63,7 @@ fun TraitsScreen() {
             }
 
             override fun onCancelled(p0: DatabaseError) {
-                Toast.makeText(context,"Some Error Occurred",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Some Error Occurred", Toast.LENGTH_SHORT).show()
             }
         })
     }
@@ -80,22 +82,37 @@ fun TraitsScreen() {
                 event = it
             }
         }
+        if (base) {
+            filteredList = filteredList + traitsList.filter {
+                it.type == "Base Trait"
+            }
+        }
+        if (burn) {
+            filteredList = filteredList + traitsList.filter {
+                it.type == "Burn Trait"
+            }
+        }
+        if (event) {
+            filteredList = filteredList + traitsList.filter {
+                it.type == "Event Trait"
+            }
+        }
 
         LazyColumn {
-            itemsIndexed(traitsList) { _, item ->
+            itemsIndexed(filteredList) { _, item ->
                 TraitsItem(link = item.image, name = item.name, item.desc, item.cost)
             }
         }
 
         Text("hello?")
     }
-/*
-    if(it) {
-        val baseTraitList = traitsList.filter {trait ->
-            trait.type == "Base Trait" || trait.type == "Burn Trait"
-        }
-        Log.d("filtered list", baseTraitList.toString())
-    }*/
+    /*
+        if(it) {
+            val baseTraitList = traitsList.filter {trait ->
+                trait.type == "Base Trait" || trait.type == "Burn Trait"
+            }
+            Log.d("filtered list", baseTraitList.toString())
+        }*/
 
 }
 
