@@ -7,6 +7,8 @@ import coil.disk.DiskCache
 import coil.memory.MemoryCache
 import coil.util.DebugLogger
 import com.google.android.material.color.DynamicColors
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import dagger.hilt.android.HiltAndroidApp
 
 
@@ -15,6 +17,9 @@ class MyApp : Application(), ImageLoaderFactory {
 
     override fun onCreate() {
         super.onCreate()
+        Firebase.database.setPersistenceEnabled(true)
+        val ref = Firebase.database.getReference()
+        ref.keepSynced(true)
         DynamicColors.applyToActivitiesIfAvailable(this)
     }
 

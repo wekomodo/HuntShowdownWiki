@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Death Cheat",
+    "pact":"NONE",
+    "desc": "You will not lose your Hunter if you fail to extract, but equipment and missing Health Chunks will be lost.",
+    "image": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Death_cheat.png/revision/latest?cb=20240325222837",
+    "cost": 0,
+    "rank_unlocked": 0,
+    "category": "Supportive",
+    "stack_limit": 3,
+    "type": "Burn Trait"
+  },
+  {
+    "name": "Rampage",
+    "pact":"NONE",
+    "desc": "Killing an enemy Hunter while at least one Health Chunk is empty triggers a Restoration for your Hunter.",
+    "image": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e4/Rampage.png/revision/latest?cb=20240325222846",
+    "cost": 0,
+    "rank_unlocked": 0,
+    "category": "Supportive",
+    "stack_limit": 3,
+    "type": "Burn Trait"
+  },
+  {
+    "name": "Relentless",
+    "pact":"NONE",
+    "desc": "Your Hunter won't lose a Health Chunk when downed.",
+    "image": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/ca/Relentless.png/revision/latest?cb=20240325222856",
+    "cost": 0,
+    "rank_unlocked": 0,
+    "category": "Supportive",
+    "stack_limit": 3,
+    "type": "Burn Trait"
+  },
+  {
+    "name": "Remedy",
+    "pact":"NONE",
+    "desc": "Using Dark Sight, interact with a Trait Spur within range to trigger a Restoration effect similar to banishing for your team's Hunters. (25m)",
+    "image": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/b/b7/Remedy.png/revision/latest?cb=20240325222905",
+    "cost": 0,
+    "rank_unlocked": 0,
+    "category": "Supportive",
+    "stack_limit": 3,
+    "type": "Burn Trait"
+  },
+  {
+    "name": "Shadow",
+    "pact":"NONE",
+    "desc": "Monsters can't see you, but they can still hear you. Burns when your Hunter is downed.",
+    "image": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/8e/Shadow.png/revision/latest?cb=20240325222915",
+    "cost": 0,
+    "rank_unlocked": 0,
+    "category": "Supportive",
+    "stack_limit": 3,
+    "type": "Burn Trait"
+  }
+]
