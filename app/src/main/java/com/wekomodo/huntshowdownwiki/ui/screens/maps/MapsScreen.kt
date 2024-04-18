@@ -22,7 +22,6 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.wekomodo.huntshowdownwiki.R
 import com.wekomodo.huntshowdownwiki.data.model.local.ItemMap
-import com.wekomodo.huntshowdownwiki.ui.components.MapsItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

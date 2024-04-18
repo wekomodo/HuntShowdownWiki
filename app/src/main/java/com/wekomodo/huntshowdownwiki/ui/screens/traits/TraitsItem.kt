@@ -1,4 +1,4 @@
-package com.wekomodo.huntshowdownwiki.ui.components
+package com.wekomodo.huntshowdownwiki.ui.screens.traits
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -27,7 +27,7 @@ import coil.compose.AsyncImage
 import com.wekomodo.huntshowdownwiki.R
 
 @Composable
-fun TraitsItem(link: String, name: String, desc: String,cost : Int) {
+fun TraitsItem(link: String, name: String, desc: String, cost: Int,rank : Int) {
 
     Column(modifier = Modifier.fillMaxSize()) {
         Box(
@@ -50,12 +50,12 @@ fun TraitsItem(link: String, name: String, desc: String,cost : Int) {
             }
             Column {
                 Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceAround,
+                    modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
+                    horizontalArrangement = Arrangement.Absolute.SpaceAround,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     AsyncImage(
-                        modifier = Modifier.size(110.dp),
+                        modifier = Modifier.size(100.dp),
                         model = link,
                         contentDescription = ""
                     )
@@ -65,7 +65,7 @@ fun TraitsItem(link: String, name: String, desc: String,cost : Int) {
                             horizontalArrangement = Arrangement.End,
                             verticalAlignment = Alignment.CenterVertically,
                         ) {
-                            Text(text = cost.toString(),color = Color(0xFFfff5dc))
+                            Text(text = cost.toString(), color = Color(0xFFfff5dc))
                             Icon(
                                 painterResource(id = R.drawable.ic_upgrade_points),
                                 contentDescription = "upgrade_points",
@@ -73,6 +73,7 @@ fun TraitsItem(link: String, name: String, desc: String,cost : Int) {
                                 modifier = Modifier.size(32.dp)
                             )
                         }
+                        Text(text = "Rank : $rank", color = Color.White)
 
                     }
 
@@ -100,5 +101,5 @@ fun TraitsItem(link: String, name: String, desc: String,cost : Int) {
 fun TraitsItemPreview() {
     val link =
         "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/WELNetworks-logo.svg/1200px-WELNetworks-logo.svg.png"
-    TraitsItem(link, "Assiliant", "BLEH BLEH BLEH",1)
+    TraitsItem(link, "Assiliant", "BLEH BLEH BLEH", 1,42)
 }

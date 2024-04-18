@@ -1,4 +1,4 @@
-package com.wekomodo.huntshowdownwiki.ui.screens
+package com.wekomodo.huntshowdownwiki.ui.screens.traits
 
 import android.util.Log
 import android.widget.Toast
@@ -26,13 +26,13 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
 import com.wekomodo.huntshowdownwiki.data.model.firebase.Trait
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
-import com.wekomodo.huntshowdownwiki.ui.components.TraitsItem
 
 @Composable
 fun TraitsScreen() {
     val context = LocalContext.current
+    val emptyObject = Trait("", 0, "", "", "", "", 0, 0, "")
     val traitsList = remember {
-        mutableStateListOf(Trait("", 0, "", "", "", "", 0, 0, ""))
+        mutableStateListOf(emptyObject)
     }
     var base by remember {
         mutableStateOf(true)
@@ -43,6 +43,9 @@ fun TraitsScreen() {
     var event by remember {
         mutableStateOf(true)
     }
+    var selectedItem by remember {
+        mutableStateOf(emptyObject)
+    }
     var filteredList: List<Trait> = emptyList()
     LaunchedEffect(Unit) {
         val database = Firebase.database.reference.child("traits")
@@ -51,7 +54,7 @@ fun TraitsScreen() {
             override fun onDataChange(p0: DataSnapshot) {
                 for (items in p0.children) {
                     val trait = items.getValue(Trait::class.java)
-                    traitsList.remove(Trait("", 0, "", "", "", "", 0, 0, ""))
+                    traitsList.remove(emptyObject)
                     trait?.let {
                         traitsList.add(trait)
                     }
@@ -100,20 +103,11 @@ fun TraitsScreen() {
 
         LazyColumn {
             itemsIndexed(filteredList) { _, item ->
-                TraitsItem(link = item.image, name = item.name, item.desc, item.cost)
+                TraitsItem(link = item.image, name = item.name, item.desc, item.cost,item.rank_unlocked)
             }
         }
-
-        Text("hello?")
+        Text("Nothing Selected?")
     }
-    /*
-        if(it) {
-            val baseTraitList = traitsList.filter {trait ->
-                trait.type == "Base Trait" || trait.type == "Burn Trait"
-            }
-            Log.d("filtered list", baseTraitList.toString())
-        }*/
-
 }
 
 @Preview
