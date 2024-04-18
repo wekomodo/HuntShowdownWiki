@@ -44,9 +44,9 @@ fun TraitsScreen() {
         mutableStateOf(true)
     }
     var filteredList: List<Trait> = emptyList()
-    val database = Firebase.database.reference.child("traits")
-    Log.d("firebaseResult", database.toString())
     LaunchedEffect(Unit) {
+        val database = Firebase.database.reference.child("traits")
+        Log.d("firebaseResult", database.toString())
         database.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 for (items in p0.children) {
