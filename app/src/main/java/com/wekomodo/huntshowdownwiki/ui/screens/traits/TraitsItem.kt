@@ -5,8 +5,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -27,20 +25,19 @@ import coil.compose.AsyncImage
 import com.wekomodo.huntshowdownwiki.R
 
 @Composable
-fun TraitsItem(link: String, name: String, desc: String, cost: Int,rank : Int) {
+fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
 
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(modifier = Modifier.fillMaxWidth()) {
         Box(
             modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight(),
+                .fillMaxWidth(),
             contentAlignment = Alignment.TopStart
         ) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(200.dp)
-                    .padding(20.dp)
+                    .padding(10.dp)
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.items_bg),
@@ -50,7 +47,9 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int,rank : Int) {
             }
             Column {
                 Row(
-                    modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 20.dp),
                     horizontalArrangement = Arrangement.Absolute.SpaceAround,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
@@ -78,17 +77,12 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int,rank : Int) {
                     }
 
                 }
+                Text(
+                    modifier = Modifier.padding(start = 12.dp, bottom = 10.dp, end = 12.dp),
+                    text = desc, color = Color.White, fontSize = 10.sp,
+                    maxLines = 3
 
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(start = 24.dp, end = 20.dp),
-                ) {
-                    Text(
-                        text = desc, color = Color.White, fontSize = 10.sp,
-                        maxLines = 3
-                    )
-                }
+                )
             }
 
         }
@@ -101,5 +95,5 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int,rank : Int) {
 fun TraitsItemPreview() {
     val link =
         "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/WELNetworks-logo.svg/1200px-WELNetworks-logo.svg.png"
-    TraitsItem(link, "Assiliant", "BLEH BLEH BLEH", 1,42)
+    TraitsItem(link, "Assiliant", "BLEH BLEH BLEH", 1, 42)
 }

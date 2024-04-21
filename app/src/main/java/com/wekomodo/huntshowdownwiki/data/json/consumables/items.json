@@ -1,0 +1,38 @@
+{
+  "name": "Berthier Mle 1892",
+  "desc": "The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.",
+  "type": "weapon",
+  "sub_type":"Large Slot",
+  "weapon_stats": {
+    "damage": 10,
+    "effective_range": 305,
+    "rpm": 27,
+    "cycle_time": 1.7,
+    "spread": 47.5,
+    "sway": 77,
+    "vertical_recoil": 14,
+    "reload_speed": 2.7,
+    "muzzle_velocity": 590,
+    "primary_ammo": "Long",
+    "secondary_ammo": "none",
+    "ammo_types":[
+      "incendiary",
+      "spitzer"
+    ],
+    "sighted_range": null
+  },
+  "cost": 356,
+  "capacity": "1",
+  "melee_stats": {
+    "melee": 13,
+    "heavy_melee": 27,
+    "throw_range": 0
+  },
+  "effect_stats": {
+    "effect_duration": null,
+    "effect_radius": null,
+    "fuse_timer": null,
+    "control_range": null
+  },
+  "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892.png?alt=media&token=7186a5bb-9d77-4e0a-9979-179c9f577c6b"
+}

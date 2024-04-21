@@ -24,7 +24,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
-import com.wekomodo.huntshowdownwiki.data.model.firebase.Trait
+import com.wekomodo.huntshowdownwiki.data.model.firebase.traits.Trait
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 
 @Composable
@@ -42,9 +42,6 @@ fun TraitsScreen() {
     }
     var event by remember {
         mutableStateOf(true)
-    }
-    var selectedItem by remember {
-        mutableStateOf(emptyObject)
     }
     var filteredList: List<Trait> = emptyList()
     LaunchedEffect(Unit) {
