@@ -11,11 +11,10 @@
     "capacity": "4",
     "melee_stats": {
       "melee": 13,
-      "heavy_melee": 27,
-      "throw_range": null
+      "heavy_melee": 27
     },
     "effect_stats": null,
-    "image_url": "null"
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/d0/Alert_Trip_Mines.png/revision/latest/scale-to-width-down/1920?cb=20191002164745"
   },
   {
     "name": "Blank Fire Decoys",
@@ -33,7 +32,7 @@
       "throw_range": 22
     },
     "effect_stats": null,
-    "image_url": "null"
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/3d/Blank_Fire_Decoys.png/revision/latest/scale-to-width-down/1920?cb=20191002164744"
   },
   {
     "name": "Choke Bombs",
@@ -45,15 +44,17 @@
     },
     "cost": 25,
     "capacity": "2",
-    "stats": {
+    "melee_stats": {
       "melee": 13,
       "heavy_melee": 27,
-      "throw_range": 22,
-      "effect_duration": 120,
-      "effect_radius": 3,
+      "throw_range": 22
+    },
+    "effect_stats": {
+      "duration": 120,
+      "radius": 3,
       "fuse_duration": null
     },
-    "image_url": "null"
+    "image_url": "https://huntshowdown.fandom.com/wiki/Tools#/media/File:Choke_Bomb.png"
   },
   {
     "name": "Concertina Trip Mines",
@@ -65,15 +66,16 @@
     },
     "cost": 90,
     "capacity": "2",
-    "stats": {
+    "melee_stats": {
       "melee": 13,
-      "heavy_melee": 27,
-      "throw_range": null,
-      "effect_duration": null,
-      "effect_radius": 2,
+      "heavy_melee": 27
+    },
+    "effect_stats": {
+      "duration": null,
+      "radius": 2,
       "fuse_duration": null
     },
-    "image_url": "null"
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/9/9c/Concertina_Trip_Mines.png/revision/latest/scale-to-width-down/1000?cb=20191002164742"
   },
   {
     "name": "Decoy Fuses",
@@ -85,15 +87,16 @@
     },
     "cost": 30,
     "capacity": "3",
-    "stats": {
+    "melee_stats": {
       "melee": 13,
-      "heavy_melee": 27,
-      "throw_range": null,
-      "effect_duration": null,
-      "effect_radius": 2,
+      "heavy_melee": 27
+    },
+    "effect_status": {
+      "duration": null,
+      "radius": 2,
       "fuse_duration": 6
     },
-    "image_url": "null"
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/38/Decoy_fuses.png/revision/latest/scale-to-width-down/1000?cb=20200326191501"
   },
   {
     "name": "Decoys",
@@ -103,16 +106,14 @@
     "weapon_stats": null,
     "cost": 6,
     "capacity": "12",
-    "stats": {
+    "melee_stats": {
       "damage": 20,
       "melee": 13,
       "heavy_melee": 27,
-      "throw_range": 22,
-      "effect_duration": null,
-      "effect_radius": null,
-      "fuse_duration": null
+      "throw_range": 22
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a7/Decoys.png/revision/latest/scale-to-width-down/1000?cb=20191002164740"
   },
   {
     "name": "Derringer Pennyshot",
@@ -132,10 +133,11 @@
       "reload_speed": 8.1,
       "muzzle_velocity": 250
     },
-    "stats": {
+    "melee_stats": {
       "melee": 13,
       "heavy_melee": 27
     },
+    "effect_stats": null,
     "image_url": "null"
   },
   {
@@ -144,15 +146,16 @@
     "type": "tools",
     "sub_category": "Melee",
     "cost": 30,
-    "capacity": "",
+    "capacity": "1",
     "weapon_stats": null,
-    "stats": {
+    "melee_stats": {
       "melee": 13,
       "heavy_melee": 27,
       "stamina_used_light": 8,
       "stamina_used_heavy": 21
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e3/Dusters.png/revision/latest?cb=20191002164738"
   },
   {
     "name": "Electric Lamp",
@@ -160,10 +163,11 @@
     "type": "tools",
     "sub_category": "Light",
     "cost": 5,
-    "capacity": "",
+    "capacity": "1",
     "weapon_stats": null,
-    "stats": null,
-    "image_url": "null"
+    "melee_stats": null,
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/5f/Electric_Lamp.png/revision/latest/scale-to-width-down/1000?cb=20191002164736"
   },
   {
     "name": "First Aid kit",
@@ -173,11 +177,12 @@
     "cost": 30,
     "capacity": "3",
     "weapon_stats": null,
-    "stats": {
+    "melee_stats": {
       "melee": 13,
       "heavy_melee": 27
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/50/First_Aid_Kit.png/revision/latest/scale-to-width-down/1000?cb=20191002164734"
   },
   {
     "name": "Flare Pistol",
@@ -199,8 +204,9 @@
       "melee": 13,
       "heavy_melee": 27
     },
-    "stats": null,
-    "image_url": "null"
+    "melee_stats": null,
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/b/b4/Flare_Pistol.png/revision/latest/scale-to-width-down/1000?cb=20191002164732"
   },
   {
     "name": "Fusees",
@@ -212,13 +218,15 @@
     "weapon_stats": {
       "damage": 11
     },
-    "stats": {
+    "melee_stats": {
       "melee": 13,
       "heavy_melee": 27,
-      "throw_range": 22,
-      "effect_duration": 300
+      "throw_range": 22
     },
-    "image_url": "null"
+    "effect_stats": {
+      "duration" : 300
+    },
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/fe/Fusees.png/revision/latest/scale-to-width-down/1000?cb=20191002164730"
   },
   {
     "name": "Heavy Knife",
@@ -226,15 +234,16 @@
     "type": "tools",
     "sub_category": "Melee",
     "cost": 10,
-    "capacity": "3",
+    "capacity": "1",
     "weapon_stats": null,
-    "stats": {
+    "melee_stats": {
       "melee": 72,
       "heavy_melee": 120,
       "stamina_used_light": 9,
       "stamina_used_heavy": 25
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/39/Heavy_Knife.png/revision/latest/scale-to-width-down/1000?cb=20200120224931"
   },
   {
     "name": "Knife",
@@ -242,15 +251,16 @@
     "type": "tools",
     "sub_category": "Melee",
     "cost": 40,
-    "capacity": "",
+    "capacity": "1",
     "weapon_stats": null,
-    "stats": {
+    "melee_stats": {
       "melee": 52,
       "heavy_melee": 105,
       "stamina_used_light": 20,
       "stamina_used_heavy": 25
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/58/Knife.png/revision/latest/scale-to-width-down/1000?cb=20191002164727"
   },
   {
     "name": "Knuckle Knife",
@@ -258,34 +268,35 @@
     "type": "tools",
     "sub_category": "Melee",
     "cost": 50,
-    "capacity": "",
+    "capacity": "1",
     "weapon_stats": null,
-    "stats": {
+    "melee_stats": {
       "melee": 58,
       "heavy_melee": 92,
       "stamina_used_light": 8,
       "stamina_used_heavy": 21
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/7e/Knuckle_Knife.png/revision/latest/scale-to-width-down/1000?cb=20200117195421"
   },
   {
     "name": "Poison Trip Mines",
-    "desc": "This portable tripwire mine releases a cloud of poison when triggered, disorienting enemies. Comes in a pack of two.",
+    "desc": "This portable tripwire mine releases a cloud of poison when triggered, disorienting enemies. Comes in a pack of two.damage 5/s",
     "type": "tools",
     "sub_category": "Placeable",
     "weapon_stats": null,
     "cost": 30,
     "capacity": "2",
     "melee_stats": {
-      "tick_damage": 5,
       "melee": 13,
-      "heavy_melee": 27,
-      "throw_range": null,
-      "effect_duration": 30,
-      "effect_radius": 1,
+      "heavy_melee": 27
+    },
+    "effect_stats": {
+      "duration": 30,
+      "radius": 1,
       "fuse_duration": null
     },
-    "image_url": "null"
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/db/Poison_Trip_Mine.png/revision/latest/scale-to-width-down/1000?cb=20200529211118"
   },
   {
     "name": "Quad Derringer",
@@ -309,7 +320,8 @@
       "melee": 13,
       "heavy_melee": 27
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/dd/Quad_Derringer.png/revision/latest/scale-to-width-down/1000?cb=20191002180308"
   },
   {
     "name": "SpyGlass",
@@ -317,7 +329,7 @@
     "type": "tools",
     "sub_category": "Throwable",
     "cost": 8,
-    "capacity": "",
+    "capacity": "1",
     "weapon_stats": {
       "sway": 69
     },
@@ -325,7 +337,8 @@
       "melee": 13,
       "heavy_melee": 27
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c1/Spyglass.png/revision/latest?cb=20191002164747"
   },
   {
     "name": "Throwing Axes",
@@ -337,18 +350,19 @@
     "weapon_stats": {
       "damage": 162,
       "spread": 15.0,
-      "muzzle_velocity": 30
+      "muzzle_velocity": 30,
+      "sighted_range": 6
     },
     "melee_stats": {
       "melee": 75,
       "heavy_melee": 142,
       "throw_range": 85,
-      "sighted_range": 6,
       "stamina_used_light": 40,
       "stamina_used_heavy": 55,
       "stamina_used_throw": 20
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/tools%2Fthrowing_axes.png?alt=media&token=1efca955-89e6-45b8-b73a-f047983e3138"
   },
   {
     "name": "Throwing Knives",
@@ -360,18 +374,19 @@
     "weapon_stats": {
       "damage": 130,
       "spread": 15.0,
-      "muzzle_velocity": 30
+      "muzzle_velocity": 30,
+      "sighted_range": 7.5
     },
     "melee_stats": {
       "melee": 75,
       "heavy_melee": 142,
       "throw_range": 115,
-      "sighted_range": 7.5,
       "stamina_used_light": 10,
       "stamina_used_heavy": 25,
       "stamina_used_throw": 15
     },
-    "image_url": "null"
+    "effect_stats": null,
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/fa/Throwing_Knives.png/revision/latest/scale-to-width-down/1000?cb=20191208143648"
   }
 ]
 
