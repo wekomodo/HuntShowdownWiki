@@ -9,15 +9,13 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.wekomodo.huntshowdownwiki.data.model.firebase.traits.Trait
 import com.wekomodo.huntshowdownwiki.domain.firebase.viewmodel.FirebaseViewModel
@@ -31,24 +29,36 @@ private var filteringCriteria = setOf("Base Trait", "Burn Trait", "Event Trait")
 fun TraitsScreen(
     viewModel: FirebaseViewModel = viewModel()
 ) {
-  //  val context = LocalContext.current
-    val traitsList = remember {
-        mutableStateListOf(Trait())
-    }
-    var filteredList by remember {
-        mutableStateOf(traitsList.toList())
+    //  val context = LocalContext.current
+    var traitsList = emptyList<Trait>()
+    val result by viewModel.response.collectAsStateWithLifecycle(
+        initialValue = Resource.Loading(
+            null
+        )
+    )
+    val filteredList = remember {
+        mutableStateListOf<Trait>()
     }
     val activeFilters = remember { mutableSetOf<String>() }
 
-    val result = viewModel.response.collectAsState()
-    when (result.value) {
-        is Resource.Error -> Log.d("Error", "Error")
-        is Resource.Loading -> Log.d("Loading", "Loading")
-        is Resource.Success -> result.value.data?.let { it.forEach{trait ->
-            traitsList.add(trait)
-            Log.d("TRAITLIST",trait.toString())
-        }}
+    // val result = viewModel.response.collectAsStateWithLifecycle()
+    LaunchedEffect(result, activeFilters) {
+        if (result is Resource.Success) {
+            traitsList = result.data ?: emptyList()
+            filteredList.clear()
+            filteredList.addAll(traitsList)
+            Log.d("ListTrait", traitsList.toString())
+            Log.d("ListFiltered", filteredList.toList().toString())
+        }
+        /*   val newList =
+               if (activeFilters.isEmpty()) traitsList else traitsList
+                   .filter { trait ->
+                       trait.type in activeFilters
+                   }
+           filteredList.clear()
+           filteredList.addAll(newList)*/
     }
+
     Column {
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -62,13 +72,13 @@ fun TraitsScreen(
                     } else {
                         activeFilters.remove(filter)
                     }
-                    filteredList =
-                        if (activeFilters.isEmpty()) traitsList.toList() else traitsList.toList()
-                            .filter { trait ->
-                                trait.type in activeFilters
-                            }
-
+                    val newList =
+                        if (activeFilters.isEmpty()) traitsList else traitsList.filter { it.type in activeFilters }
+                    filteredList.clear()
+                    filteredList.addAll(newList)
+                    Log.d("FilterActive", activeFilters.toString())
                 }
+
             }
         }
         LazyColumn {
