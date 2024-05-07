@@ -1,33 +1,301 @@
-{
-  "name": "Berthier Mle 1892",
-  "desc": "The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.",
-  "type": "weapon | Large | Long",
-  "sub_type":"Large Slot",
-  "weapon_stats": {
-    "damage": 10,
-    "effective_range": 305,
-    "rpm": 27,
-    "cycle_time": 1.7,
-    "spread": 47.5,
-    "sway": 77,
-    "vertical_recoil": 14,
-    "reload_speed": 2.7,
-    "muzzle_velocity": 590,
-    "primary_ammo": "Long",
-    "secondary_ammo": "none",
-    "ammo_types":[
+[
+  {
+    "name": "Baseball Bat",
+    "desc": "The Baseball Bat swings intuitively and easily, delivering a solid blow",
+    "type": "weapon | small | melee",
+    "sub_type": "small Slot",
+    "weapon_stats": null,
+    "ammo_types": null,
+    "cost": 40,
+    "capacity": 1,
+    "melee_stats": {
+      "melee": 90,
+      "heavy_melee": 153
+    },
+    "image_url": "empty"
+  },
+  {
+    "name": "Berthier Mle 1892",
+    "desc": "The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.",
+    "type": "weapon | Large | Long",
+    "sub_type": "Large Slot",
+    "weapon_stats": {
+      "damage": 130,
+      "effective_range": 305,
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 47.5,
+      "sway": 77,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [
       "incendiary",
       "spitzer"
     ],
-    "sighted_range": null
+    "cost": 356,
+    "capacity": "3/6",
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892.png?alt=media&token=7186a5bb-9d77-4e0a-9979-179c9f577c6b"
   },
-  "cost": 356,
-  "capacity": 1,
-  "melee_stats": {
-    "melee": 13,
-    "heavy_melee": 27,
-    "throw_range": null
+  {
+    "name": "Berthier Mle 1892 Riposte",
+    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. An affixed bayonet makes this deadly in close combat.",
+    "type": "weapon | Large | Long",
+    "sub_type": "Large Slot",
+    "weapon_stats": {
+      "damage": 130,
+      "effective_range": 305,
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 47.5,
+      "sway": 84,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [
+      "incendiary",
+      "spitzer"
+    ],
+    "cost": 370,
+    "capacity": "3/6",
+    "melee_stats": {
+      "melee": 82,
+      "heavy_melee": 168,
+      "throw_range": null
+    },
+    "effect_stats": null,
+    "image_url": "null"
   },
-  "effect_stats": null,
-  "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892.png?alt=media&token=7186a5bb-9d77-4e0a-9979-179c9f577c6b"
-}
+  {
+    "name": "Berthier Mle 1892 Deadeye",
+    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. A Deadeye scope complements its performance at midrange.",
+    "type": "weapon | Large | Long",
+    "sub_type": "Large Slot",
+    "weapon_stats": {
+      "damage": 130,
+      "effective_range": 305,
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 57.5,
+      "sway": 77,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [
+      "incendiary",
+      "spitzer"
+    ],
+    "cost": 356,
+    "capacity": "3/6",
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27,
+      "throw_range": null
+    },
+    "effect_stats": null,
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892%20deadeye.png?alt=media&token=0dc0d7e5-79d6-4714-9531-c6ca50472831"
+  },
+  {
+    "name": "Berthier Mle 1892 Marksman",
+    "desc": "The Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience, A Marksman scope gives the rifle an advantage at distance.",
+    "type": "weapon | Large | Long",
+    "sub_type": "Large Slot",
+    "weapon_stats": {
+      "damage": 130,
+      "effective_range": 305,
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 70,
+      "sway": 69,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [
+      {
+        "name": "Incendiary",
+        "cost": 35,
+        "damage": 130,
+        "spread" : null,
+        "sighted_range": null,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 590,
+        "capacity": "3/6"
+      },
+      {
+        "name": "Spitzer",
+        "cost": 75,
+        "damage": 110,
+        "spread" : null,
+        "sighted_range": null,
+        "effective_range": 317,
+        "vertical_recoil": 18,
+        "muzzle_velocity": 780,
+        "capacity": "3/6"
+      }
+    ],
+    "cost": 356,
+    "capacity": "3/6",
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Bomb Lance",
+    "desc": "Adapted for combat on land, this explosive harpoon can be fired short distances and deals tremendous damage on direct impact.",
+    "type": "weapon | Large | special",
+    "sub_type": "Large Slot",
+    "weapon_stats": {
+      "damage": 150,
+      "sighted_range": 10,
+      "effective_range": null,
+      "rpm": 9,
+      "cycle_time": 7.3,
+      "spread": 37.5,
+      "reload_speed": 6.9,
+      "sway": null,
+      "vertical_recoil": null,
+      "muzzle_velocity": 60
+    },
+    "ammo_types": [
+      {
+        "name": "Dragon Breath",
+        "cost": 10,
+        "damage": 58,
+        "sighted_range": 10,
+        "spread" : 32.5,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 100,
+        "capacity": "1/3"
+      },
+      {
+        "name": "Steel Ball",
+        "cost": 5,
+        "damage": 239,
+        "sighted_range": 10,
+        "spread" : 62.5,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 450,
+        "capacity": "1/4"
+      },
+      {
+        "name": "Waxed Frag Charge",
+        "cost": 50,
+        "damage": 50,
+        "sighted_range": 10,
+        "spread" : 37.5,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 60,
+        "capacity": "1/4"
+      }
+    ],
+    "cost": 199,
+    "capacity": "1/3",
+    "melee_stats": {
+      "melee": 180,
+      "heavy_melee": 360
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Bornheim No. 3",
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Reloads via a five-round magazine, or by topping up rounds individually. Can be used for dual wielding.",
+    "type": "weapon | small | compact",
+    "sub_type": "small Slot",
+    "stats": {
+      "damage": 74,
+      "effective_range": 62,
+      "rpm": 65,
+      "cycle_time": 0.2,
+      "spread": 25,
+      "sway": 128,
+      "vertical_recoil": 6,
+      "reload_speed": 7.4,
+      "muzzle_velocity": 380
+    },
+    "ammo_types": [
+      {
+        "name": "High velocity",
+        "cost": 60,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 7.5,
+        "muzzle_velocity": 560,
+        "capacity": "5+1/15"
+      },
+      {
+        "name": "Incendiary",
+        "cost": 40,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 6,
+        "muzzle_velocity": 380,
+        "capacity": "5+1/15"
+      }
+    ],
+    "cost": 146,
+    "capacity": "5+1/15",
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "image_url": "null"
+  },
+  {
+    "name": "Bornheim No. 3 Extended",
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Modified to increase capacity by removing the option to reload via magazine. Can be used for dual wielding.",
+    "type": "weapon | small | compact",
+    "sub_type": "small Slot",
+    "stats": {
+      "damage": 74,
+      "effective_range": 62,
+      "rpm": 44,
+      "cycle_time": 0.2,
+      "spread": 25,
+      "sway": 128,
+      "vertical_recoil": 6,
+      "reload_speed": 9.6,
+      "muzzle_velocity": 380
+    },
+    "ammo_types": [
+      {
+        "name": "High velocity",
+        "cost": 60,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 7.5,
+        "muzzle_velocity": 560,
+        "capacity": "8+1/15"
+      },
+      {
+        "name": "Incendiary",
+        "cost": 40,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 6,
+        "muzzle_velocity": 380,
+        "capacity": "8+1/15"
+      }
+    ],
+    "cost": 203,
+    "capacity": "8+1/15",
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "image_url": "null"
+  }
+]

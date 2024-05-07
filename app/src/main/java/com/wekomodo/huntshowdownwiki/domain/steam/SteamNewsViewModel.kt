@@ -12,7 +12,6 @@ import kotlinx.coroutines.launch
 
 @HiltViewModel
 class SteamNewsViewModel @Inject constructor(
-    private val respository : SteamNewsRepository,
     private val useCase: SteamNewsUseCase
 ) : ViewModel(){
 

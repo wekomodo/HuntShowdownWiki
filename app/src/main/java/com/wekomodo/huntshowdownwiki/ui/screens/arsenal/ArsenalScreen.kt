@@ -49,7 +49,7 @@ fun ArsenalScreen() {
     }
     //var filteredList: List<Item> = emptyList()
     LaunchedEffect(Unit) {
-        val database = Firebase.database.reference.child("items")
+        val database = Firebase.database.reference.child("items").child("tools")
         Log.d("firebaseResult", database.toString())
         database.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
@@ -69,6 +69,7 @@ fun ArsenalScreen() {
             }
         })
     }
+
 
     Column(
         modifier = Modifier
@@ -94,7 +95,7 @@ fun ArsenalScreen() {
         Log.d("firebaselistItem",itemList.toList().toString())
         LazyColumn {
             itemsIndexed(itemList) { _, item ->
-                ArsenalItem(name = item.name, image = item.image_url)
+                ArsenalItem(name = item.name, image = item.image_url,desc = item.desc)
             }
         }
         /*Row(

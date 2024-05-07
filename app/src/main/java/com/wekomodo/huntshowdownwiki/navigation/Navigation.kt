@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.wekomodo.huntshowdownwiki.ui.screens.arsenal.ArsenalScreen
-import com.wekomodo.huntshowdownwiki.ui.screens.NewsScreen
+import com.wekomodo.huntshowdownwiki.ui.screens.news.NewsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.traits.TraitsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapDetailScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapsScreen
