@@ -1,28 +1,20 @@
 package com.wekomodo.huntshowdownwiki.ui.screens.news
 
 import android.util.Log
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
-import androidx.compose.material3.Card
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.wekomodo.huntshowdownwiki.R
 import com.wekomodo.huntshowdownwiki.data.model.steam.Newsitem
 
 @Composable
@@ -39,13 +31,11 @@ fun NewsItemUi(newsitem: Newsitem, onclick: () -> Unit) {
             modifier = Modifier.padding(10.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Card {
-                AsyncImage(
-                    modifier = Modifier.height(120.dp),
-                    model = imageUrl,
-                    contentDescription = "newsImage"
-                )
-            }
+            AsyncImage(
+                modifier = Modifier.height(120.dp).clip(RoundedCornerShape(10.dp)),
+                model = imageUrl,
+                contentDescription = "newsImage",
+            )
             Text(modifier = Modifier.padding(10.dp), text = newsitem.title)
         }
 

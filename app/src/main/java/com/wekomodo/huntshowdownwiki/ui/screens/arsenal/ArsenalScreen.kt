@@ -69,8 +69,6 @@ fun ArsenalScreen() {
             }
         })
     }
-
-
     Column(
         modifier = Modifier
             .fillMaxSize()

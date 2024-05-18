@@ -1,5 +1,7 @@
 package com.wekomodo.huntshowdownwiki.ui.screens.news
 
+import android.content.Intent
+import android.net.Uri
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -20,11 +22,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat.startActivity
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.wekomodo.huntshowdownwiki.data.model.steam.Newsitem
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
 import com.wekomodo.huntshowdownwiki.util.Status
+
 
 @Composable
 fun NewsScreen(
@@ -33,7 +37,9 @@ fun NewsScreen(
     val uriHandler = LocalUriHandler.current
     val context = LocalContext.current
     var loading by remember { mutableStateOf(false) }
-    viewModel.getNews("594650", "10", "500", "json")
+    LaunchedEffect(Unit) {
+        viewModel.getNews("594650", "10", "500", "json")
+    }
     val result = viewModel.steamNews.collectAsStateWithLifecycle()
     val newsList = remember {
         mutableListOf(Newsitem())
@@ -52,7 +58,7 @@ fun NewsScreen(
         }
 
         Status.ERROR -> {
-            Toast.makeText(context, "Some error occured", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Some error occurred", Toast.LENGTH_SHORT).show()
         }
     }
     Column(
@@ -60,20 +66,28 @@ fun NewsScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        /* if(loading)
+         if(loading)
          {
              CircularProgressIndicator(
                  modifier = Modifier.width(64.dp),
                  color = MaterialTheme.colorScheme.secondary,
                  trackColor = MaterialTheme.colorScheme.surfaceVariant,
              )
-         }*/
+         }
         LazyColumn {
+            if(newsList.size>1)
             itemsIndexed(newsList) { _, item ->
                 NewsItemUi(
                     item
                 ) {
-                    uriHandler.openUri(item.url)
+                    context.startActivity(
+                        Intent(
+                            Intent.ACTION_VIEW, Uri.parse(
+                              item.url
+                            )
+                        )
+                    )
+                 //   uriHandler.openUri(item.url)
                 }
             }
         }
