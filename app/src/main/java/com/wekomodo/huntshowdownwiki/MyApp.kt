@@ -33,7 +33,7 @@ class MyApp : Application(), ImageLoaderFactory {
             .diskCache {
                 DiskCache.Builder()
                     .directory(cacheDir.resolve("image_cache"))
-                    .maxSizeBytes(5 * 1024 * 1024)
+                    .maxSizePercent(0.02)
                     .build()
             }
             .logger(DebugLogger())
