@@ -18,8 +18,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.wekomodo.huntshowdownwiki.domain.firebase.viewmodel.FirebaseViewModel
+import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
+import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
 import com.wekomodo.huntshowdownwiki.util.Resource
+import com.wekomodo.huntshowdownwiki.util.Status
 
 
 private var filteringCriteria = setOf("Base Trait", "Burn Trait", "Event Trait")
@@ -30,6 +33,8 @@ fun TraitsScreen(
 ) {
     //  val context = LocalContext.current
     var uiState by remember { mutableStateOf(TraitsUiState()) }
+    var loading by remember { mutableStateOf(false) }
+    var error by remember { mutableStateOf(false) }
 //    var traitsList = emptyList<Trait>()
     val result by viewModel.response.collectAsStateWithLifecycle(
         initialValue = Resource.Loading(
@@ -52,6 +57,27 @@ fun TraitsScreen(
                 displayedList = data
             )
         }
+        when (result.status) {
+            Status.SUCCESS -> {
+                loading = false
+                error = false
+                val data = result.data?.toList() ?: emptyList()
+                uiState = uiState.copy(
+                    traitList = data,
+                    displayedList = data
+                )
+            }
+            Status.LOADING -> {
+                loading = true
+                error = false
+            }
+
+            Status.ERROR -> {
+                error = true
+                loading = false
+                // Toast.makeText(context, "Some error occurred", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     // reacts when changes to filters are made
@@ -69,24 +95,9 @@ fun TraitsScreen(
         }
     }
 
-//    LaunchedEffect(result, activeFilters) {
-//        if (result is Resource.Success) {
-//            traitsList = result.data ?: emptyList()
-//            filteredList.clear()
-//            filteredList.addAll(traitsList)
-//            Log.d("ListTrait", traitsList.toString())
-//            Log.d("ListFiltered", filteredList.toList().toString())
-//        }
-//        /*   val newList =
-//               if (activeFilters.isEmpty()) traitsList else traitsList
-//                   .filter { trait ->
-//                       trait.type in activeFilters
-//                   }
-//           filteredList.clear()
-//           filteredList.addAll(newList)*/
-//    }
-
     Column {
+        LoadingUiState(loading = loading)
+        ErrorUiState(error = error)
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceAround
