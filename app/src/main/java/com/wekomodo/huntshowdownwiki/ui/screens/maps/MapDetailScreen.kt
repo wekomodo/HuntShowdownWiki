@@ -13,6 +13,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Info
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -24,7 +25,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.wekomodo.huntshowdownwiki.R
 import com.wekomodo.huntshowdownwiki.ui.components.MapLegend
 import com.wekomodo.huntshowdownwiki.ui.components.MapLegendButton
@@ -85,15 +85,18 @@ fun MapDetailScreen(
         mutableStateOf(true)
     }
 
-    Column(modifier = Modifier
-        .fillMaxSize().verticalScroll(rememberScrollState())) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
+    ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
             horizontalArrangement = Arrangement.Center
         ) {
-            Text(text = mapName, fontSize = 24.sp)
+            Text(text = mapName, style = MaterialTheme.typography.titleLarge)
         }
         Row(
             modifier = Modifier
@@ -102,8 +105,17 @@ fun MapDetailScreen(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            Icon(imageVector = Icons.Rounded.Info, contentDescription = "tip Icon")
-            Text(modifier = Modifier.padding(start = 4.dp), text = "pinch to zoom in & out on map")
+            Card {
+                Row(Modifier.padding(8.dp)) {
+                    Icon(imageVector = Icons.Rounded.Info, contentDescription = "tip Icon")
+                    Text(
+                        modifier = Modifier.padding(start = 4.dp),
+                        text = "pinch to zoom in & out on map"
+                    )
+                }
+            }
+
+
         }
         Card(
             modifier = Modifier.padding(10.dp)
@@ -150,8 +162,16 @@ fun MapDetailScreen(
                 }
             }
         }
-        Column(modifier = Modifier.fillMaxWidth().padding(8.dp)) {
-            Text(modifier = Modifier.padding(8.dp), text = "Map Legend", fontSize = 18.sp)
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp)
+        ) {
+            Text(
+                modifier = Modifier.padding(8.dp),
+                text = "Map Legend",
+                style = MaterialTheme.typography.titleLarge
+            )
             MapLegendButton(names, R.drawable.ic_location_names, "Locations") { names = it }
             MapLegendButton(
                 spawnLocation,

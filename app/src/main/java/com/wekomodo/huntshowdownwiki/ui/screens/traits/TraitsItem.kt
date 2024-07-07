@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -59,7 +60,7 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
                         contentDescription = ""
                     )
                     Column {
-                        Text(text = name, color = Color.White, fontSize = 24.sp)
+                        Text(text = name, color = Color.White, style = MaterialTheme.typography.titleLarge)
                         Row(
                             horizontalArrangement = Arrangement.End,
                             verticalAlignment = Alignment.CenterVertically,

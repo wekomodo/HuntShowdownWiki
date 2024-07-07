@@ -15,12 +15,15 @@ class SteamNewsRepository @Inject constructor(
         maxLength: String,
         format: String
     ) : News? {
-        val response = api.getLatestNews(appId, count, maxLength, format)
-        val result = response.body()
-        return if (response.isSuccessful && result != null) {
-            response.body()
-        }
-        else
+        return try {
+            val response = api.getLatestNews(appId, count, maxLength, format)
+            val result = response.body()
+            return if (response.isSuccessful && result != null) {
+                response.body()
+            } else
+                null
+        }catch (e : Exception){
             null
+        }
     }
 }

@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -18,7 +19,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.wekomodo.huntshowdownwiki.R
 
 @Composable
@@ -41,7 +41,7 @@ fun MapsItem(image: Int, name: String, onClick: () -> Unit) {
                     .size(32.dp)
                     .clip(CircleShape)
             )
-            Text(text = name, fontSize = 24.sp)
+            Text(text = name, style = MaterialTheme.typography.displaySmall)
 
         }
         Image(
