@@ -70,6 +70,7 @@ fun NewsScreen(
         LazyColumn {
             if(newsList.size>1)
             itemsIndexed(newsList) { _, item ->
+                if(item.feedlabel == "Community Announcements")
                 NewsItemUi(
                     item
                 ) {

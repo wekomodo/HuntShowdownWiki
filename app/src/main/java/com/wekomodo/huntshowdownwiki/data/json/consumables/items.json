@@ -264,11 +264,11 @@
       "effective_range": 62,
       "rpm": 44,
       "cycle_time": 0.2,
+      "muzzle_velocity": 380,
+      "reload_speed": 9.6,
       "spread": 25,
       "sway": 128,
-      "vertical_recoil": 6,
-      "reload_speed": 9.6,
-      "muzzle_velocity": 380
+      "vertical_recoil": 6
     },
     "ammo_types": [
       {
@@ -297,5 +297,24 @@
       "heavy_melee": 31
     },
     "image_url": "null"
+  },
+  {
+    "name": "Bornheim No. 3 Match",
+    "desc": "This early German semi-automatic pistol can reliably put down targets at a distance, making use of its low recoil and fast reload.",
+    "unlock_requirement": "Bornheim No. 3 Incendiary Ammo",
+    "type": "weapon | medium | compact",
+    "sub_type": "medium Slot",
+    "stats": {
+      "damage": 80,
+      "effective_range": 62,
+      "rpm": 65,
+      "cycle_time": 0.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 7.6,
+      "spread": 22.5,
+      "sway": 87,
+      "vertical_recoil": 3
+    },
+    "capacity": "5+1/15"
   }
 ]
