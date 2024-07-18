@@ -27,14 +27,14 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.Item
+import com.wekomodo.huntshowdownwiki.data.model.firebase.weapons.Weapons
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 
 
 @Composable
 fun ArsenalScreen() {
     val context = LocalContext.current
-    val emptyObject = Item()
+    val emptyObject = Weapons()
     val itemList = remember {
         mutableStateListOf(emptyObject)
     }
@@ -49,18 +49,19 @@ fun ArsenalScreen() {
     }
     //var filteredList: List<Item> = emptyList()
     LaunchedEffect(Unit) {
-        val database = Firebase.database.reference.child("items").child("tools")
+        val database = Firebase.database.reference.child("items").child("weapons")
         Log.d("firebaseResult", database.toString())
         database.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 for (items in p0.children) {
-                    val item = items.getValue(Item::class.java)
+                    Log.d("firebaseItems",items.value.toString())
+                    val item = items.getValue(Weapons::class.java)
                     itemList.remove(emptyObject)
                     item?.let {
                         itemList.add(item)
                     }
                  //   filteredList = itemList.toList()
-                    Log.d("firebaseItems", item.toString())
+                   // Log.d("firebaseItems", item.toString())
                 }
 
             }
@@ -96,83 +97,6 @@ fun ArsenalScreen() {
                 ArsenalItem(name = item.name, image = item.image_url,desc = item.desc)
             }
         }
-        /*Row(
-            modifier = Modifier
-                .height(78.dp)
-                .fillMaxWidth()
-                .padding(start = 15.dp),
-            horizontalArrangement = Arrangement.SpaceAround,
-            verticalAlignment = Alignment.CenterVertically
-
-        ) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Box(
-                    modifier = Modifier
-                        .size(48.dp)
-                        .paint(
-                            painterResource(id = R.drawable.ic_outline_vector),
-                        )
-                        .clickable {
-
-                        }
-                ) {
-                    Icon(
-                        modifier = Modifier
-                            .size(24.dp)
-                            .align(Alignment.Center),
-                        painter = painterResource(id = R.drawable.ic_guns),
-                        contentDescription = "Guns"
-                    )
-                }
-            }
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Box(
-                    modifier = Modifier
-                        .size(48.dp)
-                        .paint(
-                            painterResource(id = R.drawable.ic_outline_vector),
-                        )
-                        .clickable {
-
-                        }
-                ) {
-                    Icon(
-                        modifier = Modifier
-                            .size(24.dp)
-                            .align(Alignment.Center),
-                        painter = painterResource(id = R.drawable.ic_tools),
-                        contentDescription = "Tools"
-                    )
-                }
-            }
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Box(
-                    modifier = Modifier
-                        .size(48.dp)
-                        .paint(
-                            painterResource(id = R.drawable.ic_outline_vector),
-                        )
-                        .clickable {
-
-                        }
-                ) {
-                    Icon(
-                        modifier = Modifier
-                            .size(24.dp)
-                            .align(Alignment.Center),
-                        painter = painterResource(id = R.drawable.ic_consumables),
-                        contentDescription = "Consumables"
-                    )
-                }
-            }
-
-        }*/
        }
 }
 @Preview

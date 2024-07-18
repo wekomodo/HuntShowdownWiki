@@ -29,22 +29,4 @@ class FirebaseViewModel : ViewModel() {
             _response.value = Resource.Success(tempList)
         }
     }
-/*    addListenerForSingleValueEvent(object : ValueEventListener{
-        override fun onDataChange(snapshot: DataSnapshot) {
-            for (items in snapshot.children) {
-                val trait = items.getValue(Trait::class.java)
-                tempList.remove(Trait())
-                trait?.let {
-                    tempList.add(trait)
-                }
-            }
-            Log.d("firebasetraits", tempList.toString())
-            _response.value = Resource.Success(tempList)
-        }
-
-        override fun onCancelled(error: DatabaseError) {
-            Log.d("Firebase Call", error.message)
-        }
-
-    })*/
 }

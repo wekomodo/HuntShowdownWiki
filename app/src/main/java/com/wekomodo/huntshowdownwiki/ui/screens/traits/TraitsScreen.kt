@@ -124,7 +124,6 @@ fun TraitsScreen(
                 )
             }
         }
-        Text("Nothing Selected?")
     }
 }
 

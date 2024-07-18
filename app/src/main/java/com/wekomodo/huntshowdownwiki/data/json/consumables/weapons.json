@@ -1,0 +1,2390 @@
+[
+  {
+    "name": "Baseball Bat",
+    "desc": "The Baseball Bat swings intuitively and easily, delivering a solid blow",
+    "stats": null,
+    "ammo_types": [],
+    "cost": 40,
+    "melee_stats": {
+      "melee": 90,
+      "heavy_melee": 153
+    },
+    "type": [
+      "weapon",
+      "small",
+      "melee"
+    ],
+    "image_url": "empty"
+  },
+  {
+    "name": "Berthier Mle 1892",
+    "capacity": "3/6",
+    "desc": "The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.",
+    "stats": {
+      "damage": 130,
+      "effective_range": "305m",
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 47.5,
+      "sway": 77,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [],
+    "cost": 356,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ],
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892.png?alt=media&token=7186a5bb-9d77-4e0a-9979-179c9f577c6b"
+  },
+  {
+    "name": "Berthier Mle 1892 Riposte",
+    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. An affixed bayonet makes this deadly in close combat.",
+    "capacity": "3/6",
+    "stats": {
+      "damage": 130,
+      "effective_range": "305m",
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 47.5,
+      "sway": 84,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [],
+    "cost": 370,
+    "melee_stats": {
+      "melee": 82,
+      "heavy_melee": 168
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ],
+    "image_url": "null"
+  },
+  {
+    "name": "Berthier Mle 1892 Deadeye",
+    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. A Deadeye scope complements its performance at midrange.",
+    "capacity": "3/6",
+    "stats": {
+      "damage": 130,
+      "effective_range": "305m",
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 57.5,
+      "sway": 77,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [],
+    "cost": 356,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ],
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892%20deadeye.png?alt=media&token=0dc0d7e5-79d6-4714-9531-c6ca50472831"
+  },
+  {
+    "name": "Berthier Mle 1892 Marksman",
+    "desc": "The Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience, A Marksman scope gives the rifle an advantage at distance.",
+    "capacity": "3/6",
+    "stats": {
+      "damage": 130,
+      "effective_range": "305m",
+      "rpm": 27,
+      "cycle_time": 1.7,
+      "spread": 70,
+      "sway": 69,
+      "vertical_recoil": 14,
+      "reload_speed": 2.7,
+      "muzzle_velocity": 590
+    },
+    "ammo_types": [
+      {
+        "name": "Incendiary",
+        "cost": 35,
+        "damage": 130,
+        "spread": null,
+        "sighted_range": null,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 590,
+        "capacity": "3/6"
+      },
+      {
+        "name": "Spitzer",
+        "cost": 75,
+        "damage": 110,
+        "spread": null,
+        "sighted_range": null,
+        "effective_range": 317,
+        "vertical_recoil": 18,
+        "muzzle_velocity": 780,
+        "capacity": "3/6"
+      }
+    ],
+    "cost": 356,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ],
+    "image_url": "null"
+  },
+  {
+    "name": "Bomb Lance",
+    "desc": "Adapted for combat on land, this explosive harpoon can be fired short distances and deals tremendous damage on direct impact.",
+    "capacity": "1/3",
+    "stats": {
+      "damage": 150,
+      "sighted_range": 10,
+      "effective_range": null,
+      "rpm": 9,
+      "cycle_time": 7.3,
+      "spread": 37.5,
+      "reload_speed": 6.9,
+      "sway": null,
+      "vertical_recoil": null,
+      "muzzle_velocity": 60
+    },
+    "ammo_types": [
+      {
+        "name": "Dragon Breath",
+        "cost": 10,
+        "damage": 58,
+        "sighted_range": 10,
+        "spread": 32.5,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 100,
+        "capacity": "1/3"
+      },
+      {
+        "name": "Steel Ball",
+        "cost": 5,
+        "damage": 239,
+        "sighted_range": 10,
+        "spread": 62.5,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 450,
+        "capacity": "1/4"
+      },
+      {
+        "name": "Waxed Frag Charge",
+        "cost": 50,
+        "damage": 50,
+        "sighted_range": 10,
+        "spread": 37.5,
+        "effective_range": null,
+        "vertical_recoil": null,
+        "muzzle_velocity": 60,
+        "capacity": "1/4"
+      }
+    ],
+    "cost": 199,
+    "melee_stats": {
+      "melee": 180,
+      "heavy_melee": 360
+    },
+    "type": [
+      "weapon",
+      "large",
+      "special"
+    ],
+    "image_url": "null"
+  },
+  {
+    "name": "Bornheim No. 3",
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Reloads via a five-round magazine, or by topping up rounds individually. Can be used for dual wielding.",
+    "capacity": "5+1/15",
+    "stats": {
+      "damage": 74,
+      "effective_range": "62m",
+      "rpm": 65,
+      "cycle_time": 0.2,
+      "spread": 25,
+      "sway": 128,
+      "vertical_recoil": 6,
+      "reload_speed": 7.4,
+      "muzzle_velocity": 380
+    },
+    "ammo_types": [
+      {
+        "name": "High velocity",
+        "cost": 60,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 7.5,
+        "muzzle_velocity": 560,
+        "capacity": "5+1/15"
+      },
+      {
+        "name": "Incendiary",
+        "cost": 40,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 6,
+        "muzzle_velocity": 380,
+        "capacity": "5+1/15"
+      }
+    ],
+    "cost": 146,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ],
+    "image_url": "null"
+  },
+  {
+    "name": "Bornheim No. 3 Extended",
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Modified to increase capacity by removing the option to reload via magazine. Can be used for dual wielding.",
+    "capacity": "8+1/15",
+    "stats": {
+      "damage": 74,
+      "effective_range": "62m",
+      "rpm": 44,
+      "cycle_time": 0.2,
+      "muzzle_velocity": 380,
+      "reload_speed": 9.6,
+      "spread": 25,
+      "sway": 128,
+      "vertical_recoil": 6
+    },
+    "ammo_types": [
+      {
+        "name": "High velocity",
+        "cost": 60,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 7.5,
+        "muzzle_velocity": 560,
+        "capacity": "8+1/15"
+      },
+      {
+        "name": "Incendiary",
+        "cost": 40,
+        "damage": 74,
+        "effective_range": 62,
+        "vertical_recoil": 6,
+        "muzzle_velocity": 380,
+        "capacity": "8+1/15"
+      }
+    ],
+    "cost": 203,
+
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "compact"
+    ],
+    "image_url": "null"
+  },
+  {
+    "name": "Bornheim No. 3 Match",
+    "desc": "This early German semi-automatic pistol can reliably put down targets at a distance, making use of its low recoil and fast reload.",
+    "capacity": "5+1/15",
+    "stats": {
+      "damage": 80,
+      "effective_range": "62m",
+      "rpm": 65,
+      "cycle_time": 0.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 7.6,
+      "spread": 22.5,
+      "sway": 87,
+      "vertical_recoil": 3
+    },
+    "ammo_types": [],
+    "cost": 180,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Bornheim No. 3 Silencer",
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. An attached silencer masks the rapid gunfire. Can be used for dual wielding.",
+    "capacity": "5+1/15",
+    "stats": {
+      "damage": 74,
+      "effective_range": "48m",
+      "rpm": 65,
+      "cycle_time": 0.2,
+      "muzzle_velocity": 300,
+      "reload_speed": 7.4,
+      "spread": 25,
+      "sway": 128,
+      "vertical_recoil": 6
+    },
+    "ammo_types": [],
+    "cost": 174,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Caldwell 92 New Army",
+    "desc": "Fast, light, and easy to handle, this double-action revolver has a distinguished counter-clockwise rotating cylinder that swings out to effortlessly reload its six .38 bullets. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 97,
+      "effective_range": "80m",
+      "rpm": 30,
+      "cycle_time": 0.5,
+      "muzzle_velocity": 230,
+      "reload_speed": 9.5,
+      "spread": 47.5,
+      "sway": 128,
+      "vertical_recoil": 5
+    },
+    "ammo_types": [],
+    "cost": 90,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Caldwell 92 New Army Swift",
+    "desc": "Faster reloading Caldwell 92 New Army pistol, thanks to a speed reloader. However, any unspent ammunition is lost in the process of reloading. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 97,
+      "effective_range": "80m",
+      "rpm": 40,
+      "cycle_time": 0.5,
+      "muzzle_velocity": 230,
+      "reload_speed": 5.6,
+      "spread": 47.5,
+      "sway": 128,
+      "vertical_recoil": 5
+    },
+    "ammo_types": [],
+    "cost": 108,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Caldwell Conversion Pistol",
+    "desc": "The Caldwell Conversion Pistol is a single-action six-shot revolver. Slow to reload but sturdy and reliable. Can be used for dual wielding.",
+    "capacity": "6/18",
+    "stats": {
+      "damage": 104,
+      "effective_range": "85m",
+      "rpm": 21,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 300,
+      "reload_speed": 11.2,
+      "spread": 30,
+      "sway": 128,
+      "vertical_recoil": 4.5
+    },
+    "ammo_types": [],
+    "cost": 55,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Caldwell Conversion Chain Pistol",
+    "desc": "Modified single-action revolver that chambers 17 rounds in a revolving chain for sustained fire. Can be used for dual wielding.",
+    "capacity": "17/18",
+    "stats": {
+      "damage": 104,
+      "effective_range": "85m",
+      "rpm": 24,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 300,
+      "reload_speed": 28.7,
+      "spread": 45,
+      "sway": 128,
+      "vertical_recoil": 3.5
+    },
+    "ammo_types": [],
+    "cost": 84,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Caldwell Conversion Uppercut",
+    "desc": "Modified single-action revolver that fires more powerful rifle cartridges, but kicks like a mule. Can be used for dual wielding.",
+    "capacity": "6/9",
+    "stats": {
+      "damage": 126,
+      "effective_range": "115m",
+      "rpm": 18,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 410,
+      "reload_speed": 16,
+      "spread": 40,
+      "sway": 128,
+      "vertical_recoil": 23
+    },
+    "ammo_types": [],
+    "cost": 414,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "long"
+    ]
+  },
+  {
+    "name": "Caldwell Conversion Uppercut Precision",
+    "desc": "Modified single-action revolver, with a stock to stabilize its powerful rifle cartridges.",
+    "capacity": "6/9",
+    "stats": {
+      "damage": 126,
+      "effective_range": "115m",
+      "rpm": 18,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 410,
+      "reload_speed": 18.3,
+      "spread": 35,
+      "sway": 87,
+      "vertical_recoil": 11
+    },
+    "ammo_types": [],
+    "cost": 453,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "long"
+    ]
+  },
+  {
+    "name": "Caldwell Marathon",
+    "desc": "Fast-firing pump-action rifle that performs best at mid-range. A clunky reload reduces its flexibility.",
+    "capacity": "15+1/24",
+    "stats": {
+      "damage": 113,
+      "effective_range": "160m",
+      "rpm": 31,
+      "cycle_time": 1,
+      "muzzle_velocity": 430,
+      "reload_speed": 19.2,
+      "spread": 15,
+      "sway": 77,
+      "vertical_recoil": 7
+    },
+    "ammo_types": [],
+    "cost": 68,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "compact"
+    ]
+  },
+  {
+    "name": "Caldwell Marathon Swift",
+    "desc": "Fast-firing pump-action rifle that performs best at mid-range. Reloading is quickened with a speed loader mechanism.",
+    "capacity": "15+1/24",
+    "stats": {
+      "damage": 113,
+      "effective_range": "160m",
+      "rpm": 45,
+      "cycle_time": 1,
+      "muzzle_velocity": 430,
+      "reload_speed": 10,
+      "spread": 15,
+      "sway": 77,
+      "vertical_recoil": 7
+    },
+    "ammo_types": [],
+    "cost": 95,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "compact"
+    ]
+  },
+  {
+    "name": "Caldwell Pax",
+    "desc": "This iconic single-action six round revolver needs no further introduction. Robust, powerful, and accurate, it brought peace to the once lawless West. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 110,
+      "effective_range": "87m",
+      "rpm": 22,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 330,
+      "reload_speed": 11.2,
+      "spread": 32.5,
+      "sway": 128,
+      "vertical_recoil": 10
+    },
+    "ammo_types": [],
+    "cost": 80,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "medium"
+    ]
+  },
+  {
+    "name": "Caldwell Pax Claw",
+    "desc": "Iconic single-action six round revolver. Robust, powerful, and accurate, a blade affixed to the grip gives this an edge up close. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 110,
+      "effective_range": "87m",
+      "rpm": 22,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 330,
+      "reload_speed": 11.2,
+      "spread": 32.5,
+      "sway": 128,
+      "vertical_recoil": 10
+    },
+    "ammo_types": [],
+    "cost": 90,
+    "melee_stats": {
+      "melee": 52,
+      "heavy_melee": 105
+    },
+    "type": [
+      "weapon",
+      "small",
+      "medium"
+    ]
+  },
+  {
+    "name": "Caldwell Pax Trueshot",
+    "desc": "The iconic single-action six round revolver with an extended barrel that increases muzzle velocity. Robust, exceptionally powerful, and fairly accurate, it is the arm of the West's spreading law. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 114,
+      "effective_range": "89m",
+      "rpm": 18,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 410,
+      "reload_speed": 11.2,
+      "spread": 27.5,
+      "sway": 128,
+      "vertical_recoil": 16
+    },
+    "ammo_types": [],
+    "cost": 141,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "medium"
+    ]
+  },
+  {
+    "name": "Caldwell Rival 78",
+    "desc": "Sturdy, break-action, side-by-side shotgun with a medium-length barrel that can destroy all but the toughest targets at close range.",
+    "capacity": "2/8",
+    "stats": {
+      "damage": 190,
+      "effective_range": "13m",
+      "rpm": 24,
+      "cycle_time": 0.3,
+      "muzzle_velocity": 425,
+      "reload_speed": 4.7,
+      "spread": 80,
+      "sway": 77,
+      "vertical_recoil": 20
+    },
+    "ammo_types": [],
+    "cost": 150,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Caldwell Rival 78 Handcannon",
+    "desc": "Sawn-off break-action side-by-side shotgun. Its wider spread but shorter range make this a great backup weapon.",
+    "capacity": "2/6",
+    "stats": {
+      "damage": 105,
+      "effective_range": "10m",
+      "rpm": 24,
+      "cycle_time": 0.3,
+      "muzzle_velocity": 350,
+      "reload_speed": 4.7,
+      "spread": 125,
+      "sway": 133,
+      "vertical_recoil": 30
+    },
+    "ammo_types": [],
+    "cost": 125,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Cavalry Saber",
+    "desc": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
+    "stats": null,
+    "ammo_types": [],
+    "cost": 50,
+    "melee_stats": {
+      "melee": 82,
+      "heavy_melee": 168
+    },
+    "type": [
+      "weapon",
+      "small",
+      "melee"
+    ]
+  },
+  {
+    "name": "Combat Axe",
+    "desc": "A heavy two-handed melee weapon that can split open the toughest of enemies with ease.",
+    "stats": null,
+    "ammo_types": [],
+    "cost": 40,
+    "melee_stats": {
+      "melee": 165,
+      "heavy_melee": 330
+    },
+    "type": [
+      "weapon",
+      "small",
+      "melee"
+    ]
+  },
+  {
+    "name": "Crossbow",
+    "desc": "Hand-crafted crossbow that fires powerful bolts. Well suited for covert missions and stealth takedowns, but has a long reload. Bolts can be retrieved and reused.",
+    "capacity": "1/18",
+    "stats": {
+      "damage": 247,
+      "effective_range": "12m",
+      "rpm": 13,
+      "cycle_time": 4.8,
+      "muzzle_velocity": 150,
+      "reload_speed": 5.3,
+      "spread": 30,
+      "sway": 77,
+      "vertical_recoil": 4
+    },
+    "ammo_types": [],
+    "cost": 50,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "special"
+    ]
+  },
+  {
+    "name": "Crown & King Auto-5",
+    "desc": "Prototype long-barreled semi-automatic shotgun with internal four round magazine plus one in the chamber. High power and rate of fire, but strong recoil and short range.",
+    "capacity": "4+1/6",
+    "stats": {
+      "damage": 194,
+      "effective_range": "13m",
+      "rpm": 24,
+      "cycle_time": 0.6,
+      "muzzle_velocity": 425,
+      "reload_speed": 10.7,
+      "spread": 65,
+      "sway": 133,
+      "vertical_recoil": 20
+    },
+    "ammo_types": [],
+    "cost": 600,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Dolch 96",
+    "desc": "Powerful, German, prototype, semi-automatic pistol with an internal magazine loaded from the top. When fully emptied, it can be reloaded fast with a ten-round stripper clip. Can be used for dual wielding.",
+    "capacity": "10/10",
+    "stats": {
+      "damage": 97,
+      "effective_range": "78m",
+      "rpm": 64,
+      "cycle_time": 0.4,
+      "muzzle_velocity": 440,
+      "reload_speed": 6,
+      "spread": 35,
+      "sway": 128,
+      "vertical_recoil": 14
+    },
+    "ammo_types": [],
+    "cost": 690,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "special"
+    ]
+  },
+  {
+    "name": "Dolch 96 Claw",
+    "desc": "The German, prototype, semi-automatic pistol, with a robust hooked blade affixed for hand-to-hand combat. Can be used for dual wielding.",
+    "capacity": "10/10",
+    "stats": {
+      "damage": 97,
+      "effective_range": "78m",
+      "rpm": 64,
+      "cycle_time": 0.4,
+      "muzzle_velocity": 440,
+      "reload_speed": 6,
+      "spread": 35,
+      "sway": 128,
+      "vertical_recoil": 14
+    },
+    "cost": 700,
+    "melee_stats": {
+      "melee": 52,
+      "heavy_melee": 105
+    },
+    "type": [
+      "weapon",
+      "small",
+      "special"
+    ]
+  },
+  {
+    "name": "Dolch 96 Deadeye",
+    "desc": "The German, prototype, semi-automatic pistol with a short scope to fully utilize the weapon's power at midrange. Cannot use a stripper clip to be reloaded. Can be used for dual wielding.",
+    "capacity": "10/10",
+    "stats": {
+      "damage": 97,
+      "effective_range": "78m",
+      "rpm": 40,
+      "cycle_time": 0.4,
+      "muzzle_velocity": 440,
+      "reload_speed": 21.7,
+      "spread": 50,
+      "sway": 106,
+      "vertical_recoil": 14
+    },
+    "cost": 780,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "special"
+    ]
+  },
+  {
+    "name": "Dolch 96 Precision",
+    "desc": "Powerful, German, prototype, semi-automatic pistol. The wooden holster is attached as a makeshift buttstock for accurate fire over distance.",
+    "capacity": "10/10",
+    "stats": {
+      "damage": 97,
+      "effective_range": "78m",
+      "rpm": 64,
+      "cycle_time": 0.3,
+      "muzzle_velocity": 440,
+      "reload_speed": 6,
+      "spread": 30,
+      "sway": 87,
+      "vertical_recoil": 12
+    },
+    "cost": 730,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "special"
+    ]
+  },
+  {
+    "name": "Drilling",
+    "desc": "Two medium rifle barrels combined with a shotgun underbarrel to create an all-round flexible and powerful weapon.",
+    "capacity": "rifle 2/20 shotgun 1/5",
+    "stats": {
+      "damage": 120,
+      "effective_range": "170m",
+      "rpm": 20,
+      "cycle_time": 0.6,
+      "muzzle_velocity": 530,
+      "reload_speed": 5.3,
+      "spread": 42.5,
+      "sway": 77,
+      "vertical_recoil": 12
+    },
+    "cost": 510,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "medium"
+    ]
+  },
+  {
+    "name": "Drilling Handcannon",
+    "desc": "Two medium rifle barrels combined with a shotgun underbarrel, all three shortened to make a smaller, more compact package.",
+    "capacity": "rifle 2/20 shotgun 1/3",
+    "stats": {
+      "damage": 118,
+      "effective_range": "160m",
+      "rpm": 20,
+      "cycle_time": 0.6,
+      "muzzle_velocity": 424,
+      "reload_speed": 4.8,
+      "spread": 62.5,
+      "sway": 133,
+      "vertical_recoil": 16
+    },
+    "cost": 430,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ]
+  },
+  {
+    "name": "Drilling Hatchet",
+    "desc": "Two medium rifle barrels combined with a shotgun underbarrel and an additional blade to create a powerful multipurpose weapon.",
+    "capacity": {
+      "rifle": "1/3",
+      "shotgun": "2/20"
+    },
+    "stats": {
+      "damage": 118,
+      "effective_range": "160m",
+      "rpm": 18,
+      "cycle_time": 0.6,
+      "muzzle_velocity": 424,
+      "reload_speed": 5.6,
+      "spread": 62.5,
+      "sway": 108,
+      "vertical_recoil": 16
+    },
+    "cost": 440,
+    "melee_stats": {
+      "melee": 90,
+      "heavy_melee": 150
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ]
+  },
+  {
+    "name": "Hand Crossbow",
+    "desc": "Imaginative hand crossbow that fires compact bolts. Excels in situations when discretion is required above all. Bolts can be retrieved and reused.",
+    "capacity": "1/16",
+    "stats": {
+      "damage": 195,
+      "effective_range": "12m",
+      "rpm": 14,
+      "cycle_time": 4.5,
+      "muzzle_velocity": 100,
+      "reload_speed": 4.3,
+      "spread": 25,
+      "sway": 82,
+      "vertical_recoil": 1.2
+    },
+    "cost": 30,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "type": [
+      "weapon",
+      "small",
+      "special"
+    ]
+  },
+  {
+    "name": "Hunting Bow",
+    "desc": "Able to pierce through flesh and bone at a great distance, the Hunting Bow will make quick, stealthy work of monsters and men. Arrows can be retrieved and reused.",
+    "capacity": "1/16",
+    "stats": {
+      "damage": 227,
+      "effective_range": "20m",
+      "rpm": 51,
+      "cycle_time": 1.3,
+      "muzzle_velocity": 150,
+      "reload_speed": 0.6,
+      "spread": 12.5,
+      "sway": 82,
+      "vertical_recoil": 1
+    },
+    "cost": 57,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 27
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "special"
+    ]
+  },
+  {
+    "name": "Katana",
+    "desc": "A two-handed sword refined over hundreds of years to slice and pierce even the sturdiest armor, making human flesh effortless to rend. Special attack enabled with Martialist Trait.",
+    "stats": null,
+    "ammo_types": [],
+    "cost": 115,
+    "melee_stats": {
+      "melee": 165,
+      "heavy_melee": 280
+    },
+    "type": [
+      "weapon",
+      "small",
+      "melee"
+    ]
+  },
+  {
+    "name": "LeMat Mark II",
+    "desc": "Infamous icon of the Confederacy, this updated model takes nine cartridges in its cylinder. Its second barrel delivers a shotgun blast up close. Can be used for dual wielding.",
+    "capacity": "pistol 9/18 shotgun 1/3",
+    "stats": {
+      "damage": 97,
+      "effective_range": "80m",
+      "rpm": 25,
+      "cycle_time": 1.3,
+      "muzzle_velocity": 375,
+      "reload_speed": 15.8,
+      "spread": 40,
+      "sway": 128,
+      "vertical_recoil": 6
+    },
+    "cost": 83,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "LeMat Mark II Carbine",
+    "desc": "The LeMat Mark II's unique design that featured an extra shotgun barrel made it very effective in close quarters. This model transforms it into a rifle with a stock and extended barrel, improving its overall handling & power",
+    "capacity": "primary 9/18 shotgun 1/5",
+    "stats": {
+      "damage": 107,
+      "effective_range": "141m",
+      "rpm": 21,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 460,
+      "reload_speed": 18.7,
+      "spread": 35,
+      "sway": 77,
+      "vertical_recoil": 2.5
+    },
+    "cost": 115,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "compact"
+    ]
+  },
+  {
+    "name": "LeMat Mark II Carbine Marksman",
+    "desc": "The LeMat Mark II Carbine's extended barrel, shotgun barrel, and rifle stock make it a very fine weapon for combat at almost any range when combined with a marksman scope.",
+    "capacity": "primary 9/18 shotgun 1/5",
+    "stats": {
+      "damage": 107,
+      "effective_range": "141m",
+      "rpm": 21,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 460,
+      "reload_speed": 18.7,
+      "spread": 55,
+      "sway": 69,
+      "vertical_recoil": 2.5
+    },
+    "cost": 134,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "compact"
+    ]
+  },
+  {
+    "name": "LeMat Mark II UpperMat",
+    "desc": "Two-handed advancement on the LeMat Mark II that trades speed for power, and uses Long Ammo.",
+    "capacity": "primary 9/9 shotgun 1/3",
+    "stats": {
+      "damage": 126,
+      "effective_range": "115m",
+      "rpm": 18,
+      "cycle_time": 1.3,
+      "muzzle_velocity": 530,
+      "reload_speed": 21.8,
+      "spread": 40,
+      "sway": 128,
+      "vertical_recoil": 23
+    },
+    "cost": 370,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium",
+      "long"
+    ]
+  },
+  {
+    "name": "Lebel 1886",
+    "desc": "The Lebel 1886, groundbreaking for its time, is a bolt-action rifle with an internal 10-round magazine. Slightly outperformed by more modern designs, it remains a powerful weapon of choice.",
+    "capacity": "10/5",
+    "stats": {
+      "damage": 132,
+      "effective_range": "311m",
+      "rpm": 20,
+      "cycle_time": 1.8,
+      "muzzle_velocity": 630,
+      "reload_speed": 18.7,
+      "spread": 40,
+      "sway": 77,
+      "vertical_recoil": 9
+    },
+    "cost": 397,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Lebel 1886 Aperture",
+    "desc": "The groundbreaking Lebel 1886 bolt-action rifle with a toggle-able Aperture sight which ensures higher precision at medium ranges.",
+    "capacity": "10/5",
+    "stats": {
+      "damage": 132,
+      "effective_range": "311m",
+      "rpm": 20,
+      "cycle_time": 1.8,
+      "muzzle_velocity": 630,
+      "reload_speed": 18.7,
+      "spread": 40,
+      "sway": 69,
+      "vertical_recoil": 9
+    },
+    "cost": 425,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Lebel 1886 Marksman",
+    "desc": "A version of the Lebel 1886 bolt-action rifle with a mounted medium scope that ensures higher accuracy at a distance.",
+    "capacity": "10/5",
+    "stats": {
+      "damage": 132,
+      "effective_range": "311m",
+      "rpm": 20,
+      "cycle_time": 1.8,
+      "muzzle_velocity": 630,
+      "reload_speed": 18.7,
+      "spread": 55,
+      "sway": 69,
+      "vertical_recoil": 9
+    },
+    "cost": 607,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Lebel 1886 Talon",
+    "desc": "This variant of the Lebel 1886 bolt-action rifle doubles as a deadly melee weapon thanks to the axe blade attached to the buttstock.",
+    "capacity": "10/5",
+    "stats": {
+      "damage": 132,
+      "effective_range": "311m",
+      "rpm": 20,
+      "cycle_time": 1.8,
+      "muzzle_velocity": 630,
+      "reload_speed": 18.7,
+      "spread": 40,
+      "sway": 77,
+      "vertical_recoil": 11
+    },
+    "cost": 407,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 330
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Machete",
+    "desc": "Used both for cutting through undergrowth and limbs, a machete is a reliable weapon to forge a path.",
+    "stats": null,
+    "ammo_types": [],
+    "cost": 30,
+    "melee_stats": {
+      "melee": 90,
+      "heavy_melee": 150
+    },
+    "type": [
+      "weapon",
+      "small",
+      "melee"
+    ]
+  },
+  {
+    "name": "Mako 1895 Carbine",
+    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. From a new manufacturer in competition with Winfield.",
+    "capacity": "6+1/8",
+    "stats": {
+      "damage": 128,
+      "effective_range": "302m",
+      "rpm": 20,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 540,
+      "reload_speed": 13,
+      "spread": 47.5,
+      "sway": 77,
+      "vertical_recoil": 15
+    },
+    "cost": 360,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Mako 1895 Carbine Aperture",
+    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. Its toggle-able Aperture sight ensures higher precision at medium ranges.",
+    "capacity": "6+1/8",
+    "stats": {
+      "damage": 128,
+      "effective_range": "302m",
+      "rpm": 20,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 540,
+      "reload_speed": 13,
+      "spread": 47.5,
+      "sway": 69,
+      "vertical_recoil": 15
+    },
+    "cost": 385,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Mako 1895 Carbine Claw",
+    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. A robust hooked blade is affixed to make the gun a melee and ranged weapon.",
+    "capacity": "6+1/8",
+    "stats": {
+      "damage": 128,
+      "effective_range": "302m",
+      "rpm": 20,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 540,
+      "reload_speed": 13,
+      "spread": 47.5,
+      "sway": 77,
+      "vertical_recoil": 15
+    },
+    "cost": 370,
+    "melee_stats": {
+      "melee": 120,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Martini-Henry IC1",
+    "desc": "The workhorse rifle of the British Empire, the Martini-Henry IC1 is a single-shot breech-loading rifle that values simplicity and power.",
+    "capacity": "1/20",
+    "stats": {
+      "damage": 143,
+      "effective_range": "334m",
+      "rpm": 18,
+      "cycle_time": 3.5,
+      "muzzle_velocity": 400,
+      "reload_speed": 2.7,
+      "spread": 42.5,
+      "sway": 77,
+      "vertical_recoil": 12
+    },
+    "cost": 122,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Martini-Henry IC1 Deadeye",
+    "desc": "This single-shot breech-loading rifle is furnished with a Deadeye scope that complements its competent range and power.",
+    "capacity": "1/20",
+    "stats": {
+      "damage": 143,
+      "effective_range": "334m",
+      "rpm": 18,
+      "cycle_time": 3.5,
+      "muzzle_velocity": 400,
+      "reload_speed": 2.7,
+      "spread": 52.5,
+      "sway": 77,
+      "vertical_recoil": 12
+    },
+    "cost": 140,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Martini-Henry IC1 Ironside",
+    "desc": "This Martini-Henry IC1 features a mechanism carrying five extra cartridges in addition to the one in the rifle's chamber which allows the wielder to replace the spent cartridge in quick succession, transforming the weapon.",
+    "capacity": "5+1/15",
+    "stats": {
+      "damage": 143,
+      "effective_range": "334m",
+      "rpm": 18,
+      "cycle_time": 1.8,
+      "muzzle_velocity": 400,
+      "reload_speed": 14.7,
+      "spread": 42.5,
+      "sway": 77,
+      "vertical_recoil": 12
+    },
+    "cost": 159,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Martini-Henry IC1 Marksman",
+    "desc": "This single-shot breech-loading rifle is furnished with a Marksman's scope that complements its competent range and power.",
+    "capacity": "1/20",
+    "stats": {
+      "damage": 143,
+      "effective_range": "334m",
+      "rpm": 18,
+      "cycle_time": 3.5,
+      "muzzle_velocity": 400,
+      "reload_speed": 2.7,
+      "spread": 62.5,
+      "sway": 69,
+      "vertical_recoil": 12
+    },
+    "cost": 490,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Mosin-Nagant M1891 Avtomat",
+    "desc": "This experimental conversion of a bolt-action rifle was modified into a makeshift machine gun, with a high rate of fire and increased internal magazine. Reloaded with stripper clips.",
+    "capacity": "15/0",
+    "stats": {
+      "damage": 136,
+      "effective_range": "320m",
+      "rpm": 75,
+      "cycle_time": 0.1,
+      "muzzle_velocity": 615,
+      "reload_speed": 11.4,
+      "spread": 100,
+      "sway": 133,
+      "vertical_recoil": 8
+    },
+    "cost": 1250,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Mosin-Nagant M1891 Bayonet",
+    "desc": "Modern Imperial Russian bolt-action service rifle with an internal magazine. Its attached spike bayonet turns it into a frightening melee weapon.",
+    "capacity": "5/10",
+    "stats": {
+      "damage": 136,
+      "effective_range": "320m",
+      "rpm": 26,
+      "cycle_time": 1.9,
+      "muzzle_velocity": 615,
+      "reload_speed": 3.7,
+      "spread": 35,
+      "sway": 77,
+      "vertical_recoil": 10
+    },
+    "cost": 500,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 168
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Mosin-Nagant M1891 Obrez",
+    "desc": "Sawn-off variant of the Mosin-Nagant bolt-action rifle. Can be carried as a backup weapon that packs a punch, but without a stock its recoil is brutal.",
+    "capacity": "5/10",
+    "stats": {
+      "damage": 133,
+      "effective_range": "314m",
+      "rpm": 26,
+      "cycle_time": 1.9,
+      "muzzle_velocity": 550,
+      "reload_speed": 3.7,
+      "spread": 55,
+      "sway": 133,
+      "vertical_recoil": 16
+    },
+    "cost": 290,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "long"
+    ]
+  },
+  {
+    "name": "Mosin-Nagant M1891 Obrez Drum",
+    "desc": "This shortened Russian service rifle is outfitted with an extended Drum magazine, giving it a huge capacity for ammunition.",
+    "capacity": "15/0",
+    "stats": {
+      "damage": 133,
+      "effective_range": "314m",
+      "rpm": 29,
+      "cycle_time": 1.9,
+      "muzzle_velocity": 550,
+      "reload_speed": 8,
+      "spread": 55,
+      "sway": 133,
+      "vertical_recoil": 16
+    },
+    "cost": 350,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "long"
+    ]
+  },
+  {
+    "name": "Mosin-Nagant M1891 Obrez Mace",
+    "desc": "This shortened Russian service rifle has been additionally modified with a weighted 'mace' stock, making it a competent melee weapon.",
+    "capacity": "5/10",
+    "stats": {
+      "damage": 133,
+      "effective_range": "314m",
+      "rpm": 26,
+      "cycle_time": 1.9,
+      "muzzle_velocity": 550,
+      "reload_speed": 3.7,
+      "spread": 55,
+      "sway": 133,
+      "vertical_recoil": 19
+    },
+    "cost": 310,
+    "melee_stats": {
+      "melee": 54,
+      "heavy_melee": 90
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "long"
+    ]
+  },
+  {
+    "name": "Mosin-Nagant M1891 Sniper",
+    "desc": "Modern Imperial Russian bolt-action service rifle. The attached long scope provides accuracy at range, but prevents the use of stripper clips for fast reloading.",
+    "capacity": "5/10",
+    "stats": {
+      "damage": 136,
+      "effective_range": "320m",
+      "rpm": 24,
+      "cycle_time": 1.9,
+      "muzzle_velocity": 615,
+      "reload_speed": 5.3,
+      "spread": 40,
+      "sway": 69,
+      "vertical_recoil": 10
+    },
+    "cost": 730,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Nagant M1895",
+    "desc": "Modern, Imperial Russian, single-action revolver. Slow to reload. Sacrifices stopping power for an extra bullet in the drum and a higher rate of fire. Can be used for dual wielding.",
+    "capacity": "7/21",
+    "stats": {
+      "damage": 91,
+      "effective_range": "74m",
+      "rpm": 21,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 330,
+      "reload_speed": 12.5,
+      "spread": 40,
+      "sway": 128,
+      "vertical_recoil": 4
+    },
+    "cost": 24,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nagant M1895 Officer",
+    "desc": "Modern, Imperial Russian, double-action revolver. Though it has a faster rate of fire, the stronger force required to pull the trigger has a negative impact on accuracy. Can be used for dual wielding.",
+    "capacity": "7/14",
+    "stats": {
+      "damage": 91,
+      "effective_range": "74m",
+      "rpm": 28,
+      "cycle_time": 0.5,
+      "muzzle_velocity": 330,
+      "reload_speed": 12.8,
+      "spread": 50,
+      "sway": 128,
+      "vertical_recoil": 5
+    },
+    "cost": 96,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nagant M1895 Officer Brawler",
+    "desc": "Modern, Imperial Russian, double-action revolver variant. The weight of this piece is put to good use with an integrated knuckle duster. Can be used for dual wielding.",
+    "capacity": "7/14",
+    "stats": {
+      "damage": 91,
+      "effective_range": "74m",
+      "rpm": 28,
+      "cycle_time": 0.5,
+      "muzzle_velocity": 330,
+      "reload_speed": 12.8,
+      "spread": 50,
+      "sway": 128,
+      "vertical_recoil": 5
+    },
+    "cost": 106,
+    "melee_stats": {
+      "melee": 31,
+      "heavy_melee": 72
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nagant M1895 Officer Carbine",
+    "desc": "Modern, Imperial Russian, double-action revolver variant. This model is heavily modified with a longer barrel and a stock, effectively turning it into a small rapid-fire rifle.",
+    "capacity": "7/14",
+    "stats": {
+      "damage": 104,
+      "effective_range": "126m",
+      "rpm": 28,
+      "cycle_time": 0.5,
+      "muzzle_velocity": 360,
+      "reload_speed": 13.4,
+      "spread": 25,
+      "sway": 77,
+      "vertical_recoil": 4
+    },
+    "cost": 183,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nagant M1895 Officer Carbine Deadeye",
+    "desc": "Modern, Imperial Russian, double-action revolver variant. This model is modified with a lengthened barrel and stock, as well as the addition of a telescopic sight, effectively turning it into an unconventional rapid-fire rifle.",
+    "capacity": "7/14",
+    "stats": {
+      "damage": 104,
+      "effective_range": "126m",
+      "rpm": 28,
+      "cycle_time": 0.5,
+      "muzzle_velocity": 360,
+      "reload_speed": 13.4,
+      "spread": 40,
+      "sway": 77,
+      "vertical_recoil": 4
+    },
+    "cost": 199,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nagant M1895 Precision",
+    "desc": "Modern, Imperial Russian, single-action revolver. The attached stock improves accuracy and handling, making it easier to operate the hammer between shots at a faster rate.",
+    "capacity": "7/21",
+    "stats": {
+      "damage": 91,
+      "effective_range": "74m",
+      "rpm": 21,
+      "cycle_time": 1.0,
+      "muzzle_velocity": 330,
+      "reload_speed": 13.4,
+      "spread": 27.5,
+      "sway": 87,
+      "vertical_recoil": 1.5
+    },
+    "cost": 29,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nagant M1895 Precision Deadeye",
+    "desc": "Modified, Russian, single-action, seven-round revolver. Telescopic sight and rifle stock make it an unconventional sniper.",
+    "capacity": "7/21",
+    "stats": {
+      "damage": 91,
+      "effective_range": "74m",
+      "rpm": 21,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 330,
+      "reload_speed": 13.4,
+      "spread": 35,
+      "sway": 87,
+      "vertical_recoil": 1.5
+    },
+    "cost": 42,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nagant M1895 Silencer",
+    "desc": "Modern, Imperial Russian, single-action revolver. Unique among revolvers of this era. The cylinder gas seal suppresses the sound of its fire. Can be used for dual wielding.",
+    "capacity": "7/21",
+    "stats": {
+      "damage": 91,
+      "effective_range": "57m",
+      "rpm": 21,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 250,
+      "reload_speed": 12.5,
+      "spread": 45,
+      "sway": 128,
+      "vertical_recoil": 4
+    },
+    "cost": 93,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "compact"
+    ]
+  },
+  {
+    "name": "Nitro Express Rifle",
+    "desc": "Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.",
+    "capacity": "2/4",
+    "stats": {
+      "damage": 364,
+      "effective_range": "252m",
+      "rpm": 21,
+      "cycle_time": 0.7,
+      "muzzle_velocity": 550,
+      "reload_speed": 4.8,
+      "spread": 62.5,
+      "sway": 77,
+      "vertical_recoil": 40
+    },
+    "cost": 1015,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "special"
+    ]
+  },
+  {
+    "name": "Railroad Hammer",
+    "desc": "Large mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.",
+    "stats": null,
+    "ammo_types": [],
+    "cost": 45,
+    "melee_stats": {
+      "melee": 153,
+      "heavy_melee": 261
+    },
+    "type": [
+      "weapon",
+      "small",
+      "melee"
+    ]
+  },
+  {
+    "name": "Romero 77",
+    "desc": "Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.",
+    "capacity": "1/12",
+    "stats": {
+      "damage": 218,
+      "effective_range": "14m",
+      "rpm": 16,
+      "cycle_time": null,
+      "muzzle_velocity": 450,
+      "reload_speed": 3.4,
+      "spread": 50,
+      "sway": 77,
+      "vertical_recoil": 20,
+      "stamina_consumption": 25
+    },
+    "ammo_type" : [],
+    "cost": 66,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Romero 77 Alamo",
+    "desc": "A Romero 77 shotgun with an external magazine and reloading device. Holds up to five shells at a time, including the one in the chamber, and allows for a seamless reload, making this a suitable repeating shotgun.",
+    "capacity": "4+1/5",
+    "unlock_requirement": "Romero 77 Hatchet",
+    "stats": {
+      "damage": 218,
+      "effective_range": "14m",
+      "rpm": 13,
+      "cycle_time": 2.8,
+      "muzzle_velocity": 450,
+      "reload_speed": 18.2,
+      "spread": 50,
+      "sway": 77,
+      "vertical_recoil": 20,
+      "stamina_consumption": 25
+    },
+    "ammo_type" : [],
+    "cost": 98,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Romero 77 Alamo",
+    "desc": "A Romero 77 shotgun with an external magazine and reloading device. Holds up to five shells at a time, including the one in the chamber, and allows for a seamless reload, making this a suitable repeating shotgun.",
+    "capacity": "4+1/5",
+    "unlock_requirement": "Romero 77 Hatchet",
+    "stats": {
+      "damage": 218,
+      "effective_range": "14m",
+      "rpm": 13,
+      "cycle_time": 4,
+      "muzzle_velocity": 450,
+      "reload_speed": 18.2,
+      "spread": 50,
+      "sway": 77,
+      "vertical_recoil": 20,
+      "stamina_consumption": 25
+    },
+    "ammo_type" : [],
+    "cost": 46,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Romero 77 Hatchet",
+    "desc": "Heavily modified, break-action, single barrel shotgun. Sawn-off and tooled up with additional blades for brutal close combat.",
+    "capacity": "1/10",
+    "unlock_requirement": "Romero 77 Alamo Penny Shot Ammo",
+    "stats": {
+      "damage": 145,
+      "effective_range": "11m",
+      "rpm": 16,
+      "cycle_time": 4,
+      "muzzle_velocity": 375,
+      "reload_speed": 3.7,
+      "spread": 100,
+      "sway": 108,
+      "vertical_recoil": 30,
+      "stamina_consumption": 25
+    },
+    "ammo_type" : [],
+    "cost": 56,
+    "melee_stats": {
+      "melee": 90,
+      "heavy_melee": 150
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Romero 77 Talon",
+    "desc": "Classic break-action shotgun with a long barrel. Decent power, range, and attached blades for close combat make this a very flexible weapon to bring along.",
+    "capacity": "1/12",
+    "unlock_requirement": "Romero 77 Alamo Dragon Breath",
+    "stats": {
+      "damage": 218,
+      "effective_range": "14m",
+      "rpm": 16,
+      "cycle_time": 4,
+      "muzzle_velocity": 425,
+      "reload_speed": 3.4,
+      "spread": 50,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "ammo_type" : [],
+    "cost": 76,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 330
+    },
+    "type": [
+      "weapon",
+      "large",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Scottfield Model 3",
+    "desc": "A classic, single-action break open revolver, the Scottfield has seen both sides of the law. The break action allows for quicker ejecting of spent rounds, meaning a faster overall reload when empty. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 107,
+      "effective_range": "85m",
+      "rpm": 24,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 280,
+      "reload_speed": 9,
+      "spread": 28.1,
+      "sway": 128,
+      "vertical_recoil": 20
+    },
+    "ammo_type" : [],
+    "cost": 77,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "medium"
+    ]
+  },
+  {
+    "name": "Scottfield Model 3 Brawler",
+    "desc": "This snub barrel Scottfield Model 3 not only has the quick reload Hunters have come to know, but an added pair of dusters for close combat at the cost of accuracy. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 107,
+      "effective_range": "85m",
+      "rpm": 24,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 280,
+      "reload_speed": 9,
+      "spread": 45,
+      "sway": 128,
+      "vertical_recoil": 31
+    },
+    "ammo_type" : [],
+    "cost": 87,
+    "melee_stats": {
+      "melee": 31,
+      "heavy_melee": 72
+    },
+    "type": [
+      "weapon",
+      "small",
+      "medium"
+    ]
+  },
+  {
+    "name": "Scottfield Model 3 Precision",
+    "desc": "The buttstock on this Scottfield Model 3 allows for a more stable shot with steady aim and less kickback.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 107,
+      "effective_range": "85m",
+      "rpm": 24,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 280,
+      "reload_speed": 9,
+      "spread": 28.1,
+      "sway": 87,
+      "vertical_recoil": 27
+    },
+    "ammo_type" : [],
+    "cost": 85,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ]
+  },
+  {
+    "name": "Scottfield Model 3 Spitfire",
+    "desc": "Its shortened barrel makes the Scottfield Model 3 Spitfire a perfect choice for situations that require discretion, and its modified finger rest provides higher rate of fire in exchange for accuracy. Can be used for dual wielding.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 107,
+      "effective_range": "85m",
+      "rpm": 30,
+      "cycle_time": 0.8,
+      "muzzle_velocity": 280,
+      "reload_speed": 9,
+      "spread": 45,
+      "sway": 128,
+      "vertical_recoil": 27
+    },
+    "ammo_type" : [],
+    "cost": 108,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "medium"
+    ]
+  },
+  {
+    "name": "Scottfield Model 3 Swift",
+    "desc": "The Scottfield Model 3 Swift allows for an even quicker reload with the help of a device that lets the wielder load six cartridges together into the empty cylinder. However, any unspent ammunition is lost in the process of reloading.",
+    "capacity": "6/12",
+    "stats": {
+      "damage": 107,
+      "effective_range": "85m",
+      "rpm": 30,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 280,
+      "reload_speed": 4.3,
+      "spread": 28.1,
+      "sway": 128,
+      "vertical_recoil": 31
+    },
+    "ammo_type" : [],
+    "cost": 95,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "small",
+      "medium"
+    ]
+  },
+  {
+    "name": "Sparks LRR",
+    "desc": "Renowned, large-bore, single-shot rifle with good sights. Can put down a bison across a prairie.",
+    "capacity": "1/16",
+    "stats": {
+      "damage": 149,
+      "effective_range": "347m",
+      "rpm": 13,
+      "cycle_time": 4.9,
+      "muzzle_velocity": 533,
+      "reload_speed": 4,
+      "spread": 35,
+      "sway": 77,
+      "vertical_recoil": 10
+    },
+    "ammo_type" : [],
+    "cost": 130,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Sparks LRR Silencer",
+    "desc": "Renowned, large-bore single shot rifle modified with a silencer.",
+    "capacity": "1/16",
+    "stats": {
+      "damage": 149,
+      "effective_range": "169m",
+      "rpm": 13,
+      "cycle_time": 4.9,
+      "muzzle_velocity": 300,
+      "reload_speed": 4,
+      "spread": 42.5,
+      "sway": 87,
+      "vertical_recoil": 10
+    },
+    "ammo_type" : [],
+    "cost": 150,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Sparks LRR Sniper",
+    "desc": "Renowned, large-bore, single-shot rifle mounted with a long scope for even greater effectiveness over distance.",
+    "capacity": "1/8",
+    "stats": {
+      "damage": 149,
+      "effective_range": "347m",
+      "rpm": 13,
+      "cycle_time": 4.9,
+      "muzzle_velocity": 533,
+      "reload_speed": 4,
+      "spread": 55,
+      "sway": 69,
+      "vertical_recoil": 14
+    },
+    "ammo_type" : [],
+    "cost": 199,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Sparks Pistol",
+    "desc": "A Sparks LRR cut down to be a small handgun, the Sparks Pistol delivers equally powerful shots over short to medium ranges. Though small and easy to carry, it loses its power drastically over longer distances, and has a stronger recoil because of the missing stock.",
+    "capacity": "1/14",
+    "stats": {
+      "damage": 149,
+      "effective_range": "150m",
+      "rpm": 11,
+      "cycle_time": 5.9,
+      "muzzle_velocity": 453,
+      "reload_speed": 5,
+      "spread": 42.5,
+      "sway": 128,
+      "vertical_recoil": 25
+    },
+    "ammo_type" : [],
+    "cost": 155,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "long"
+    ]
+  },
+  {
+    "name": "Specter 1882",
+    "desc": "Revolutionary pump-action shotgun with long barrel, able to fire shells in rapid succession. Reloading the internal magazine takes time, due to its clunky, unrefined loading sequence.",
+    "capacity": "4+1/10",
+    "stats": {
+      "damage": 210,
+      "effective_range": "14m",
+      "rpm": 20,
+      "cycle_time": 1.3,
+      "muzzle_velocity": 425,
+      "reload_speed": 14.8,
+      "spread": 60,
+      "sway": 77,
+      "vertical_recoil": 20
+    },
+    "ammo_type" : [],
+    "cost": 188,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Specter 1882 Bayonet",
+    "desc": "Rapid firing, pump-action shotgun with medium barrel. Tooled up with sharp knife bayonet for close combat.",
+    "capacity": "4+1/10",
+    "stats": {
+      "damage": 190,
+      "effective_range": "14m",
+      "rpm": 20,
+      "cycle_time": 1.3,
+      "muzzle_velocity": 400,
+      "reload_speed": 14.8,
+      "spread": 80,
+      "sway": 77,
+      "vertical_recoil": 20
+    },
+    "ammo_type" : [],
+    "cost": 164,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "shotgun"
+    ]
+  },
+  {
+    "name": "Springfield 1866",
+    "desc": "A breech-loading rifle with a .50-70 caliber centerfire cartridge, the Springfield 1866 is best known for its quick rate of fire.",
+    "capacity": "1/24",
+    "stats": {
+      "damage": 132,
+      "effective_range": "212m",
+      "rpm": 19,
+      "cycle_time": 3.3,
+      "muzzle_velocity": 490,
+      "reload_speed": 3,
+      "spread": 20,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "ammo_type" : [],
+    "cost": 38,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 54
+    },
+    "type": [
+      "weapon",
+      "large",
+      "medium"
+    ]
+  },
+  {
+    "name": "Springfield 1866 Bayonet",
+    "desc": "The original breech-loading Springfield 1866 with bayonet attachment, a powerful short-range addition.",
+    "capacity": "1/24",
+    "stats": {
+      "damage": 132,
+      "effective_range": "212m",
+      "rpm": 19,
+      "cycle_time": 3.3,
+      "muzzle_velocity": 490,
+      "reload_speed": 3,
+      "spread": 20,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "ammo_type" : [],
+    "cost": 48,
+    "melee_stats": {
+      "melee": 27,
+      "heavy_melee": 168
+    },
+    "type": [
+      "weapon",
+      "large",
+      "medium"
+    ]
+  },
+  {
+    "name": "Springfield 1866 Compact",
+    "desc": "A shorter version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. Its sawn-off barrel and stock make the weapon hard to control, but a great backup.",
+    "capacity": "1/24",
+    "stats": {
+      "damage": 130,
+      "effective_range": "204m",
+      "rpm": 19,
+      "cycle_time": 3.3,
+      "muzzle_velocity": 440,
+      "reload_speed": 3,
+      "spread": 40,
+      "sway": 133,
+      "vertical_recoil": 25
+    },
+    "ammo_type" : [],
+    "cost": 33,
+    "melee_stats": {
+      "melee": 13,
+      "heavy_melee": 31
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ]
+  }
+]

@@ -42,9 +42,7 @@ fun NewsItemUi(newsitem: Newsitem, onclick: () -> Unit) {
             contentDescription = "newsImage",
         )
         Text(modifier = Modifier.padding(10.dp), text = newsitem.title)
-
     }
-
 }
 
 

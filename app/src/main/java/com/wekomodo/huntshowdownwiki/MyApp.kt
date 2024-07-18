@@ -17,9 +17,9 @@ class MyApp : Application(), ImageLoaderFactory {
 
     override fun onCreate() {
         super.onCreate()
-        Firebase.database.setPersistenceEnabled(true)
+     /*   Firebase.database.setPersistenceEnabled(true)
         val ref = Firebase.database.getReference()
-        ref.keepSynced(true)
+        ref.keepSynced(true)*/
         DynamicColors.applyToActivitiesIfAvailable(this)
     }
 

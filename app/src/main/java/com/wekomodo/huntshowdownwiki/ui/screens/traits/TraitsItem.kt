@@ -79,9 +79,8 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
 
                 }
                 Text(
-                    modifier = Modifier.padding(start = 12.dp, bottom = 10.dp, end = 12.dp),
-                    text = desc, color = Color.White, fontSize = 10.sp,
-                    maxLines = 3
+                    modifier = Modifier.padding(start = 18.dp, bottom = 10.dp, end = 18.dp),
+                    text = desc, color = Color.White, style = MaterialTheme.typography.bodySmall
 
                 )
             }
