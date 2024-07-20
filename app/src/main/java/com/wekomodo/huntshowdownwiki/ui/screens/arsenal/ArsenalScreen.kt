@@ -29,6 +29,7 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
 import com.wekomodo.huntshowdownwiki.data.model.firebase.weapons.Weapons
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
+import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
 
 
 @Composable
@@ -47,12 +48,16 @@ fun ArsenalScreen() {
     var consumables by remember {
         mutableStateOf(true)
     }
+    var loading by remember {
+        mutableStateOf(true)
+    }
     //var filteredList: List<Item> = emptyList()
     LaunchedEffect(Unit) {
         val database = Firebase.database.reference.child("items").child("weapons")
         Log.d("firebaseResult", database.toString())
         database.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
+                loading = false
                 for (items in p0.children) {
                     Log.d("firebaseItems",items.value.toString())
                     val item = items.getValue(Weapons::class.java)
@@ -90,8 +95,8 @@ fun ArsenalScreen() {
                 consumables = it
             }
         }
-    //    Log.d("firebaseList",filteredList.toString())
-        Log.d("firebaselistItem",itemList.toList().toString())
+        LoadingUiState(loading = loading)
+        if(itemList.size>1)
         LazyColumn {
             itemsIndexed(itemList) { _, item ->
                 ArsenalItem(name = item.name, image = item.image_url,desc = item.desc)

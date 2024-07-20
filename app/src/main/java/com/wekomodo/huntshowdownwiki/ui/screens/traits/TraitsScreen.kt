@@ -3,16 +3,17 @@ package com.wekomodo.huntshowdownwiki.ui.screens.traits
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -96,11 +97,9 @@ fun TraitsScreen(
     }
 
     Column {
-        LoadingUiState(loading = loading)
-        ErrorUiState(error = error)
         Row(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceAround
+            horizontalArrangement = Arrangement.SpaceAround,
         ) {
             filteringCriteria.forEach { filter ->
                 val isSelected = filter in uiState.activeFilters
@@ -113,17 +112,25 @@ fun TraitsScreen(
                 }
             }
         }
-        LazyColumn {
-            itemsIndexed(uiState.displayedList) { _, item ->
-                TraitsItem(
-                    link = item.image,
-                    name = item.name,
-                    item.desc,
-                    item.cost,
-                    item.rank_unlocked
-                )
+        Column(Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally) {
+            LoadingUiState(loading = loading)
+            ErrorUiState(error = error)
+            LazyColumn {
+
+                itemsIndexed(uiState.displayedList) { _, item ->
+                    TraitsItem(
+                        link = item.image,
+                        name = item.name,
+                        item.desc,
+                        item.cost,
+                        item.rank_unlocked
+                    )
+                }
             }
         }
+
     }
 }
 

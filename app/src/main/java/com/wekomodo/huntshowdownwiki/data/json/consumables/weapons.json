@@ -1,524 +1,503 @@
 [
   {
-    "name": "Baseball Bat",
-    "desc": "The Baseball Bat swings intuitively and easily, delivering a solid blow",
-    "stats": null,
-    "ammo_types": [],
     "cost": 40,
+    "desc": "The Baseball Bat swings intuitively and easily, delivering a solid blow",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fbat.png?alt=media&token=be3def08-c57c-4060-b73a-27e33b73fd03",
     "melee_stats": {
-      "melee": 90,
-      "heavy_melee": 153
+      "heavy_melee": 153,
+      "melee": 90
     },
+    "name": "Baseball Bat",
     "type": [
       "weapon",
-      "small",
+      "small slot slot",
       "melee"
-    ],
-    "image_url": "empty"
+    ]
   },
   {
-    "name": "Berthier Mle 1892",
     "capacity": "3/6",
+    "cost": 356,
     "desc": "The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fbert.png?alt=media&token=f1bdbb91-5001-4d3f-8fec-6f933efc9ecd",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 13
+    },
+    "name": "Berthier Mle 1892",
     "stats": {
+      "cycle_time": 1.7,
       "damage": 130,
       "effective_range": "305m",
+      "muzzle_velocity": 590,
+      "reload_speed": 2.7,
       "rpm": 27,
-      "cycle_time": 1.7,
       "spread": 47.5,
       "sway": 77,
-      "vertical_recoil": 14,
-      "reload_speed": 2.7,
-      "muzzle_velocity": 590
-    },
-    "ammo_types": [],
-    "cost": 356,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 27
+      "vertical_recoil": 14
     },
     "type": [
       "weapon",
-      "large",
+      "large slot slot",
       "long"
-    ],
-    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892.png?alt=media&token=7186a5bb-9d77-4e0a-9979-179c9f577c6b"
+    ]
   },
   {
-    "name": "Berthier Mle 1892 Riposte",
-    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. An affixed bayonet makes this deadly in close combat.",
     "capacity": "3/6",
+    "cost": 370,
+    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. An affixed bayonet makes this deadly in close combat.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fbert%20rip.png?alt=media&token=35d94b0e-d121-4dbc-8cd1-39d0a0ddb659",
+    "melee_stats": {
+      "heavy_melee": 168,
+      "melee": 82
+    },
+    "name": "Berthier Mle 1892 Riposte",
     "stats": {
+      "cycle_time": 1.7,
       "damage": 130,
       "effective_range": "305m",
+      "muzzle_velocity": 590,
+      "reload_speed": 2.7,
       "rpm": 27,
-      "cycle_time": 1.7,
       "spread": 47.5,
       "sway": 84,
-      "vertical_recoil": 14,
-      "reload_speed": 2.7,
-      "muzzle_velocity": 590
-    },
-    "ammo_types": [],
-    "cost": 370,
-    "melee_stats": {
-      "melee": 82,
-      "heavy_melee": 168
+      "vertical_recoil": 14
     },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
-    ],
-    "image_url": "null"
+    ]
   },
   {
-    "name": "Berthier Mle 1892 Deadeye",
-    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. A Deadeye scope complements its performance at midrange.",
     "capacity": "3/6",
+    "cost": 356,
+    "desc": "The light Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience. A Deadeye scope complements its performance at midrange.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fbert%20deadeye.png?alt=media&token=b87c4b56-2934-4d3e-bea9-ba68b5ad3c97",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 13
+    },
+    "name": "Berthier Mle 1892 Deadeye",
     "stats": {
+      "cycle_time": 1.7,
       "damage": 130,
       "effective_range": "305m",
+      "muzzle_velocity": 590,
+      "reload_speed": 2.7,
       "rpm": 27,
-      "cycle_time": 1.7,
       "spread": 57.5,
       "sway": 77,
-      "vertical_recoil": 14,
-      "reload_speed": 2.7,
-      "muzzle_velocity": 590
-    },
-    "ammo_types": [],
-    "cost": 356,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 27
+      "vertical_recoil": 14
     },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
-    ],
-    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2FBerthier%20Mle%201892%20deadeye.png?alt=media&token=0dc0d7e5-79d6-4714-9531-c6ca50472831"
+    ]
   },
   {
-    "name": "Berthier Mle 1892 Marksman",
-    "desc": "The Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience, A Marksman scope gives the rifle an advantage at distance.",
-    "capacity": "3/6",
-    "stats": {
-      "damage": 130,
-      "effective_range": "305m",
-      "rpm": 27,
-      "cycle_time": 1.7,
-      "spread": 70,
-      "sway": 69,
-      "vertical_recoil": 14,
-      "reload_speed": 2.7,
-      "muzzle_velocity": 590
-    },
     "ammo_types": [
       {
-        "name": "Incendiary",
+        "capacity": "3/6",
         "cost": 35,
         "damage": 130,
-        "spread": null,
-        "sighted_range": null,
-        "effective_range": null,
-        "vertical_recoil": null,
         "muzzle_velocity": 590,
-        "capacity": "3/6"
+        "name": "Incendiary"
       },
       {
-        "name": "Spitzer",
+        "capacity": "3/6",
         "cost": 75,
         "damage": 110,
-        "spread": null,
-        "sighted_range": null,
         "effective_range": 317,
-        "vertical_recoil": 18,
         "muzzle_velocity": 780,
-        "capacity": "3/6"
+        "name": "Spitzer",
+        "vertical_recoil": 18
       }
     ],
+    "capacity": "3/6",
     "cost": 356,
+    "desc": "The Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience, A Marksman scope gives the rifle an advantage at distance.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fbert%20mark.png?alt=media&token=f5af8558-4878-41b6-bf5b-4332fe57b809",
     "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 27
+      "heavy_melee": 27,
+      "melee": 13
+    },
+    "name": "Berthier Mle 1892 Marksman",
+    "stats": {
+      "cycle_time": 1.7,
+      "damage": 130,
+      "effective_range": "305m",
+      "muzzle_velocity": 590,
+      "reload_speed": 2.7,
+      "rpm": 27,
+      "spread": 70,
+      "sway": 69,
+      "vertical_recoil": 14
     },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
-    ],
-    "image_url": "null"
+    ]
   },
   {
-    "name": "Bomb Lance",
-    "desc": "Adapted for combat on land, this explosive harpoon can be fired short distances and deals tremendous damage on direct impact.",
-    "capacity": "1/3",
-    "stats": {
-      "damage": 150,
-      "sighted_range": 10,
-      "effective_range": null,
-      "rpm": 9,
-      "cycle_time": 7.3,
-      "spread": 37.5,
-      "reload_speed": 6.9,
-      "sway": null,
-      "vertical_recoil": null,
-      "muzzle_velocity": 60
-    },
     "ammo_types": [
       {
-        "name": "Dragon Breath",
+        "capacity": "1/3",
         "cost": 10,
         "damage": 58,
-        "sighted_range": 10,
-        "spread": 32.5,
-        "effective_range": null,
-        "vertical_recoil": null,
         "muzzle_velocity": 100,
-        "capacity": "1/3"
+        "name": "Dragon Breath",
+        "sighted_range": 10,
+        "spread": 32.5
       },
       {
-        "name": "Steel Ball",
+        "capacity": "1/4",
         "cost": 5,
         "damage": 239,
-        "sighted_range": 10,
-        "spread": 62.5,
-        "effective_range": null,
-        "vertical_recoil": null,
         "muzzle_velocity": 450,
-        "capacity": "1/4"
+        "name": "Steel Ball",
+        "sighted_range": 10,
+        "spread": 62.5
       },
       {
-        "name": "Waxed Frag Charge",
+        "capacity": "1/4",
         "cost": 50,
         "damage": 50,
-        "sighted_range": 10,
-        "spread": 37.5,
-        "effective_range": null,
-        "vertical_recoil": null,
         "muzzle_velocity": 60,
-        "capacity": "1/4"
+        "name": "Waxed Frag Charge",
+        "sighted_range": 10,
+        "spread": 37.5
       }
     ],
+    "capacity": "1/3",
     "cost": 199,
+    "desc": "Adapted for combat on land, this explosive harpoon can be fired short distances and deals tremendous damage on direct impact.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/3d/Bomb_Lance.png/revision/latest/scale-to-width-down/1000?cb=20190404183920",
     "melee_stats": {
-      "melee": 180,
-      "heavy_melee": 360
+      "heavy_melee": 360,
+      "melee": 180
+    },
+    "name": "Bomb Lance",
+    "stats": {
+      "cycle_time": 7.3,
+      "damage": 150,
+      "muzzle_velocity": 60,
+      "reload_speed": 6.9,
+      "rpm": 9,
+      "sighted_range": 10,
+      "spread": 37.5
     },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "special"
-    ],
-    "image_url": "null"
+    ]
   },
   {
-    "name": "Bornheim No. 3",
-    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Reloads via a five-round magazine, or by topping up rounds individually. Can be used for dual wielding.",
-    "capacity": "5+1/15",
-    "stats": {
-      "damage": 74,
-      "effective_range": "62m",
-      "rpm": 65,
-      "cycle_time": 0.2,
-      "spread": 25,
-      "sway": 128,
-      "vertical_recoil": 6,
-      "reload_speed": 7.4,
-      "muzzle_velocity": 380
-    },
     "ammo_types": [
       {
-        "name": "High velocity",
+        "capacity": "5+1/15",
         "cost": 60,
         "damage": 74,
         "effective_range": 62,
-        "vertical_recoil": 7.5,
         "muzzle_velocity": 560,
-        "capacity": "5+1/15"
+        "name": "High velocity",
+        "vertical_recoil": 7.5
       },
       {
-        "name": "Incendiary",
+        "capacity": "5+1/15",
         "cost": 40,
         "damage": 74,
         "effective_range": 62,
-        "vertical_recoil": 6,
         "muzzle_velocity": 380,
-        "capacity": "5+1/15"
+        "name": "Incendiary",
+        "vertical_recoil": 6
       }
     ],
+    "capacity": "5+1/15",
     "cost": 146,
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Reloads via a five-round magazine, or by topping up rounds individually. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/d9/Bornheim_No_3.png/revision/latest/scale-to-width-down/1000?cb=20190222213424",
     "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
+      "heavy_melee": 31,
+      "melee": 13
     },
-    "type": [
-      "weapon",
-      "small",
-      "compact"
-    ],
-    "image_url": "null"
-  },
-  {
-    "name": "Bornheim No. 3 Extended",
-    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Modified to increase capacity by removing the option to reload via magazine. Can be used for dual wielding.",
-    "capacity": "8+1/15",
+    "name": "Bornheim No. 3",
     "stats": {
+      "cycle_time": 0.2,
       "damage": 74,
       "effective_range": "62m",
-      "rpm": 44,
-      "cycle_time": 0.2,
       "muzzle_velocity": 380,
-      "reload_speed": 9.6,
+      "reload_speed": 7.4,
+      "rpm": 65,
       "spread": 25,
       "sway": 128,
       "vertical_recoil": 6
     },
+    "type": [
+      "weapon",
+      "small slot",
+      "compact"
+    ]
+  },
+  {
     "ammo_types": [
       {
-        "name": "High velocity",
+        "capacity": "8+1/15",
         "cost": 60,
         "damage": 74,
         "effective_range": 62,
-        "vertical_recoil": 7.5,
         "muzzle_velocity": 560,
-        "capacity": "8+1/15"
+        "name": "High velocity",
+        "vertical_recoil": 7.5
       },
       {
-        "name": "Incendiary",
+        "capacity": "8+1/15",
         "cost": 40,
         "damage": 74,
         "effective_range": 62,
-        "vertical_recoil": 6,
         "muzzle_velocity": 380,
-        "capacity": "8+1/15"
+        "name": "Incendiary",
+        "vertical_recoil": 6
       }
     ],
+    "capacity": "8+1/15",
     "cost": 203,
-
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. Modified to increase capacity by removing the option to reload via magazine. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/d2/Bornheim_Extended_Perspective.png/revision/latest/scale-to-width-down/1000?cb=20191101000915",
     "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Bornheim No. 3 Extended",
+    "stats": {
+      "cycle_time": 0.2,
+      "damage": 74,
+      "effective_range": "62m",
+      "muzzle_velocity": 380,
+      "reload_speed": 9.6,
+      "rpm": 44,
+      "spread": 25,
+      "sway": 128,
+      "vertical_recoil": 6
     },
     "type": [
       "weapon",
       "medium slot",
       "compact"
-    ],
-    "image_url": "null"
+    ]
   },
   {
-    "name": "Bornheim No. 3 Match",
-    "desc": "This early German semi-automatic pistol can reliably put down targets at a distance, making use of its low recoil and fast reload.",
     "capacity": "5+1/15",
+    "cost": 180,
+    "desc": "This early German semi-automatic pistol can reliably put down targets at a distance, making use of its low recoil and fast reload.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/70/Bornheim_No._3_Match.png/revision/latest/scale-to-width-down/1000?cb=20191001121154",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Bornheim No. 3 Match",
     "stats": {
+      "cycle_time": 0.2,
       "damage": 80,
       "effective_range": "62m",
-      "rpm": 65,
-      "cycle_time": 0.2,
       "muzzle_velocity": 400,
       "reload_speed": 7.6,
+      "rpm": 65,
       "spread": 22.5,
       "sway": 87,
       "vertical_recoil": 3
     },
-    "ammo_types": [],
-    "cost": 180,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Bornheim No. 3 Silencer",
-    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. An attached silencer masks the rapid gunfire. Can be used for dual wielding.",
     "capacity": "5+1/15",
+    "cost": 174,
+    "desc": "This early German semi-automatic pistol can release a hail of accurate fire by virtue of its low recoil. An attached silencer masks the rapid gunfire. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fborn%20silencer.png?alt=media&token=9bc113c6-6938-412f-98f7-20aa648486c9",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Bornheim No. 3 Silencer",
     "stats": {
+      "cycle_time": 0.2,
       "damage": 74,
       "effective_range": "48m",
-      "rpm": 65,
-      "cycle_time": 0.2,
       "muzzle_velocity": 300,
       "reload_speed": 7.4,
+      "rpm": 65,
       "spread": 25,
       "sway": 128,
       "vertical_recoil": 6
     },
-    "ammo_types": [],
-    "cost": 174,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Caldwell 92 New Army",
-    "desc": "Fast, light, and easy to handle, this double-action revolver has a distinguished counter-clockwise rotating cylinder that swings out to effortlessly reload its six .38 bullets. Can be used for dual wielding.",
     "capacity": "6/12",
+    "cost": 90,
+    "desc": "Fast, light, and easy to handle, this double-action revolver has a distinguished counter-clockwise rotating cylinder that swings out to effortlessly reload its six .38 bullets. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fnew%20army.png?alt=media&token=b04603d8-41eb-4b7e-b79a-c2781a74a1b4",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Caldwell 92 New Army",
     "stats": {
+      "cycle_time": 0.5,
       "damage": 97,
       "effective_range": "80m",
-      "rpm": 30,
-      "cycle_time": 0.5,
       "muzzle_velocity": 230,
       "reload_speed": 9.5,
+      "rpm": 30,
       "spread": 47.5,
       "sway": 128,
       "vertical_recoil": 5
     },
-    "ammo_types": [],
-    "cost": 90,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Caldwell 92 New Army Swift",
-    "desc": "Faster reloading Caldwell 92 New Army pistol, thanks to a speed reloader. However, any unspent ammunition is lost in the process of reloading. Can be used for dual wielding.",
     "capacity": "6/12",
+    "cost": 108,
+    "desc": "Faster reloading Caldwell 92 New Army pistol, thanks to a speed reloader. However, any unspent ammunition is lost in the process of reloading. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fnew%20army%20swift.png?alt=media&token=a70ac8b1-8927-41b4-9791-64dd7caed9a0",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Caldwell 92 New Army Swift",
     "stats": {
+      "cycle_time": 0.5,
       "damage": 97,
       "effective_range": "80m",
-      "rpm": 40,
-      "cycle_time": 0.5,
       "muzzle_velocity": 230,
       "reload_speed": 5.6,
+      "rpm": 40,
       "spread": 47.5,
       "sway": 128,
       "vertical_recoil": 5
     },
-    "ammo_types": [],
-    "cost": 108,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Caldwell Conversion Pistol",
-    "desc": "The Caldwell Conversion Pistol is a single-action six-shot revolver. Slow to reload but sturdy and reliable. Can be used for dual wielding.",
     "capacity": "6/18",
+    "cost": 55,
+    "desc": "The Caldwell Conversion Pistol is a single-action six-shot revolver. Slow to reload but sturdy and reliable. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/40/Caldwell_Conversion_Pistol.png/revision/latest/scale-to-width-down/1000?cb=20180219141125",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Caldwell Conversion Pistol",
     "stats": {
+      "cycle_time": 1.4,
       "damage": 104,
       "effective_range": "85m",
-      "rpm": 21,
-      "cycle_time": 1.4,
       "muzzle_velocity": 300,
       "reload_speed": 11.2,
+      "rpm": 21,
       "spread": 30,
       "sway": 128,
       "vertical_recoil": 4.5
     },
-    "ammo_types": [],
-    "cost": 55,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Caldwell Conversion Chain Pistol",
-    "desc": "Modified single-action revolver that chambers 17 rounds in a revolving chain for sustained fire. Can be used for dual wielding.",
     "capacity": "17/18",
+    "cost": 84,
+    "desc": "Modified single-action revolver that chambers 17 rounds in a revolving chain for sustained fire. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e5/Caldwell_Conversion_Chain_Pistol.png/revision/latest/scale-to-width-down/1000?cb=20180219142556",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Caldwell Conversion Chain Pistol",
     "stats": {
+      "cycle_time": 1.4,
       "damage": 104,
       "effective_range": "85m",
-      "rpm": 24,
-      "cycle_time": 1.4,
       "muzzle_velocity": 300,
       "reload_speed": 28.7,
+      "rpm": 24,
       "spread": 45,
       "sway": 128,
       "vertical_recoil": 3.5
     },
-    "ammo_types": [],
-    "cost": 84,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Caldwell Conversion Uppercut",
-    "desc": "Modified single-action revolver that fires more powerful rifle cartridges, but kicks like a mule. Can be used for dual wielding.",
     "capacity": "6/9",
+    "cost": 414,
+    "desc": "Modified single-action revolver that fires more powerful rifle cartridges, but kicks like a mule. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/4c/Caldwell_Conversion_Uppercut.png/revision/latest/scale-to-width-down/1000?cb=20180219141248",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Caldwell Conversion Uppercut",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 126,
       "effective_range": "115m",
-      "rpm": 18,
-      "cycle_time": 1.6,
       "muzzle_velocity": 410,
       "reload_speed": 16,
+      "rpm": 18,
       "spread": 40,
       "sway": 128,
       "vertical_recoil": 23
     },
-    "ammo_types": [],
-    "cost": 414,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "long"
     ]
   },
   {
-    "name": "Caldwell Conversion Uppercut Precision",
-    "desc": "Modified single-action revolver, with a stock to stabilize its powerful rifle cartridges.",
     "capacity": "6/9",
+    "cost": 453,
+    "desc": "Modified single-action revolver, with a stock to stabilize its powerful rifle cartridges.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fuppy%20precision.png?alt=media&token=e4484884-38d1-48a1-9600-692901de74fb",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Caldwell Conversion Uppercut Precision",
     "stats": {
+      "cycle_time": 1.4,
       "damage": 126,
       "effective_range": "115m",
-      "rpm": 18,
-      "cycle_time": 1.4,
       "muzzle_velocity": 410,
       "reload_speed": 18.3,
+      "rpm": 18,
       "spread": 35,
       "sway": 87,
       "vertical_recoil": 11
     },
-    "ammo_types": [],
-    "cost": 453,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -526,188 +505,188 @@
     ]
   },
   {
-    "name": "Caldwell Marathon",
-    "desc": "Fast-firing pump-action rifle that performs best at mid-range. A clunky reload reduces its flexibility.",
     "capacity": "15+1/24",
+    "cost": 68,
+    "desc": "Fast-firing pump-action rifle that performs best at mid-range. A clunky reload reduces its flexibility.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fcaldwell%20marathon.png?alt=media&token=744f3011-4075-42b8-8c44-b62787a526d4",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Caldwell Marathon",
     "stats": {
+      "cycle_time": 1,
       "damage": 113,
       "effective_range": "160m",
-      "rpm": 31,
-      "cycle_time": 1,
       "muzzle_velocity": 430,
       "reload_speed": 19.2,
+      "rpm": 31,
       "spread": 15,
       "sway": 77,
       "vertical_recoil": 7
     },
-    "ammo_types": [],
-    "cost": 68,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "compact"
     ]
   },
   {
-    "name": "Caldwell Marathon Swift",
-    "desc": "Fast-firing pump-action rifle that performs best at mid-range. Reloading is quickened with a speed loader mechanism.",
     "capacity": "15+1/24",
+    "cost": 95,
+    "desc": "Fast-firing pump-action rifle that performs best at mid-range. Reloading is quickened with a speed loader mechanism.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fcaldwell%20marathon.png?alt=media&token=744f3011-4075-42b8-8c44-b62787a526d4",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Caldwell Marathon Swift",
     "stats": {
+      "cycle_time": 1,
       "damage": 113,
       "effective_range": "160m",
-      "rpm": 45,
-      "cycle_time": 1,
       "muzzle_velocity": 430,
       "reload_speed": 10,
+      "rpm": 45,
       "spread": 15,
       "sway": 77,
       "vertical_recoil": 7
     },
-    "ammo_types": [],
-    "cost": 95,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "compact"
     ]
   },
   {
-    "name": "Caldwell Pax",
-    "desc": "This iconic single-action six round revolver needs no further introduction. Robust, powerful, and accurate, it brought peace to the once lawless West. Can be used for dual wielding.",
     "capacity": "6/12",
-    "stats": {
-      "damage": 110,
-      "effective_range": "87m",
-      "rpm": 22,
-      "cycle_time": 1.4,
-      "muzzle_velocity": 330,
-      "reload_speed": 11.2,
-      "spread": 32.5,
-      "sway": 128,
-      "vertical_recoil": 10
-    },
-    "ammo_types": [],
     "cost": 80,
+    "desc": "This iconic single-action six round revolver needs no further introduction. Robust, powerful, and accurate, it brought peace to the once lawless West. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/30/Caldwell_Pax.png/revision/latest?cb=20190202211218",
     "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
+      "heavy_melee": 31,
+      "melee": 13
     },
-    "type": [
-      "weapon",
-      "small",
-      "medium"
-    ]
-  },
-  {
-    "name": "Caldwell Pax Claw",
-    "desc": "Iconic single-action six round revolver. Robust, powerful, and accurate, a blade affixed to the grip gives this an edge up close. Can be used for dual wielding.",
-    "capacity": "6/12",
+    "name": "Caldwell Pax",
     "stats": {
+      "cycle_time": 1.4,
       "damage": 110,
       "effective_range": "87m",
-      "rpm": 22,
-      "cycle_time": 1.4,
       "muzzle_velocity": 330,
       "reload_speed": 11.2,
+      "rpm": 22,
       "spread": 32.5,
       "sway": 128,
       "vertical_recoil": 10
     },
-    "ammo_types": [],
-    "cost": 90,
-    "melee_stats": {
-      "melee": 52,
-      "heavy_melee": 105
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "medium"
     ]
   },
   {
-    "name": "Caldwell Pax Trueshot",
-    "desc": "The iconic single-action six round revolver with an extended barrel that increases muzzle velocity. Robust, exceptionally powerful, and fairly accurate, it is the arm of the West's spreading law. Can be used for dual wielding.",
     "capacity": "6/12",
+    "cost": 90,
+    "desc": "Iconic single-action six round revolver. Robust, powerful, and accurate, a blade affixed to the grip gives this an edge up close. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fclaw%20pax.png?alt=media&token=d6018a0d-be62-461d-858a-6ebb53a58a2b",
+    "melee_stats": {
+      "heavy_melee": 105,
+      "melee": 52
+    },
+    "name": "Caldwell Pax Claw",
     "stats": {
+      "cycle_time": 1.4,
+      "damage": 110,
+      "effective_range": "87m",
+      "muzzle_velocity": 330,
+      "reload_speed": 11.2,
+      "rpm": 22,
+      "spread": 32.5,
+      "sway": 128,
+      "vertical_recoil": 10
+    },
+    "type": [
+      "weapon",
+      "small slot",
+      "medium"
+    ]
+  },
+  {
+    "capacity": "6/12",
+    "cost": 141,
+    "desc": "The iconic single-action six round revolver with an extended barrel that increases muzzle velocity. Robust, exceptionally powerful, and fairly accurate, it is the arm of the West's spreading law. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fpax%20trueshot.png?alt=media&token=5a3eae48-43be-4f0f-b4fd-21bc4fda2a03",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Caldwell Pax Trueshot",
+    "stats": {
+      "cycle_time": 1.6,
       "damage": 114,
       "effective_range": "89m",
-      "rpm": 18,
-      "cycle_time": 1.6,
       "muzzle_velocity": 410,
       "reload_speed": 11.2,
+      "rpm": 18,
       "spread": 27.5,
       "sway": 128,
       "vertical_recoil": 16
     },
-    "ammo_types": [],
-    "cost": 141,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "medium"
     ]
   },
   {
-    "name": "Caldwell Rival 78",
-    "desc": "Sturdy, break-action, side-by-side shotgun with a medium-length barrel that can destroy all but the toughest targets at close range.",
     "capacity": "2/8",
+    "cost": 150,
+    "desc": "Sturdy, break-action, side-by-side shotgun with a medium-length barrel that can destroy all but the toughest targets at close range.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/72/Caldwell_Rival_78.png/revision/latest/scale-to-width-down/1000?cb=20180219154238",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Caldwell Rival 78",
     "stats": {
+      "cycle_time": 0.3,
       "damage": 190,
       "effective_range": "13m",
-      "rpm": 24,
-      "cycle_time": 0.3,
       "muzzle_velocity": 425,
       "reload_speed": 4.7,
+      "rpm": 24,
       "spread": 80,
       "sway": 77,
       "vertical_recoil": 20
     },
-    "ammo_types": [],
-    "cost": 150,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "shotgun"
     ]
   },
   {
-    "name": "Caldwell Rival 78 Handcannon",
-    "desc": "Sawn-off break-action side-by-side shotgun. Its wider spread but shorter range make this a great backup weapon.",
     "capacity": "2/6",
+    "cost": 125,
+    "desc": "Sawn-off break-action side-by-side shotgun. Its wider spread but shorter range make this a great backup weapon.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/83/CaldwellRivalHandcanon.png/revision/latest/scale-to-width-down/1000?cb=20190421111339",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Caldwell Rival 78 Handcannon",
     "stats": {
+      "cycle_time": 0.3,
       "damage": 105,
       "effective_range": "10m",
-      "rpm": 24,
-      "cycle_time": 0.3,
       "muzzle_velocity": 350,
       "reload_speed": 4.7,
+      "rpm": 24,
       "spread": 125,
       "sway": 133,
       "vertical_recoil": 30
     },
-    "ammo_types": [],
-    "cost": 125,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -715,190 +694,191 @@
     ]
   },
   {
-    "name": "Cavalry Saber",
-    "desc": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
-    "stats": null,
-    "ammo_types": [],
     "cost": 50,
+    "desc": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a0/Cavalry_Saber.png/revision/latest/scale-to-width-down/1000?cb=20180219143233",
     "melee_stats": {
-      "melee": 82,
-      "heavy_melee": 168
+      "heavy_melee": 168,
+      "melee": 82
     },
+    "name": "Cavalry Saber",
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "melee"
     ]
   },
   {
-    "name": "Combat Axe",
-    "desc": "A heavy two-handed melee weapon that can split open the toughest of enemies with ease.",
-    "stats": null,
-    "ammo_types": [],
     "cost": 40,
+    "desc": "A heavy two-handed melee weapon that can split open the toughest of enemies with ease.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/dd/Combat_Axe.png/revision/latest?cb=20190108013800",
     "melee_stats": {
-      "melee": 165,
-      "heavy_melee": 330
+      "heavy_melee": 330,
+      "melee": 165
     },
+    "name": "Combat Axe",
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "melee"
     ]
   },
   {
-    "name": "Crossbow",
-    "desc": "Hand-crafted crossbow that fires powerful bolts. Well suited for covert missions and stealth takedowns, but has a long reload. Bolts can be retrieved and reused.",
     "capacity": "1/18",
+    "cost": 50,
+    "desc": "Hand-crafted crossbow that fires powerful bolts. Well suited for covert missions and stealth takedowns, but has a long reload. Bolts can be retrieved and reused.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/79/Crossbow.png/revision/latest?cb=20190316201801",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Crossbow",
     "stats": {
+      "cycle_time": 4.8,
       "damage": 247,
       "effective_range": "12m",
-      "rpm": 13,
-      "cycle_time": 4.8,
       "muzzle_velocity": 150,
       "reload_speed": 5.3,
+      "rpm": 13,
       "spread": 30,
       "sway": 77,
       "vertical_recoil": 4
     },
-    "ammo_types": [],
-    "cost": 50,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "special"
     ]
   },
   {
-    "name": "Crown & King Auto-5",
-    "desc": "Prototype long-barreled semi-automatic shotgun with internal four round magazine plus one in the chamber. High power and rate of fire, but strong recoil and short range.",
     "capacity": "4+1/6",
+    "cost": 600,
+    "desc": "Prototype long-barreled semi-automatic shotgun with internal four round magazine plus one in the chamber. High power and rate of fire, but strong recoil and short range.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a5/Crown_%26_King_Auto-5.png/revision/latest/scale-to-width-down/1000?cb=20180219154351",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Crown & King Auto-5",
     "stats": {
+      "cycle_time": 0.6,
       "damage": 194,
       "effective_range": "13m",
-      "rpm": 24,
-      "cycle_time": 0.6,
       "muzzle_velocity": 425,
       "reload_speed": 10.7,
+      "rpm": 24,
       "spread": 65,
       "sway": 133,
       "vertical_recoil": 20
     },
-    "ammo_types": [],
-    "cost": 600,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "shotgun"
     ]
   },
   {
-    "name": "Dolch 96",
-    "desc": "Powerful, German, prototype, semi-automatic pistol with an internal magazine loaded from the top. When fully emptied, it can be reloaded fast with a ten-round stripper clip. Can be used for dual wielding.",
     "capacity": "10/10",
-    "stats": {
-      "damage": 97,
-      "effective_range": "78m",
-      "rpm": 64,
-      "cycle_time": 0.4,
-      "muzzle_velocity": 440,
-      "reload_speed": 6,
-      "spread": 35,
-      "sway": 128,
-      "vertical_recoil": 14
-    },
-    "ammo_types": [],
     "cost": 690,
+    "desc": "Powerful, German, prototype, semi-automatic pistol with an internal magazine loaded from the top. When fully emptied, it can be reloaded fast with a ten-round stripper clip. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/5b/Dolch96.png/revision/latest/scale-to-width-down/1000?cb=20180219143040",
     "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
+      "heavy_melee": 31,
+      "melee": 13
     },
-    "type": [
-      "weapon",
-      "small",
-      "special"
-    ]
-  },
-  {
-    "name": "Dolch 96 Claw",
-    "desc": "The German, prototype, semi-automatic pistol, with a robust hooked blade affixed for hand-to-hand combat. Can be used for dual wielding.",
-    "capacity": "10/10",
+    "name": "Dolch 96",
     "stats": {
+      "cycle_time": 0.4,
       "damage": 97,
       "effective_range": "78m",
-      "rpm": 64,
-      "cycle_time": 0.4,
       "muzzle_velocity": 440,
       "reload_speed": 6,
+      "rpm": 64,
       "spread": 35,
       "sway": 128,
       "vertical_recoil": 14
     },
-    "cost": 700,
-    "melee_stats": {
-      "melee": 52,
-      "heavy_melee": 105
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "special"
     ]
   },
   {
-    "name": "Dolch 96 Deadeye",
-    "desc": "The German, prototype, semi-automatic pistol with a short scope to fully utilize the weapon's power at midrange. Cannot use a stripper clip to be reloaded. Can be used for dual wielding.",
     "capacity": "10/10",
+    "cost": 700,
+    "desc": "The German, prototype, semi-automatic pistol, with a robust hooked blade affixed for hand-to-hand combat. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fdolch%20claw.png?alt=media&token=a663efc8-c6fc-4476-926d-3dc3114ca205",
+    "melee_stats": {
+      "heavy_melee": 105,
+      "melee": 52
+    },
+    "name": "Dolch 96 Claw",
     "stats": {
+      "cycle_time": 0.4,
       "damage": 97,
       "effective_range": "78m",
-      "rpm": 40,
+      "muzzle_velocity": 440,
+      "reload_speed": 6,
+      "rpm": 64,
+      "spread": 35,
+      "sway": 128,
+      "vertical_recoil": 14
+    },
+    "type": [
+      "weapon",
+      "small slot",
+      "special"
+    ]
+  },
+  {
+    "capacity": "10/10",
+    "cost": 780,
+    "desc": "The German, prototype, semi-automatic pistol with a short scope to fully utilize the weapon's power at midrange. Cannot use a stripper clip to be reloaded. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fdolch%20deadeye.png?alt=media&token=7b4e6359-5a4d-4a7f-9ed1-cb1280f40fc5",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Dolch 96 Deadeye",
+    "stats": {
       "cycle_time": 0.4,
+      "damage": 97,
+      "effective_range": "78m",
       "muzzle_velocity": 440,
       "reload_speed": 21.7,
+      "rpm": 40,
       "spread": 50,
       "sway": 106,
       "vertical_recoil": 14
     },
-    "cost": 780,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "special"
     ]
   },
   {
-    "name": "Dolch 96 Precision",
-    "desc": "Powerful, German, prototype, semi-automatic pistol. The wooden holster is attached as a makeshift buttstock for accurate fire over distance.",
     "capacity": "10/10",
+    "cost": 730,
+    "desc": "Powerful, German, prototype, semi-automatic pistol. The wooden holster is attached as a makeshift buttstock for accurate fire over distance.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/4c/Dolch_96_Precision.png/revision/latest/scale-to-width-down/1000?cb=20180219154420",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Dolch 96 Precision",
     "stats": {
+      "cycle_time": 0.3,
       "damage": 97,
       "effective_range": "78m",
-      "rpm": 64,
-      "cycle_time": 0.3,
       "muzzle_velocity": 440,
       "reload_speed": 6,
+      "rpm": 64,
       "spread": 30,
       "sway": 87,
       "vertical_recoil": 12
     },
-    "cost": 730,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -906,51 +886,53 @@
     ]
   },
   {
-    "name": "Drilling",
-    "desc": "Two medium rifle barrels combined with a shotgun underbarrel to create an all-round flexible and powerful weapon.",
     "capacity": "rifle 2/20 shotgun 1/5",
+    "cost": 510,
+    "desc": "Two medium rifle barrels combined with a shotgun underbarrel to create an all-round flexible and powerful weapon.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fdrilling.png?alt=media&token=75218d1d-daae-49e7-a1ce-ca8bc48fa45d",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Drilling",
     "stats": {
+      "cycle_time": 0.6,
       "damage": 120,
       "effective_range": "170m",
-      "rpm": 20,
-      "cycle_time": 0.6,
       "muzzle_velocity": 530,
       "reload_speed": 5.3,
+      "rpm": 20,
       "spread": 42.5,
       "sway": 77,
       "vertical_recoil": 12
     },
-    "cost": 510,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "medium"
     ]
   },
   {
-    "name": "Drilling Handcannon",
-    "desc": "Two medium rifle barrels combined with a shotgun underbarrel, all three shortened to make a smaller, more compact package.",
     "capacity": "rifle 2/20 shotgun 1/3",
+    "cost": 430,
+    "desc": "Two medium rifle barrels combined with a shotgun underbarrel, all three shortened to make a small sloter, more compact package.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fdrilling%20handcannon.png?alt=media&token=42a3c3a6-d888-4e8f-8235-35dd7147d3e6",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Drilling Handcannon",
     "stats": {
+      "cycle_time": 0.6,
       "damage": 118,
       "effective_range": "160m",
-      "rpm": 20,
-      "cycle_time": 0.6,
       "muzzle_velocity": 424,
       "reload_speed": 4.8,
+      "rpm": 20,
       "spread": 62.5,
       "sway": 133,
       "vertical_recoil": 16
     },
-    "cost": 430,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -958,28 +940,26 @@
     ]
   },
   {
-    "name": "Drilling Hatchet",
+    "capacity": "rifle 2/20 shotgun 1/3",
+    "cost": 440,
     "desc": "Two medium rifle barrels combined with a shotgun underbarrel and an additional blade to create a powerful multipurpose weapon.",
-    "capacity": {
-      "rifle": "1/3",
-      "shotgun": "2/20"
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fdrilling%20hatchet.png?alt=media&token=6166d983-4d26-4308-9919-9174d826566f",
+    "melee_stats": {
+      "heavy_melee": 150,
+      "melee": 90
     },
+    "name": "Drilling Hatchet",
     "stats": {
+      "cycle_time": 0.6,
       "damage": 118,
       "effective_range": "160m",
-      "rpm": 18,
-      "cycle_time": 0.6,
       "muzzle_velocity": 424,
       "reload_speed": 5.6,
+      "rpm": 18,
       "spread": 62.5,
       "sway": 108,
       "vertical_recoil": 16
     },
-    "cost": 440,
-    "melee_stats": {
-      "melee": 90,
-      "heavy_melee": 150
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -987,50 +967,52 @@
     ]
   },
   {
-    "name": "Hand Crossbow",
-    "desc": "Imaginative hand crossbow that fires compact bolts. Excels in situations when discretion is required above all. Bolts can be retrieved and reused.",
     "capacity": "1/16",
+    "cost": 30,
+    "desc": "Imaginative hand crossbow that fires compact bolts. Excels in situations when discretion is required above all. Bolts can be retrieved and reused.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/62/Hand_Crossbow.png/revision/latest?cb=20190107021935",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 13
+    },
+    "name": "Hand Crossbow",
     "stats": {
+      "cycle_time": 4.5,
       "damage": 195,
       "effective_range": "12m",
-      "rpm": 14,
-      "cycle_time": 4.5,
       "muzzle_velocity": 100,
       "reload_speed": 4.3,
+      "rpm": 14,
       "spread": 25,
       "sway": 82,
       "vertical_recoil": 1.2
     },
-    "cost": 30,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 27
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "special"
     ]
   },
   {
-    "name": "Hunting Bow",
-    "desc": "Able to pierce through flesh and bone at a great distance, the Hunting Bow will make quick, stealthy work of monsters and men. Arrows can be retrieved and reused.",
     "capacity": "1/16",
+    "cost": 57,
+    "desc": "Able to pierce through flesh and bone at a great distance, the Hunting Bow will make quick, stealthy work of monsters and men. Arrows can be retrieved and reused.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fhunting%20boqw.png?alt=media&token=d939ba5d-6c27-4a35-b967-76ac8865f7e2",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 13
+    },
+    "name": "Hunting Bow",
     "stats": {
+      "cycle_time": 1.3,
       "damage": 227,
       "effective_range": "20m",
-      "rpm": 51,
-      "cycle_time": 1.3,
       "muzzle_velocity": 150,
       "reload_speed": 0.6,
+      "rpm": 51,
       "spread": 12.5,
       "sway": 82,
       "vertical_recoil": 1
-    },
-    "cost": 57,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 27
     },
     "type": [
       "weapon",
@@ -1039,118 +1021,121 @@
     ]
   },
   {
-    "name": "Katana",
-    "desc": "A two-handed sword refined over hundreds of years to slice and pierce even the sturdiest armor, making human flesh effortless to rend. Special attack enabled with Martialist Trait.",
-    "stats": null,
-    "ammo_types": [],
     "cost": 115,
+    "desc": "A two-handed sword refined over hundreds of years to slice and pierce even the sturdiest armor, making human flesh effortless to rend. Special attack enabled with Martialist Trait.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fkatana.png?alt=media&token=04cc2b6c-c569-43f8-be93-a66d1f3eea07",
     "melee_stats": {
-      "melee": 165,
-      "heavy_melee": 280
+      "heavy_melee": 280,
+      "melee": 165
     },
+    "name": "Katana",
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "melee"
     ]
   },
   {
-    "name": "LeMat Mark II",
-    "desc": "Infamous icon of the Confederacy, this updated model takes nine cartridges in its cylinder. Its second barrel delivers a shotgun blast up close. Can be used for dual wielding.",
     "capacity": "pistol 9/18 shotgun 1/3",
+    "cost": 83,
+    "desc": "Infamous icon of the Confederacy, this updated model takes nine cartridges in its cylinder. Its second barrel delivers a shotgun blast up close. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/2/20/LeMat_Mark_II_Revolver.png/revision/latest?cb=20190329212912",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "LeMat Mark II",
     "stats": {
+      "cycle_time": 1.3,
       "damage": 97,
       "effective_range": "80m",
-      "rpm": 25,
-      "cycle_time": 1.3,
       "muzzle_velocity": 375,
       "reload_speed": 15.8,
+      "rpm": 25,
       "spread": 40,
       "sway": 128,
       "vertical_recoil": 6
     },
-    "cost": 83,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "LeMat Mark II Carbine",
-    "desc": "The LeMat Mark II's unique design that featured an extra shotgun barrel made it very effective in close quarters. This model transforms it into a rifle with a stock and extended barrel, improving its overall handling & power",
     "capacity": "primary 9/18 shotgun 1/5",
+    "cost": 115,
+    "desc": "The LeMat Mark II's unique design that featured an extra shotgun barrel made it very effective in close quarters. This model transforms it into a rifle with a stock and extended barrel, improving its overall handling & power",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Flemat%20carbine.png?alt=media&token=5abc4ef1-c45a-4848-b9ea-cd759af25d0c",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "LeMat Mark II Carbine",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 107,
       "effective_range": "141m",
-      "rpm": 21,
-      "cycle_time": 1.2,
       "muzzle_velocity": 460,
       "reload_speed": 18.7,
+      "rpm": 21,
       "spread": 35,
       "sway": 77,
       "vertical_recoil": 2.5
     },
-    "cost": 115,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "compact"
     ]
   },
   {
-    "name": "LeMat Mark II Carbine Marksman",
-    "desc": "The LeMat Mark II Carbine's extended barrel, shotgun barrel, and rifle stock make it a very fine weapon for combat at almost any range when combined with a marksman scope.",
     "capacity": "primary 9/18 shotgun 1/5",
+    "cost": 134,
+    "desc": "The LeMat Mark II Carbine's extended barrel, shotgun barrel, and rifle stock make it a very fine weapon for combat at almost any range when combined with a marksman scope.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Flemat%20carbine%20marksman.png?alt=media&token=2dd69fdb-0635-4c34-8195-f07929e785c7",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "LeMat Mark II Carbine Marksman",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 107,
       "effective_range": "141m",
-      "rpm": 21,
-      "cycle_time": 1.2,
       "muzzle_velocity": 460,
       "reload_speed": 18.7,
+      "rpm": 21,
       "spread": 55,
       "sway": 69,
       "vertical_recoil": 2.5
     },
-    "cost": 134,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "compact"
     ]
   },
   {
-    "name": "LeMat Mark II UpperMat",
-    "desc": "Two-handed advancement on the LeMat Mark II that trades speed for power, and uses Long Ammo.",
     "capacity": "primary 9/9 shotgun 1/3",
+    "cost": 370,
+    "desc": "Two-handed advancement on the LeMat Mark II that trades speed for power, and uses Long Ammo.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Flemat%20mark%202%20uppermat.png?alt=media&token=fcef6c5f-5d7f-46c6-a513-e199923cae10",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "LeMat Mark II UpperMat",
     "stats": {
+      "cycle_time": 1.3,
       "damage": 126,
       "effective_range": "115m",
-      "rpm": 18,
-      "cycle_time": 1.3,
       "muzzle_velocity": 530,
       "reload_speed": 21.8,
+      "rpm": 18,
       "spread": 40,
       "sway": 128,
       "vertical_recoil": 23
-    },
-    "cost": 370,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
     },
     "type": [
       "weapon",
@@ -1159,378 +1144,391 @@
     ]
   },
   {
-    "name": "Lebel 1886",
-    "desc": "The Lebel 1886, groundbreaking for its time, is a bolt-action rifle with an internal 10-round magazine. Slightly outperformed by more modern designs, it remains a powerful weapon of choice.",
     "capacity": "10/5",
+    "cost": 397,
+    "desc": "The Lebel 1886, groundbreaking for its time, is a bolt-action rifle with an internal 10-round magazine. Slightly outperformed by more modern designs, it remains a powerful weapon of choice.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/d4/Lebel_1886.png/revision/latest/scale-to-width-down/1000?cb=20190329212852",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Lebel 1886",
     "stats": {
+      "cycle_time": 1.8,
       "damage": 132,
       "effective_range": "311m",
-      "rpm": 20,
-      "cycle_time": 1.8,
       "muzzle_velocity": 630,
       "reload_speed": 18.7,
+      "rpm": 20,
       "spread": 40,
       "sway": 77,
       "vertical_recoil": 9
     },
-    "cost": 397,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Lebel 1886 Aperture",
-    "desc": "The groundbreaking Lebel 1886 bolt-action rifle with a toggle-able Aperture sight which ensures higher precision at medium ranges.",
     "capacity": "10/5",
+    "cost": 425,
+    "desc": "The groundbreaking Lebel 1886 bolt-action rifle with a toggle-able Aperture sight which ensures higher precision at medium ranges.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Flebel%20aper.png?alt=media&token=7f30eb0d-4cbc-4b60-b93f-f8c7c3ffc5f5",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Lebel 1886 Aperture",
     "stats": {
+      "cycle_time": 1.8,
       "damage": 132,
       "effective_range": "311m",
-      "rpm": 20,
-      "cycle_time": 1.8,
       "muzzle_velocity": 630,
       "reload_speed": 18.7,
+      "rpm": 20,
       "spread": 40,
       "sway": 69,
       "vertical_recoil": 9
     },
-    "cost": 425,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Lebel 1886 Marksman",
-    "desc": "A version of the Lebel 1886 bolt-action rifle with a mounted medium scope that ensures higher accuracy at a distance.",
     "capacity": "10/5",
+    "cost": 607,
+    "desc": "A version of the Lebel 1886 bolt-action rifle with a mounted medium scope that ensures higher accuracy at a distance.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/04/Lebel_Marksman_Perspective.png/revision/latest/scale-to-width-down/1000?cb=20191101001212",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Lebel 1886 Marksman",
     "stats": {
+      "cycle_time": 1.8,
       "damage": 132,
       "effective_range": "311m",
-      "rpm": 20,
-      "cycle_time": 1.8,
       "muzzle_velocity": 630,
       "reload_speed": 18.7,
+      "rpm": 20,
       "spread": 55,
       "sway": 69,
       "vertical_recoil": 9
     },
-    "cost": 607,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Lebel 1886 Talon",
-    "desc": "This variant of the Lebel 1886 bolt-action rifle doubles as a deadly melee weapon thanks to the axe blade attached to the buttstock.",
     "capacity": "10/5",
+    "cost": 407,
+    "desc": "This variant of the Lebel 1886 bolt-action rifle doubles as a deadly melee weapon thanks to the axe blade attached to the buttstock.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f8/Lebel_Talon_Perspective.png/revision/latest/scale-to-width-down/1000?cb=20191101001019",
+    "melee_stats": {
+      "heavy_melee": 330,
+      "melee": 27
+    },
+    "name": "Lebel 1886 Talon",
     "stats": {
+      "cycle_time": 1.8,
       "damage": 132,
       "effective_range": "311m",
-      "rpm": 20,
-      "cycle_time": 1.8,
       "muzzle_velocity": 630,
       "reload_speed": 18.7,
+      "rpm": 20,
       "spread": 40,
       "sway": 77,
       "vertical_recoil": 11
     },
-    "cost": 407,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 330
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Machete",
-    "desc": "Used both for cutting through undergrowth and limbs, a machete is a reliable weapon to forge a path.",
-    "stats": null,
-    "ammo_types": [],
     "cost": 30,
+    "desc": "Used both for cutting through undergrowth and limbs, a machete is a reliable weapon to forge a path.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/0c/Machete.png/revision/latest/scale-to-width-down/1000?cb=20180219152144",
     "melee_stats": {
-      "melee": 90,
-      "heavy_melee": 150
+      "heavy_melee": 150,
+      "melee": 90
     },
+    "name": "Machete",
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "melee"
     ]
   },
   {
-    "name": "Mako 1895 Carbine",
-    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. From a new manufacturer in competition with Winfield.",
     "capacity": "6+1/8",
+    "cost": 360,
+    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. From a new manufacturer in competition with Winfield.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fmako%20carbine.png?alt=media&token=00af034d-ca00-4d0c-9b64-a743e013f7e3",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Mako 1895 Carbine",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 128,
       "effective_range": "302m",
-      "rpm": 20,
-      "cycle_time": 1.6,
       "muzzle_velocity": 540,
       "reload_speed": 13,
+      "rpm": 20,
       "spread": 47.5,
       "sway": 77,
       "vertical_recoil": 15
     },
-    "cost": 360,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Mako 1895 Carbine Aperture",
-    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. Its toggle-able Aperture sight ensures higher precision at medium ranges.",
     "capacity": "6+1/8",
+    "cost": 385,
+    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. Its toggle-able Aperture sight ensures higher precision at medium ranges.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fmako%20carbine%20aperture.png?alt=media&token=bcb6825f-9c8c-46ad-9066-d2d9821fe5e5",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Mako 1895 Carbine Aperture",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 128,
       "effective_range": "302m",
-      "rpm": 20,
-      "cycle_time": 1.6,
       "muzzle_velocity": 540,
       "reload_speed": 13,
+      "rpm": 20,
       "spread": 47.5,
       "sway": 69,
       "vertical_recoil": 15
     },
-    "cost": 385,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Mako 1895 Carbine Claw",
-    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. A robust hooked blade is affixed to make the gun a melee and ranged weapon.",
     "capacity": "6+1/8",
+    "cost": 370,
+    "desc": "Long range, lever-action rifle that delivers a powerful punch with long ammo. A robust hooked blade is affixed to make the gun a melee and ranged weapon.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fmako%20carbine%20claw.png?alt=media&token=c42e2207-ca0f-4bdf-a43d-5d2d2f654550",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 120
+    },
+    "name": "Mako 1895 Carbine Claw",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 128,
       "effective_range": "302m",
-      "rpm": 20,
-      "cycle_time": 1.6,
       "muzzle_velocity": 540,
       "reload_speed": 13,
+      "rpm": 20,
       "spread": 47.5,
       "sway": 77,
       "vertical_recoil": 15
     },
-    "cost": 370,
-    "melee_stats": {
-      "melee": 120,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Martini-Henry IC1",
-    "desc": "The workhorse rifle of the British Empire, the Martini-Henry IC1 is a single-shot breech-loading rifle that values simplicity and power.",
     "capacity": "1/20",
+    "cost": 122,
+    "desc": "The workhorse rifle of the British Empire, the Martini-Henry IC1 is a single-shot breech-loading rifle that values simplicity and power.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/da/Martini-Henry_IC1.png/revision/latest/scale-to-width-down/1000?cb=20191121204901",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Martini-Henry IC1",
     "stats": {
+      "cycle_time": 3.5,
       "damage": 143,
       "effective_range": "334m",
-      "rpm": 18,
-      "cycle_time": 3.5,
       "muzzle_velocity": 400,
       "reload_speed": 2.7,
+      "rpm": 18,
       "spread": 42.5,
       "sway": 77,
       "vertical_recoil": 12
     },
-    "cost": 122,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Martini-Henry IC1 Deadeye",
-    "desc": "This single-shot breech-loading rifle is furnished with a Deadeye scope that complements its competent range and power.",
     "capacity": "1/20",
+    "cost": 140,
+    "desc": "This single-shot breech-loading rifle is furnished with a Deadeye scope that complements its competent range and power.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a3/Martini-Henry_IC1_Deadeye.png/revision/latest/scale-to-width-down/1000?cb=20191129234610",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Martini-Henry IC1 Deadeye",
     "stats": {
+      "cycle_time": 3.5,
       "damage": 143,
       "effective_range": "334m",
-      "rpm": 18,
-      "cycle_time": 3.5,
       "muzzle_velocity": 400,
       "reload_speed": 2.7,
+      "rpm": 18,
       "spread": 52.5,
       "sway": 77,
       "vertical_recoil": 12
     },
-    "cost": 140,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Martini-Henry IC1 Ironside",
-    "desc": "This Martini-Henry IC1 features a mechanism carrying five extra cartridges in addition to the one in the rifle's chamber which allows the wielder to replace the spent cartridge in quick succession, transforming the weapon.",
     "capacity": "5+1/15",
+    "cost": 159,
+    "desc": "This Martini-Henry IC1 features a mechanism carrying five extra cartridges in addition to the one in the rifle's chamber which allows the wielder to replace the spent cartridge in quick succession, transforming the weapon.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fmartini%20ironside.png?alt=media&token=f0c7afcd-ebd4-4895-a1d5-b14c80202bd5",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Martini-Henry IC1 Ironside",
     "stats": {
+      "cycle_time": 1.8,
       "damage": 143,
       "effective_range": "334m",
-      "rpm": 18,
-      "cycle_time": 1.8,
       "muzzle_velocity": 400,
       "reload_speed": 14.7,
+      "rpm": 18,
       "spread": 42.5,
       "sway": 77,
       "vertical_recoil": 12
     },
-    "cost": 159,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Martini-Henry IC1 Marksman",
-    "desc": "This single-shot breech-loading rifle is furnished with a Marksman's scope that complements its competent range and power.",
     "capacity": "1/20",
+    "cost": 490,
+    "desc": "This single-shot breech-loading rifle is furnished with a Marksman's scope that complements its competent range and power.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/17/Martini-Henry_IC1_Marksman.png/revision/latest/scale-to-width-down/1000?cb=20200326185858",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Martini-Henry IC1 Marksman",
     "stats": {
+      "cycle_time": 3.5,
       "damage": 143,
       "effective_range": "334m",
-      "rpm": 18,
-      "cycle_time": 3.5,
       "muzzle_velocity": 400,
       "reload_speed": 2.7,
+      "rpm": 18,
       "spread": 62.5,
       "sway": 69,
       "vertical_recoil": 12
     },
-    "cost": 490,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Mosin-Nagant M1891 Avtomat",
-    "desc": "This experimental conversion of a bolt-action rifle was modified into a makeshift machine gun, with a high rate of fire and increased internal magazine. Reloaded with stripper clips.",
     "capacity": "15/0",
+    "cost": 1250,
+    "desc": "This experimental conversion of a bolt-action rifle was modified into a makeshift machine gun, with a high rate of fire and increased internal magazine. Reloaded with stripper clips.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/5f/Mosin_Nagant_Avtomat.png/revision/latest/scale-to-width-down/1000?cb=20200326185531",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Mosin-Nagant M1891 Avtomat",
     "stats": {
+      "cycle_time": 0.1,
       "damage": 136,
       "effective_range": "320m",
-      "rpm": 75,
-      "cycle_time": 0.1,
       "muzzle_velocity": 615,
       "reload_speed": 11.4,
+      "rpm": 75,
       "spread": 100,
       "sway": 133,
       "vertical_recoil": 8
     },
-    "cost": 1250,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Mosin-Nagant M1891 Bayonet",
-    "desc": "Modern Imperial Russian bolt-action service rifle with an internal magazine. Its attached spike bayonet turns it into a frightening melee weapon.",
     "capacity": "5/10",
+    "cost": 500,
+    "desc": "Modern Imperial Russian bolt-action service rifle with an internal magazine. Its attached spike bayonet turns it into a frightening melee weapon.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/32/Mosin_Nagant_M1891_Bayonet.png/revision/latest/scale-to-width-down/1000?cb=20180219155601",
+    "melee_stats": {
+      "heavy_melee": 168,
+      "melee": 27
+    },
+    "name": "Mosin-Nagant M1891 Bayonet",
     "stats": {
+      "cycle_time": 1.9,
       "damage": 136,
       "effective_range": "320m",
-      "rpm": 26,
-      "cycle_time": 1.9,
       "muzzle_velocity": 615,
       "reload_speed": 3.7,
+      "rpm": 26,
       "spread": 35,
       "sway": 77,
       "vertical_recoil": 10
     },
-    "cost": 500,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 168
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Mosin-Nagant M1891 Obrez",
-    "desc": "Sawn-off variant of the Mosin-Nagant bolt-action rifle. Can be carried as a backup weapon that packs a punch, but without a stock its recoil is brutal.",
     "capacity": "5/10",
+    "cost": 290,
+    "desc": "Sawn-off variant of the Mosin-Nagant bolt-action rifle. Can be carried as a backup weapon that packs a punch, but without a stock its recoil is brutal.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/ac/Mosin_Nagant_M1891_Obrez.png/revision/latest/scale-to-width-down/1000?cb=20180219161532",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Mosin-Nagant M1891 Obrez",
     "stats": {
+      "cycle_time": 1.9,
       "damage": 133,
       "effective_range": "314m",
-      "rpm": 26,
-      "cycle_time": 1.9,
       "muzzle_velocity": 550,
       "reload_speed": 3.7,
+      "rpm": 26,
       "spread": 55,
       "sway": 133,
       "vertical_recoil": 16
-    },
-    "cost": 290,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
     },
     "type": [
       "weapon",
@@ -1539,24 +1537,25 @@
     ]
   },
   {
-    "name": "Mosin-Nagant M1891 Obrez Drum",
-    "desc": "This shortened Russian service rifle is outfitted with an extended Drum magazine, giving it a huge capacity for ammunition.",
     "capacity": "15/0",
+    "cost": 350,
+    "desc": "This shortened Russian service rifle is outfitted with an extended Drum magazine, giving it a huge capacity for ammunition.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/40/Mosin-Nagant_M1891_Obrez_Drum.png/revision/latest/scale-to-width-down/1000?cb=20200326185857",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Mosin-Nagant M1891 Obrez Drum",
     "stats": {
+      "cycle_time": 1.9,
       "damage": 133,
       "effective_range": "314m",
-      "rpm": 29,
-      "cycle_time": 1.9,
       "muzzle_velocity": 550,
       "reload_speed": 8,
+      "rpm": 29,
       "spread": 55,
       "sway": 133,
       "vertical_recoil": 16
-    },
-    "cost": 350,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
     },
     "type": [
       "weapon",
@@ -1565,25 +1564,26 @@
     ]
   },
   {
-    "name": "Mosin-Nagant M1891 Obrez Mace",
-    "desc": "This shortened Russian service rifle has been additionally modified with a weighted 'mace' stock, making it a competent melee weapon.",
     "capacity": "5/10",
+    "cost": 310,
+    "desc": "This shortened Russian service rifle has been additionally modified with a weighted 'mace' stock, making it a competent melee weapon.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fmosin%20obrez%20mace.png?alt=media&token=69fa1a83-5ea7-47ea-945e-050cfec95db6",
+    "melee_stats": {
+      "heavy_melee": 90,
+      "melee": 54
+    },
+    "name": "Mosin-Nagant M1891 Obrez Mace",
     "stats": {
+      "cycle_time": 1.9,
       "damage": 133,
       "effective_range": "314m",
-      "rpm": 26,
-      "cycle_time": 1.9,
       "muzzle_velocity": 550,
       "reload_speed": 3.7,
+      "rpm": 26,
       "spread": 55,
       "sway": 133,
       "vertical_recoil": 19
     },
-    "cost": 310,
-    "melee_stats": {
-      "melee": 54,
-      "heavy_melee": 90
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -1591,181 +1591,188 @@
     ]
   },
   {
-    "name": "Mosin-Nagant M1891 Sniper",
-    "desc": "Modern Imperial Russian bolt-action service rifle. The attached long scope provides accuracy at range, but prevents the use of stripper clips for fast reloading.",
     "capacity": "5/10",
+    "cost": 730,
+    "desc": "Modern Imperial Russian bolt-action service rifle. The attached long scope provides accuracy at range, but prevents the use of stripper clips for fast reloading.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/cc/Mosin_Nagant_Sniper.png/revision/latest/scale-to-width-down/1000?cb=20190107173244",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Mosin-Nagant M1891 Sniper",
     "stats": {
+      "cycle_time": 1.9,
       "damage": 136,
       "effective_range": "320m",
-      "rpm": 24,
-      "cycle_time": 1.9,
       "muzzle_velocity": 615,
       "reload_speed": 5.3,
+      "rpm": 24,
       "spread": 40,
       "sway": 69,
       "vertical_recoil": 10
     },
-    "cost": 730,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Nagant M1895",
-    "desc": "Modern, Imperial Russian, single-action revolver. Slow to reload. Sacrifices stopping power for an extra bullet in the drum and a higher rate of fire. Can be used for dual wielding.",
     "capacity": "7/21",
+    "cost": 24,
+    "desc": "Modern, Imperial Russian, single-action revolver. Slow to reload. Sacrifices stopping power for an extra bullet in the drum and a higher rate of fire. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c3/Nagant_M1895.png/revision/latest/scale-to-width-down/1000?cb=20180219142221",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Nagant M1895",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 91,
       "effective_range": "74m",
-      "rpm": 21,
-      "cycle_time": 1.5,
       "muzzle_velocity": 330,
       "reload_speed": 12.5,
+      "rpm": 21,
       "spread": 40,
       "sway": 128,
       "vertical_recoil": 4
     },
-    "cost": 24,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Nagant M1895 Officer",
-    "desc": "Modern, Imperial Russian, double-action revolver. Though it has a faster rate of fire, the stronger force required to pull the trigger has a negative impact on accuracy. Can be used for dual wielding.",
     "capacity": "7/14",
-    "stats": {
-      "damage": 91,
-      "effective_range": "74m",
-      "rpm": 28,
-      "cycle_time": 0.5,
-      "muzzle_velocity": 330,
-      "reload_speed": 12.8,
-      "spread": 50,
-      "sway": 128,
-      "vertical_recoil": 5
-    },
     "cost": 96,
+    "desc": "Modern, Imperial Russian, double-action revolver. Though it has a faster rate of fire, the stronger force required to pull the trigger has a negative impact on accuracy. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c3/Nagant_M1895.png/revision/latest/scale-to-width-down/1000?cb=20180219142221",
     "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
+      "heavy_melee": 31,
+      "melee": 13
     },
-    "type": [
-      "weapon",
-      "small",
-      "compact"
-    ]
-  },
-  {
-    "name": "Nagant M1895 Officer Brawler",
-    "desc": "Modern, Imperial Russian, double-action revolver variant. The weight of this piece is put to good use with an integrated knuckle duster. Can be used for dual wielding.",
-    "capacity": "7/14",
+    "name": "Nagant M1895 Officer",
     "stats": {
+      "cycle_time": 0.5,
       "damage": 91,
       "effective_range": "74m",
-      "rpm": 28,
-      "cycle_time": 0.5,
       "muzzle_velocity": 330,
       "reload_speed": 12.8,
+      "rpm": 28,
       "spread": 50,
       "sway": 128,
       "vertical_recoil": 5
     },
-    "cost": 106,
-    "melee_stats": {
-      "melee": 31,
-      "heavy_melee": 72
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Nagant M1895 Officer Carbine",
-    "desc": "Modern, Imperial Russian, double-action revolver variant. This model is heavily modified with a longer barrel and a stock, effectively turning it into a small rapid-fire rifle.",
     "capacity": "7/14",
+    "cost": 106,
+    "desc": "Modern, Imperial Russian, double-action revolver variant. The weight of this piece is put to good use with an integrated knuckle duster. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/43/Nagant_M1895_Brawler.png/revision/latest/scale-to-width-down/1000?cb=20180219142250",
+    "melee_stats": {
+      "heavy_melee": 72,
+      "melee": 31
+    },
+    "name": "Nagant M1895 Officer Brawler",
     "stats": {
+      "cycle_time": 0.5,
+      "damage": 91,
+      "effective_range": "74m",
+      "muzzle_velocity": 330,
+      "reload_speed": 12.8,
+      "rpm": 28,
+      "spread": 50,
+      "sway": 128,
+      "vertical_recoil": 5
+    },
+    "type": [
+      "weapon",
+      "small slot",
+      "compact"
+    ]
+  },
+  {
+    "capacity": "7/14",
+    "cost": 183,
+    "desc": "Modern, Imperial Russian, double-action revolver variant. This model is heavily modified with a longer barrel and a stock, effectively turning it into a small slot rapid-fire rifle.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/6e/Nagant_M1895_Officer_Carbine.png/revision/latest/scale-to-width-down/1000?cb=20191121221801",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Nagant M1895 Officer Carbine",
+    "stats": {
+      "cycle_time": 0.5,
       "damage": 104,
       "effective_range": "126m",
-      "rpm": 28,
-      "cycle_time": 0.5,
       "muzzle_velocity": 360,
       "reload_speed": 13.4,
+      "rpm": 28,
       "spread": 25,
       "sway": 77,
       "vertical_recoil": 4
     },
-    "cost": 183,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "compact"
     ]
   },
   {
-    "name": "Nagant M1895 Officer Carbine Deadeye",
-    "desc": "Modern, Imperial Russian, double-action revolver variant. This model is modified with a lengthened barrel and stock, as well as the addition of a telescopic sight, effectively turning it into an unconventional rapid-fire rifle.",
     "capacity": "7/14",
+    "cost": 199,
+    "desc": "Modern, Imperial Russian, double-action revolver variant. This model is modified with a lengthened barrel and stock, as well as the addition of a telescopic sight, effectively turning it into an unconventional rapid-fire rifle.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f9/Nagant_M1895_Officer_Carbine_Deadeye.png/revision/latest/scale-to-width-down/1000?cb=20201208212216",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Nagant M1895 Officer Carbine Deadeye",
     "stats": {
+      "cycle_time": 0.5,
       "damage": 104,
       "effective_range": "126m",
-      "rpm": 28,
-      "cycle_time": 0.5,
       "muzzle_velocity": 360,
       "reload_speed": 13.4,
+      "rpm": 28,
       "spread": 40,
       "sway": 77,
       "vertical_recoil": 4
     },
-    "cost": 199,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "compact"
     ]
   },
   {
-    "name": "Nagant M1895 Precision",
-    "desc": "Modern, Imperial Russian, single-action revolver. The attached stock improves accuracy and handling, making it easier to operate the hammer between shots at a faster rate.",
     "capacity": "7/21",
+    "cost": 29,
+    "desc": "Modern, Imperial Russian, single-action revolver. The attached stock improves accuracy and handling, making it easier to operate the hammer between shots at a faster rate.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/ab/Nagant_M1895_Precision.png/revision/latest/scale-to-width-down/1000?cb=20180219162306",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Nagant M1895 Precision",
     "stats": {
+      "cycle_time": 1,
       "damage": 91,
       "effective_range": "74m",
-      "rpm": 21,
-      "cycle_time": 1.0,
       "muzzle_velocity": 330,
       "reload_speed": 13.4,
+      "rpm": 21,
       "spread": 27.5,
       "sway": 87,
       "vertical_recoil": 1.5
     },
-    "cost": 29,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -1773,25 +1780,26 @@
     ]
   },
   {
-    "name": "Nagant M1895 Precision Deadeye",
-    "desc": "Modified, Russian, single-action, seven-round revolver. Telescopic sight and rifle stock make it an unconventional sniper.",
     "capacity": "7/21",
+    "cost": 42,
+    "desc": "Modified, Russian, single-action, seven-round revolver. Telescopic sight and rifle stock make it an unconventional sniper.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/e/e9/Nagant_M1895_Deadeye.png/revision/latest/scale-to-width-down/1000?cb=20190108163403",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Nagant M1895 Precision Deadeye",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 91,
       "effective_range": "74m",
-      "rpm": 21,
-      "cycle_time": 1.2,
       "muzzle_velocity": 330,
       "reload_speed": 13.4,
+      "rpm": 21,
       "spread": 35,
       "sway": 87,
       "vertical_recoil": 1.5
     },
-    "cost": 42,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
       "medium slot",
@@ -1799,290 +1807,262 @@
     ]
   },
   {
-    "name": "Nagant M1895 Silencer",
-    "desc": "Modern, Imperial Russian, single-action revolver. Unique among revolvers of this era. The cylinder gas seal suppresses the sound of its fire. Can be used for dual wielding.",
     "capacity": "7/21",
+    "cost": 93,
+    "desc": "Modern, Imperial Russian, single-action revolver. Unique among revolvers of this era. The cylinder gas seal suppresses the sound of its fire. Can be used for dual wielding.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/30/Nagant_M1895_Silencer.png/revision/latest/scale-to-width-down/1000?cb=20180219142350",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Nagant M1895 Silencer",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 91,
       "effective_range": "57m",
-      "rpm": 21,
-      "cycle_time": 1.5,
       "muzzle_velocity": 250,
       "reload_speed": 12.5,
+      "rpm": 21,
       "spread": 45,
       "sway": 128,
       "vertical_recoil": 4
     },
-    "cost": 93,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "compact"
     ]
   },
   {
-    "name": "Nitro Express Rifle",
-    "desc": "Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.",
     "capacity": "2/4",
+    "cost": 1015,
+    "desc": "Powerful, side-by-side, big game hunting rifle that can bring down the large slotst targets at mid-range. Carries limited ammunition.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/05/Nitro_Express_Rifle.png/revision/latest?cb=20180219162237",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Nitro Express Rifle",
     "stats": {
+      "cycle_time": 0.7,
       "damage": 364,
       "effective_range": "252m",
-      "rpm": 21,
-      "cycle_time": 0.7,
       "muzzle_velocity": 550,
       "reload_speed": 4.8,
+      "rpm": 21,
       "spread": 62.5,
       "sway": 77,
       "vertical_recoil": 40
     },
-    "cost": 1015,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "special"
     ]
   },
   {
-    "name": "Railroad Hammer",
-    "desc": "Large mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.",
-    "stats": null,
-    "ammo_types": [],
     "cost": 45,
+    "desc": "large slot mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fhammer.png?alt=media&token=0c866160-912c-4582-9022-b2225f81439c",
     "melee_stats": {
-      "melee": 153,
-      "heavy_melee": 261
+      "heavy_melee": 261,
+      "melee": 153
     },
+    "name": "Railroad Hammer",
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "melee"
     ]
   },
   {
-    "name": "Romero 77",
-    "desc": "Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.",
     "capacity": "1/12",
+    "cost": 66,
+    "desc": "Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/85/Romero_77.png/revision/latest/scale-to-width-down/1000?cb=20180219163146",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Romero 77",
     "stats": {
       "damage": 218,
       "effective_range": "14m",
-      "rpm": 16,
-      "cycle_time": null,
       "muzzle_velocity": 450,
       "reload_speed": 3.4,
+      "rpm": 16,
       "spread": 50,
+      "stamina_consumption": 25,
       "sway": 77,
-      "vertical_recoil": 20,
-      "stamina_consumption": 25
-    },
-    "ammo_type" : [],
-    "cost": 66,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
+      "vertical_recoil": 20
     },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "shotgun"
     ]
   },
   {
-    "name": "Romero 77 Alamo",
-    "desc": "A Romero 77 shotgun with an external magazine and reloading device. Holds up to five shells at a time, including the one in the chamber, and allows for a seamless reload, making this a suitable repeating shotgun.",
     "capacity": "4+1/5",
-    "unlock_requirement": "Romero 77 Hatchet",
-    "stats": {
-      "damage": 218,
-      "effective_range": "14m",
-      "rpm": 13,
-      "cycle_time": 2.8,
-      "muzzle_velocity": 450,
-      "reload_speed": 18.2,
-      "spread": 50,
-      "sway": 77,
-      "vertical_recoil": 20,
-      "stamina_consumption": 25
-    },
-    "ammo_type" : [],
     "cost": 98,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
-    "type": [
-      "weapon",
-      "large",
-      "shotgun"
-    ]
-  },
-  {
-    "name": "Romero 77 Alamo",
     "desc": "A Romero 77 shotgun with an external magazine and reloading device. Holds up to five shells at a time, including the one in the chamber, and allows for a seamless reload, making this a suitable repeating shotgun.",
-    "capacity": "4+1/5",
-    "unlock_requirement": "Romero 77 Hatchet",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fromero%20alamo.png?alt=media&token=cd498012-0ff3-4004-a28e-0e4f889eb63b",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Romero 77 Alamo",
     "stats": {
+      "cycle_time": 2.8,
       "damage": 218,
       "effective_range": "14m",
-      "rpm": 13,
-      "cycle_time": 4,
       "muzzle_velocity": 450,
       "reload_speed": 18.2,
+      "rpm": 13,
       "spread": 50,
+      "stamina_consumption": 25,
       "sway": 77,
-      "vertical_recoil": 20,
-      "stamina_consumption": 25
-    },
-    "ammo_type" : [],
-    "cost": 46,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
+      "vertical_recoil": 20
     },
     "type": [
       "weapon",
-      "medium slot",
+      "large slot",
       "shotgun"
-    ]
+    ],
+    "unlock_requirement": "Romero 77 Hatchet"
   },
+  null,
   {
-    "name": "Romero 77 Hatchet",
-    "desc": "Heavily modified, break-action, single barrel shotgun. Sawn-off and tooled up with additional blades for brutal close combat.",
     "capacity": "1/10",
-    "unlock_requirement": "Romero 77 Alamo Penny Shot Ammo",
+    "cost": 56,
+    "desc": "Heavily modified, break-action, single barrel shotgun. Sawn-off and tooled up with additional blades for brutal close combat.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/3d/Romero_77_Hatchet.png/revision/latest/scale-to-width-down/1000?cb=20180219163301",
+    "melee_stats": {
+      "heavy_melee": 150,
+      "melee": 90
+    },
+    "name": "Romero 77 Hatchet",
     "stats": {
+      "cycle_time": 4,
       "damage": 145,
       "effective_range": "11m",
-      "rpm": 16,
-      "cycle_time": 4,
       "muzzle_velocity": 375,
       "reload_speed": 3.7,
+      "rpm": 16,
       "spread": 100,
+      "stamina_consumption": 25,
       "sway": 108,
-      "vertical_recoil": 30,
-      "stamina_consumption": 25
-    },
-    "ammo_type" : [],
-    "cost": 56,
-    "melee_stats": {
-      "melee": 90,
-      "heavy_melee": 150
+      "vertical_recoil": 30
     },
     "type": [
       "weapon",
       "medium slot",
       "shotgun"
-    ]
+    ],
+    "unlock_requirement": "Romero 77 Alamo Penny Shot Ammo"
   },
   {
-    "name": "Romero 77 Talon",
-    "desc": "Classic break-action shotgun with a long barrel. Decent power, range, and attached blades for close combat make this a very flexible weapon to bring along.",
     "capacity": "1/12",
-    "unlock_requirement": "Romero 77 Alamo Dragon Breath",
+    "cost": 76,
+    "desc": "Classic break-action shotgun with a long barrel. Decent power, range, and attached blades for close combat make this a very flexible weapon to bring along.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/dc/Romero_77_Talon.png/revision/latest/scale-to-width-down/1000?cb=20180219163317",
+    "melee_stats": {
+      "heavy_melee": 330,
+      "melee": 27
+    },
+    "name": "Romero 77 Talon",
     "stats": {
+      "cycle_time": 4,
       "damage": 218,
       "effective_range": "14m",
-      "rpm": 16,
-      "cycle_time": 4,
       "muzzle_velocity": 425,
       "reload_speed": 3.4,
+      "rpm": 16,
       "spread": 50,
       "sway": 77,
       "vertical_recoil": 25
     },
-    "ammo_type" : [],
-    "cost": 76,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 330
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "shotgun"
-    ]
+    ],
+    "unlock_requirement": "Romero 77 Alamo Dragon Breath"
   },
   {
-    "name": "Scottfield Model 3",
-    "desc": "A classic, single-action break open revolver, the Scottfield has seen both sides of the law. The break action allows for quicker ejecting of spent rounds, meaning a faster overall reload when empty. Can be used for dual wielding.",
     "capacity": "6/12",
+    "cost": 77,
+    "desc": "A classic, single-action break open revolver, the Scottfield has seen both sides of the law. The break action allows for quicker ejecting of spent rounds, meaning a faster overall reload when empty. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fscottfield.png?alt=media&token=b36fd259-e009-4857-a76e-4b3037d000e0",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Scottfield Model 3",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 107,
       "effective_range": "85m",
-      "rpm": 24,
-      "cycle_time": 1.5,
       "muzzle_velocity": 280,
       "reload_speed": 9,
+      "rpm": 24,
       "spread": 28.1,
       "sway": 128,
       "vertical_recoil": 20
     },
-    "ammo_type" : [],
-    "cost": 77,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "medium"
     ]
   },
   {
-    "name": "Scottfield Model 3 Brawler",
-    "desc": "This snub barrel Scottfield Model 3 not only has the quick reload Hunters have come to know, but an added pair of dusters for close combat at the cost of accuracy. Can be used for dual wielding.",
     "capacity": "6/12",
+    "cost": 87,
+    "desc": "This snub barrel Scottfield Model 3 not only has the quick reload Hunters have come to know, but an added pair of dusters for close combat at the cost of accuracy. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fscottfield%20brawler.png?alt=media&token=b202c712-bd7b-40ab-a145-4273b69d84db",
+    "melee_stats": {
+      "heavy_melee": 72,
+      "melee": 31
+    },
+    "name": "Scottfield Model 3 Brawler",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 107,
       "effective_range": "85m",
-      "rpm": 24,
-      "cycle_time": 1.5,
       "muzzle_velocity": 280,
       "reload_speed": 9,
+      "rpm": 24,
       "spread": 45,
       "sway": 128,
       "vertical_recoil": 31
     },
-    "ammo_type" : [],
-    "cost": 87,
-    "melee_stats": {
-      "melee": 31,
-      "heavy_melee": 72
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "medium"
     ]
   },
   {
-    "name": "Scottfield Model 3 Precision",
-    "desc": "The buttstock on this Scottfield Model 3 allows for a more stable shot with steady aim and less kickback.",
     "capacity": "6/12",
+    "cost": 85,
+    "desc": "The buttstock on this Scottfield Model 3 allows for a more stable shot with steady aim and less kickback.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fscottfield%20precision.png?alt=media&token=3c1584bf-7bba-48c0-8b77-35d6a047761b",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Scottfield Model 3 Precision",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 107,
       "effective_range": "85m",
-      "rpm": 24,
-      "cycle_time": 1.2,
       "muzzle_velocity": 280,
       "reload_speed": 9,
+      "rpm": 24,
       "spread": 28.1,
       "sway": 87,
       "vertical_recoil": 27
-    },
-    "ammo_type" : [],
-    "cost": 85,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
     },
     "type": [
       "weapon",
@@ -2091,214 +2071,214 @@
     ]
   },
   {
-    "name": "Scottfield Model 3 Spitfire",
-    "desc": "Its shortened barrel makes the Scottfield Model 3 Spitfire a perfect choice for situations that require discretion, and its modified finger rest provides higher rate of fire in exchange for accuracy. Can be used for dual wielding.",
     "capacity": "6/12",
+    "cost": 108,
+    "desc": "Its shortened barrel makes the Scottfield Model 3 Spitfire a perfect choice for situations that require discretion, and its modified finger rest provides higher rate of fire in exchange for accuracy. Can be used for dual wielding.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fscottfield%20spitfire.png?alt=media&token=c85affb0-4e80-4379-9908-bbcdc3ae4bf5",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Scottfield Model 3 Spitfire",
     "stats": {
+      "cycle_time": 0.8,
       "damage": 107,
       "effective_range": "85m",
-      "rpm": 30,
-      "cycle_time": 0.8,
       "muzzle_velocity": 280,
       "reload_speed": 9,
+      "rpm": 30,
       "spread": 45,
       "sway": 128,
       "vertical_recoil": 27
     },
-    "ammo_type" : [],
-    "cost": 108,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "medium"
     ]
   },
   {
-    "name": "Scottfield Model 3 Swift",
-    "desc": "The Scottfield Model 3 Swift allows for an even quicker reload with the help of a device that lets the wielder load six cartridges together into the empty cylinder. However, any unspent ammunition is lost in the process of reloading.",
     "capacity": "6/12",
+    "cost": 95,
+    "desc": "The Scottfield Model 3 Swift allows for an even quicker reload with the help of a device that lets the wielder load six cartridges together into the empty cylinder. However, any unspent ammunition is lost in the process of reloading.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fscottfield.png?alt=media&token=b36fd259-e009-4857-a76e-4b3037d000e0",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Scottfield Model 3 Swift",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 107,
       "effective_range": "85m",
-      "rpm": 30,
-      "cycle_time": 1.5,
       "muzzle_velocity": 280,
       "reload_speed": 4.3,
+      "rpm": 30,
       "spread": 28.1,
       "sway": 128,
       "vertical_recoil": 31
     },
-    "ammo_type" : [],
-    "cost": 95,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
-    },
     "type": [
       "weapon",
-      "small",
+      "small slot",
       "medium"
     ]
   },
   {
-    "name": "Sparks LRR",
-    "desc": "Renowned, large-bore, single-shot rifle with good sights. Can put down a bison across a prairie.",
     "capacity": "1/16",
+    "cost": 130,
+    "desc": "Renowned, large slot-bore, single-shot rifle with good sights. Can put down a bison across a prairie.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/b/b0/Sparks_LRR.png/revision/latest/scale-to-width-down/1000?cb=20180131224214",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Sparks LRR",
     "stats": {
+      "cycle_time": 4.9,
       "damage": 149,
       "effective_range": "347m",
-      "rpm": 13,
-      "cycle_time": 4.9,
       "muzzle_velocity": 533,
       "reload_speed": 4,
+      "rpm": 13,
       "spread": 35,
       "sway": 77,
       "vertical_recoil": 10
     },
-    "ammo_type" : [],
-    "cost": 130,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Sparks LRR Silencer",
-    "desc": "Renowned, large-bore single shot rifle modified with a silencer.",
     "capacity": "1/16",
+    "cost": 150,
+    "desc": "Renowned, large slot-bore single shot rifle modified with a silencer.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/00/Sparks_LRR_Silencer.png/revision/latest/scale-to-width-down/1000?cb=20190107174057",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Sparks LRR Silencer",
     "stats": {
+      "cycle_time": 4.9,
       "damage": 149,
       "effective_range": "169m",
-      "rpm": 13,
-      "cycle_time": 4.9,
       "muzzle_velocity": 300,
       "reload_speed": 4,
+      "rpm": 13,
       "spread": 42.5,
       "sway": 87,
       "vertical_recoil": 10
     },
-    "ammo_type" : [],
-    "cost": 150,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Sparks LRR Sniper",
-    "desc": "Renowned, large-bore, single-shot rifle mounted with a long scope for even greater effectiveness over distance.",
     "capacity": "1/8",
+    "cost": 199,
+    "desc": "Renowned, large slot-bore, single-shot rifle mounted with a long scope for even greater effectiveness over distance.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/31/Sparks_LRR_Sniper.png/revision/latest/scale-to-width-down/1000?cb=20190107174200",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Sparks LRR Sniper",
     "stats": {
+      "cycle_time": 4.9,
       "damage": 149,
       "effective_range": "347m",
-      "rpm": 13,
-      "cycle_time": 4.9,
       "muzzle_velocity": 533,
       "reload_speed": 4,
+      "rpm": 13,
       "spread": 55,
       "sway": 69,
       "vertical_recoil": 14
     },
-    "ammo_type" : [],
-    "cost": 199,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Sparks Pistol",
-    "desc": "A Sparks LRR cut down to be a small handgun, the Sparks Pistol delivers equally powerful shots over short to medium ranges. Though small and easy to carry, it loses its power drastically over longer distances, and has a stronger recoil because of the missing stock.",
     "capacity": "1/14",
+    "cost": 155,
+    "desc": "A Sparks LRR cut down to be a small slot handgun, the Sparks Pistol delivers equally powerful shots over short to medium ranges. Though small slot and easy to carry, it loses its power drastically over longer distances, and has a stronger recoil because of the missing stock.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fsparks%20pistol.png?alt=media&token=e6f98223-a161-4690-9880-4048083d62f3",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Sparks Pistol",
     "stats": {
+      "cycle_time": 5.9,
       "damage": 149,
       "effective_range": "150m",
-      "rpm": 11,
-      "cycle_time": 5.9,
       "muzzle_velocity": 453,
       "reload_speed": 5,
+      "rpm": 11,
       "spread": 42.5,
       "sway": 128,
       "vertical_recoil": 25
     },
-    "ammo_type" : [],
-    "cost": 155,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "long"
     ]
   },
   {
-    "name": "Specter 1882",
-    "desc": "Revolutionary pump-action shotgun with long barrel, able to fire shells in rapid succession. Reloading the internal magazine takes time, due to its clunky, unrefined loading sequence.",
     "capacity": "4+1/10",
+    "cost": 188,
+    "desc": "Revolutionary pump-action shotgun with long barrel, able to fire shells in rapid succession. Reloading the internal magazine takes time, due to its clunky, unrefined loading sequence.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/5d/Specter_1882.png/revision/latest/scale-to-width-down/1000?cb=20180219163518",
+    "melee_stats": {
+      "heavy_melee": 54,
+      "melee": 27
+    },
+    "name": "Specter 1882",
     "stats": {
+      "cycle_time": 1.3,
       "damage": 210,
       "effective_range": "14m",
-      "rpm": 20,
-      "cycle_time": 1.3,
       "muzzle_velocity": 425,
       "reload_speed": 14.8,
+      "rpm": 20,
       "spread": 60,
       "sway": 77,
       "vertical_recoil": 20
     },
-    "ammo_type" : [],
-    "cost": 188,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "shotgun"
     ]
   },
   {
-    "name": "Specter 1882 Bayonet",
-    "desc": "Rapid firing, pump-action shotgun with medium barrel. Tooled up with sharp knife bayonet for close combat.",
     "capacity": "4+1/10",
+    "cost": 164,
+    "desc": "Rapid firing, pump-action shotgun with medium barrel. Tooled up with sharp knife bayonet for close combat.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/d9/Specter_1882_Bayonet.png/revision/latest?cb=20190107194911",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Specter 1882 Bayonet",
     "stats": {
+      "cycle_time": 1.3,
       "damage": 190,
       "effective_range": "14m",
-      "rpm": 20,
-      "cycle_time": 1.3,
       "muzzle_velocity": 400,
       "reload_speed": 14.8,
+      "rpm": 20,
       "spread": 80,
       "sway": 77,
       "vertical_recoil": 20
-    },
-    "ammo_type" : [],
-    "cost": 164,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
     },
     "type": [
       "weapon",
@@ -2307,62 +2287,143 @@
     ]
   },
   {
-    "name": "Springfield 1866",
-    "desc": "A breech-loading rifle with a .50-70 caliber centerfire cartridge, the Springfield 1866 is best known for its quick rate of fire.",
     "capacity": "1/24",
-    "stats": {
-      "damage": 132,
-      "effective_range": "212m",
-      "rpm": 19,
-      "cycle_time": 3.3,
-      "muzzle_velocity": 490,
-      "reload_speed": 3,
-      "spread": 20,
-      "sway": 77,
-      "vertical_recoil": 25
-    },
-    "ammo_type" : [],
     "cost": 38,
+    "desc": "A breech-loading rifle with a .50-70 caliber centerfire cartridge, the Springfield 1866 is best known for its quick rate of fire.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/1f/Springfield_1866.png/revision/latest/scale-to-width-down/1000?cb=20191121204903",
     "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 54
+      "heavy_melee": 54,
+      "melee": 27
     },
-    "type": [
-      "weapon",
-      "large",
-      "medium"
-    ]
-  },
-  {
-    "name": "Springfield 1866 Bayonet",
-    "desc": "The original breech-loading Springfield 1866 with bayonet attachment, a powerful short-range addition.",
-    "capacity": "1/24",
+    "name": "Springfield 1866",
     "stats": {
+      "cycle_time": 3.3,
       "damage": 132,
       "effective_range": "212m",
-      "rpm": 19,
-      "cycle_time": 3.3,
       "muzzle_velocity": 490,
       "reload_speed": 3,
+      "rpm": 19,
       "spread": 20,
       "sway": 77,
       "vertical_recoil": 25
     },
-    "ammo_type" : [],
-    "cost": 48,
-    "melee_stats": {
-      "melee": 27,
-      "heavy_melee": 168
-    },
     "type": [
       "weapon",
-      "large",
+      "large slot",
       "medium"
     ]
   },
   {
-    "name": "Springfield 1866 Compact",
+    "capacity": "1/24",
+    "cost": 48,
+    "desc": "The original breech-loading Springfield 1866 with bayonet attachment, a powerful short-range addition.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fspringfield%20bayonet.png?alt=media&token=b5ecbb24-fcfe-4a47-a19c-1274b8ed33fa",
+    "melee_stats": {
+      "heavy_melee": 168,
+      "melee": 27
+    },
+    "name": "Springfield 1866 Bayonet",
+    "stats": {
+      "cycle_time": 3.3,
+      "damage": 132,
+      "effective_range": "212m",
+      "muzzle_velocity": 490,
+      "reload_speed": 3,
+      "rpm": 19,
+      "spread": 20,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ]
+  },
+  {
+    "capacity": "1/24",
+    "cost": 33,
     "desc": "A shorter version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. Its sawn-off barrel and stock make the weapon hard to control, but a great backup.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a8/Springfield_1866_Compact.png/revision/latest/scale-to-width-down/1000?cb=20191129234612",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Springfield 1866 Compact",
+    "stats": {
+      "cycle_time": 3.3,
+      "damage": 130,
+      "effective_range": "204m",
+      "muzzle_velocity": 440,
+      "reload_speed": 3,
+      "rpm": 19,
+      "spread": 40,
+      "sway": 133,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ]
+  },
+  {
+    "name": "Specter 1882 Compact",
+    "desc": "Sawn-off, rapid firing, pump-action shotgun. While sacrificing accuracy and ammo capacity, the added foregrip keeps recoil under control in close quarter combat.",
+    "capacity": "3+1/8",
+    "stats": {
+      "damage": 113,
+      "effective_range": "10m",
+      "rpm": 19,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 350,
+      "reload_speed": 11.1,
+      "spread": 100,
+      "sway": 87,
+      "vertical_recoil": 20
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ],
+    "cost": 164,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    }
+  },
+  {
+    "name": "Springfield 1866 Compact Deadeye",
+    "desc": "Because of its compact size and mid-range scope, this rifle is considered the 'pocket sniper' of the Springfield line.",
+    "capacity": "1/24",
+    "stats": {
+      "damage": 130,
+      "effective_range": "204m",
+      "rpm": 19,
+      "cycle_time": 3.3,
+      "muzzle_velocity": 440,
+      "reload_speed": 3,
+      "spread": 55,
+      "sway": 93,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ],
+    "cost": 46,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    }
+  },
+  {
+    "name": "Springfield 1866 Compact Striker",
+    "desc": "A shorter, close-combat version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. The knife attached to its barrel can be used for both heavy and light melee attacks.",
     "capacity": "1/24",
     "stats": {
       "damage": 130,
@@ -2373,18 +2434,836 @@
       "reload_speed": 3,
       "spread": 40,
       "sway": 133,
-      "vertical_recoil": 25
-    },
-    "ammo_type" : [],
-    "cost": 33,
-    "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 31
+      "vertical_recoil": 21
     },
     "type": [
       "weapon",
       "medium slot",
       "medium"
-    ]
+    ],
+    "cost": 43,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 52,
+      "melee": 105
+    }
+  },
+  {
+    "name": "Springfield 1866 Marksman",
+    "desc": "A shorter, scoped version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges, quick fire rate, and stock. The scope is ideal to aid long-range shots.",
+    "capacity": "1/24",
+    "stats": {
+      "damage": 132,
+      "effective_range": "212m",
+      "rpm": 19,
+      "cycle_time": 3.3,
+      "muzzle_velocity": 490,
+      "reload_speed": 3,
+      "spread": 37.5,
+      "sway": 69,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 73,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Springfield M1892 Krag",
+    "desc": "The Springfield M1892 Krag is a bolt-action rifle that holds five rounds in its internal magazine, and one in its chamber. Its magazine lid allows the wielder to top it up from the side, without opening the bolt, and ejecting the round.",
+    "capacity": "5+1/12",
+    "stats": {
+      "damage": 126,
+      "effective_range": "291m",
+      "rpm": 23,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 610,
+      "reload_speed": 11.1,
+      "spread": 30,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "long"
+    ],
+    "cost": 376,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Springfield M1892 Krag Bayonet",
+    "desc": "The easy-reloading Springfield M1892 Krag bolt-action rifle, with bayonet attached for close quarters combat.",
+    "capacity": "5+1/12",
+    "stats": {
+      "damage": 126,
+      "effective_range": "291m",
+      "rpm": 23,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 610,
+      "reload_speed": 11.1,
+      "spread": 30,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "long"
+    ],
+    "cost": 386,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 168
+    }
+  },
+  {
+    "name": "Springfield M1892 Krag Sniper",
+    "desc": "The original repeating, bolt-action Springfield M1892 Krag with a sniper scope attached to it, making the rifle even more efficient over longer ranges.",
+    "capacity": "5+1/12",
+    "stats": {
+      "damage": 126,
+      "effective_range": "291m",
+      "rpm": 23,
+      "cycle_time": 1.4,
+      "muzzle_velocity": 610,
+      "reload_speed": 11.1,
+      "spread": 60,
+      "sway": 69,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "long"
+    ],
+    "cost": 579,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Vetterli 71 Karabiner",
+    "desc": "Swiss military, bolt-action carbine with internal magazine. Powerful at medium distances. Reloading is inspired by the Winfield repeater rifle, making it easy to top up ammunition.",
+    "capacity": "6+1/20",
+    "stats": {
+      "damage": 130,
+      "effective_range": "204m",
+      "rpm": 24,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 410,
+      "reload_speed": 12.1,
+      "spread": 22.5,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 105,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Vetterli 71 Karabiner Bayonet",
+    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached bayonet makes this a great choice for close combat.",
+    "capacity": "6+1/20",
+    "stats": {
+      "damage": 130,
+      "effective_range": "204m",
+      "rpm": 24,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 410,
+      "reload_speed": 12.1,
+      "spread": 22.5,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 115,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 168
+    }
+  },
+  {
+    "name": "Vetterli 71 Karabiner Cyclone",
+    "desc": "Swiss military, semi-automatic carbine with a reduced internal magazine to compensate for its self-loading mechanism. Powerful at medium distances.",
+    "capacity": "3+1/20",
+    "stats": {
+      "damage": 124,
+      "effective_range": "185m",
+      "rpm": 27,
+      "cycle_time": 0.6,
+      "muzzle_velocity": 410,
+      "reload_speed": 8.4,
+      "spread": 47.5,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 535,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Vetterli 71 Karabiner Deadeye",
+    "desc": "Swiss military, bolt-action carbine with internal magazine. A short scope makes this weapon very effective at longer ranges.",
+    "capacity": "6+1/20",
+    "stats": {
+      "damage": 130,
+      "effective_range": "204m",
+      "rpm": 24,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 410,
+      "reload_speed": 12.1,
+      "spread": 32.5,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 130,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Vetterli 71 Karabiner Marksman",
+    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached medium scope makes this excel at a distance.",
+    "capacity": "6+1/20",
+    "stats": {
+      "damage": 130,
+      "effective_range": "204m",
+      "rpm": 24,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 410,
+      "reload_speed": 12.1,
+      "spread": 42.5,
+      "sway": 69,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 190,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Vetterli 71 Karabiner Silencer",
+    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached silencer makes this ideal for stealth.",
+    "capacity": "6+1/20",
+    "stats": {
+      "damage": 130,
+      "effective_range": "162m",
+      "rpm": 24,
+      "cycle_time": 1.5,
+      "muzzle_velocity": 280,
+      "reload_speed": 12.1,
+      "spread": 22.5,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 150,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield 1887 Terminus",
+    "desc": "Seminal lever-action repeating shotgun. Boasting a balance between power and rate-of-fire, this became an icon of the era. Chamber 5+2 shells.",
+    "capacity": "6+1/8",
+    "stats": {
+      "damage": 190,
+      "effective_range": "14m",
+      "rpm": 21,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 425,
+      "reload_speed": 12.2,
+      "spread": 85,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "shotgun"
+    ],
+    "cost": 238,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield 1887 Terminus Handcannon",
+    "desc": "Seminal sawn-off lever-action repeating shotgun. Shortened to reduce size and increase lethality at close range, this packs high power for its size. Chambers 4+2 shells.",
+    "capacity": "5+1/6",
+    "stats": {
+      "damage": 105,
+      "effective_range": "10m",
+      "rpm": 19,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 350,
+      "reload_speed": 10.6,
+      "spread": 115,
+      "sway": 133,
+      "vertical_recoil": 27
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "shotgun"
+    ],
+    "cost": 218,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    }
+  },
+  {
+    "name": "Winfield 1893 Slate",
+    "desc": "An exposed hammer shotgun that replaces lever-action with pump-action, this Winfield Model 93 holds several 12-gauge rounds to cause devastating damage to opponents.",
+    "capacity": "5+1/6",
+    "stats": {
+      "damage": 203,
+      "effective_range": "13m",
+      "rpm": 23,
+      "cycle_time": 1,
+      "muzzle_velocity": 425,
+      "reload_speed": 9.6,
+      "spread": 70,
+      "sway": 77,
+      "vertical_recoil": 27
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "shotgun"
+    ],
+    "cost": 333,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield 1893 Slate Riposte",
+    "desc": "Exposed hammer, pump-action Winfield Model 93 shotgun with bayonet affixed for mastery of close quarter combat.",
+    "capacity": "5+1/6",
+    "stats": {
+      "damage": 203,
+      "effective_range": "13m",
+      "rpm": 23,
+      "cycle_time": 1,
+      "muzzle_velocity": 425,
+      "reload_speed": 9.6,
+      "spread": 70,
+      "sway": 77,
+      "vertical_recoil": 26
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "shotgun"
+    ],
+    "cost": 343,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 82,
+      "melee": 168
+    }
+  },
+  {
+    "name": "Winfield M1873",
+    "desc": "Iconic repeating rifle with very large internal magazine, capable of firing compact bullets at rapid speed. Reload is very simple, making an ammo top-up a quick job.",
+    "capacity": "15+1/20",
+    "stats": {
+      "damage": 110,
+      "effective_range": "151m",
+      "rpm": 31,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 16.4,
+      "spread": 17.5,
+      "sway": 77,
+      "vertical_recoil": 4
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 75,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1873 Aperture",
+    "desc": "Modified iconic repeating rifle with very large internal magazine. The aperture sight makes it easier to aim more precisely at medium ranges, and can be toggled.",
+    "capacity": "15+1/20",
+    "stats": {
+      "damage": 110,
+      "effective_range": "151m",
+      "rpm": 31,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 16.4,
+      "spread": 17.5,
+      "sway": 69,
+      "vertical_recoil": 4
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 80,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1873 Musket Bayonet",
+    "desc": "An iconic repeating rifle with an enlarged internal magazine that is equipped to fire compact bullets at rapid speed. In combination with its increased length, the bayonet makes this a formidable weapon against any foe that gets too close.",
+    "capacity": "17+1/20",
+    "stats": {
+      "damage": 110,
+      "effective_range": "151m",
+      "rpm": 35,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 17.9,
+      "spread": 17.5,
+      "sway": 77,
+      "vertical_recoil": 3
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 85,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1873 Swift",
+    "desc": "Modified iconic repeating rifle with very large internal magazine. Reloading is quickened with a speed loader mechanism.",
+    "capacity": "15+1/20",
+    "stats": {
+      "damage": 110,
+      "effective_range": "151m",
+      "rpm": 41,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 8.4,
+      "spread": 17.5,
+      "sway": 77,
+      "vertical_recoil": 4
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 128,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1873 Talon",
+    "desc": "Modified iconic repeating rifle with very large internal magazine. The stock is mounted with blades for melee combat.",
+    "capacity": "15+1/20",
+    "stats": {
+      "damage": 110,
+      "effective_range": "151m",
+      "rpm": 31,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 16.4,
+      "spread": 17.5,
+      "sway": 77,
+      "vertical_recoil": 4
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 128,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 330
+    }
+  },
+  {
+    "name": "Winfield M1873C",
+    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed.",
+    "capacity": "7+1/28",
+    "stats": {
+      "damage": 110,
+      "effective_range": "151m",
+      "rpm": 29,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 400,
+      "reload_speed": 10.1,
+      "spread": 17.5,
+      "sway": 77,
+      "vertical_recoil": 5
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 41,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1873C Marksman",
+    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed. Mounted with a medium scope for enhanced precision.",
+    "capacity": "7+1/28",
+    "stats": {
+      "damage": 110,
+      "effective_range": "151m",
+      "rpm": 29,
+      "cycle_time": 1.3,
+      "muzzle_velocity": 400,
+      "reload_speed": 10.1,
+      "spread": 25,
+      "sway": 69,
+      "vertical_recoil": 5
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 56,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1873C Silencer",
+    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed. Comes with a silencer.",
+    "capacity": "7+1/28",
+    "stats": {
+      "damage": 110,
+      "effective_range": "136m",
+      "rpm": 29,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 250,
+      "reload_speed": 10.1,
+      "spread": 25,
+      "sway": 87,
+      "vertical_recoil": 5
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ],
+    "cost": 55,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1873C Vandal",
+    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed.",
+    "capacity": "6+1/28",
+    "stats": {
+      "damage": 107,
+      "effective_range": "141m",
+      "rpm": 28,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 370,
+      "reload_speed": 9.4,
+      "spread": 30,
+      "sway": 133,
+      "vertical_recoil": 10
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "compact"
+    ],
+    "cost": 35,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    }
+  },
+  {
+    "name": "Winfield M1873C Vandal Deadeye",
+    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed. A Deadeye scope improves performance at midrange.",
+    "capacity": "6+1/28",
+    "stats": {
+      "damage": 107,
+      "effective_range": "141m",
+      "rpm": 28,
+      "cycle_time": 1.2,
+      "muzzle_velocity": 370,
+      "reload_speed": 9.4,
+      "spread": 45,
+      "sway": 93,
+      "vertical_recoil": 10
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "compact"
+    ],
+    "cost": 45,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    }
+  },
+  {
+    "name": "Winfield M1873C Vandal Striker",
+    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed. Attached blade makes it deadly in melee.",
+    "capacity": "6+1/28",
+    "stats": {
+      "damage": 107,
+      "effective_range": "141m",
+      "rpm": 28,
+      "cycle_time": 1.3,
+      "muzzle_velocity": 370,
+      "reload_speed": 9.4,
+      "spread": 30,
+      "sway": 133,
+      "vertical_recoil": 10
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "compact"
+    ],
+    "cost": 45,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 105
+    }
+  },
+  {
+    "name": "Winfield M1876 Centennial",
+    "desc": "Powerful repeating rifle chambered for larger ammunition than previous models. The magazine holds 9 rounds.",
+    "capacity": "9+1/12",
+    "stats": {
+      "damage": 123,
+      "effective_range": "180m",
+      "rpm": 23,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 600,
+      "reload_speed": 15.5,
+      "spread": 25,
+      "sway": 77,
+      "vertical_recoil": 11
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 157,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1876 Centennial Sniper",
+    "desc": "Powerful repeating rifle with good stopping power and an attached scope, highly effective at long range. The magazine holds nine rounds.",
+    "capacity": "9+1/12",
+    "stats": {
+      "damage": 123,
+      "effective_range": "180m",
+      "rpm": 23,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 600,
+      "reload_speed": 15.4,
+      "spread": 37.5,
+      "sway": 69,
+      "vertical_recoil": 11
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 229,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    }
+  },
+  {
+    "name": "Winfield M1876 Centennial Shorty",
+    "desc": "This particular version of the Winfield M1876 Centennial is shortened for more dynamic shooting ability without sacrificing magazine capacity or firing power.",
+    "capacity": "5+1/12",
+    "stats": {
+      "damage": 120,
+      "effective_range": "170m",
+      "rpm": 24,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 540,
+      "reload_speed": 10.9,
+      "spread": 42.5,
+      "sway": 133,
+      "vertical_recoil": 15
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ],
+    "cost": 103,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    }
+  },
+  {
+    "name": "Winfield M1876 Centennial Shorty Silencer",
+    "desc": "This particular version of the Winfield M1876 Centennial features a suppressor to mask the volume of the powerful repeating rifle.",
+    "capacity": "5+1/12",
+    "stats": {
+      "damage": 120,
+      "effective_range": "145m",
+      "rpm": 24,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 390,
+      "reload_speed": 10.9,
+      "spread": 42.5,
+      "sway": 133,
+      "vertical_recoil": 15
+    },
+    "type": [
+      "weapon",
+      "medium slot",
+      "medium"
+    ],
+    "cost": 137,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    }
+  },
+  {
+    "name": "Winfield M1876 Centennial Trauma",
+    "desc": "This particular version of the Winfield M1876 Centennial features a reinforced stock that delivers a hit as heavy and deadly as a sledgehammer, which makes the rifle viable in melee combat.",
+    "capacity": "9+1/12",
+    "stats": {
+      "damage": 123,
+      "effective_range": "180m",
+      "rpm": 23,
+      "cycle_time": 1.6,
+      "muzzle_velocity": 600,
+      "reload_speed": 15.5,
+      "spread": 25,
+      "sway": 77,
+      "vertical_recoil": 12.5
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ],
+    "cost": 167,
+    "image_url": "null",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 216
+    }
   }
+
+
+
+
+
+
+
+
 ]

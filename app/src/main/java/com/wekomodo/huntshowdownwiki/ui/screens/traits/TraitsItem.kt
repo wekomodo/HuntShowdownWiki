@@ -21,14 +21,12 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.wekomodo.huntshowdownwiki.R
 
 @Composable
 fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
 
-    Column(modifier = Modifier.fillMaxWidth()) {
         Box(
             modifier = Modifier
                 .fillMaxWidth(),
@@ -65,7 +63,7 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
                             horizontalArrangement = Arrangement.End,
                             verticalAlignment = Alignment.CenterVertically,
                         ) {
-                            Text(text = cost.toString(), color = Color(0xFFfff5dc))
+                            Text(text = cost.toString(), color = Color(0xFFfff5dc), style = MaterialTheme.typography.bodyLarge)
                             Icon(
                                 painterResource(id = R.drawable.ic_upgrade_points),
                                 contentDescription = "upgrade_points",
@@ -73,7 +71,7 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
                                 modifier = Modifier.size(32.dp)
                             )
                         }
-                        Text(text = "Rank : $rank", color = Color.White)
+                        Text(text = "Rank : $rank", color = Color.White, style = MaterialTheme.typography.bodyLarge)
 
                     }
 
@@ -87,7 +85,6 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
 
         }
     }
-}
 
 
 @Preview
