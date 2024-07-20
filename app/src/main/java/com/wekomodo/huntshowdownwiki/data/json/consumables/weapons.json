@@ -2368,16 +2368,22 @@
     ]
   },
   {
-    "name": "Specter 1882 Compact",
-    "desc": "Sawn-off, rapid firing, pump-action shotgun. While sacrificing accuracy and ammo capacity, the added foregrip keeps recoil under control in close quarter combat.",
     "capacity": "3+1/8",
+    "cost": 164,
+    "desc": "Sawn-off, rapid firing, pump-action shotgun. While sacrificing accuracy and ammo capacity, the added foregrip keeps recoil under control in close quarter combat.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/5/54/Specter_1882_Compact.png/revision/latest?cb=20190109032022",
+    "melee_stats": {
+      "heavy_melee": 31,
+      "melee": 13
+    },
+    "name": "Specter 1882 Compact",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 113,
       "effective_range": "10m",
-      "rpm": 19,
-      "cycle_time": 1.5,
       "muzzle_velocity": 350,
       "reload_speed": 11.1,
+      "rpm": 19,
       "spread": 100,
       "sway": 87,
       "vertical_recoil": 20
@@ -2386,25 +2392,25 @@
       "weapon",
       "medium slot",
       "medium"
-    ],
-    "cost": 164,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "1/24",
+    "cost": 46,
+    "desc": "Because of its compact size and mid-range scope, this rifle is considered the 'pocket sniper' of the Springfield line.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/19/Springfield_1866_Compact_Deadeye.png/revision/latest/scale-to-width-down/1000?cb=20191129234606",
     "melee_stats": {
       "heavy_melee": 31,
       "melee": 13
-    }
-  },
-  {
+    },
     "name": "Springfield 1866 Compact Deadeye",
-    "desc": "Because of its compact size and mid-range scope, this rifle is considered the 'pocket sniper' of the Springfield line.",
-    "capacity": "1/24",
     "stats": {
+      "cycle_time": 3.3,
       "damage": 130,
       "effective_range": "204m",
-      "rpm": 19,
-      "cycle_time": 3.3,
       "muzzle_velocity": 440,
       "reload_speed": 3,
+      "rpm": 19,
       "spread": 55,
       "sway": 93,
       "vertical_recoil": 25
@@ -2413,25 +2419,25 @@
       "weapon",
       "medium slot",
       "medium"
-    ],
-    "cost": 46,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 31,
-      "melee": 13
-    }
+    ]
   },
   {
-    "name": "Springfield 1866 Compact Striker",
-    "desc": "A shorter, close-combat version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. The knife attached to its barrel can be used for both heavy and light melee attacks.",
     "capacity": "1/24",
+    "cost": 43,
+    "desc": "A shorter, close-combat version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. The knife attached to its barrel can be used for both heavy and light melee attacks.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a4/Springfield_1866_Compact_Striker.png/revision/latest/scale-to-width-down/1000?cb=20191129234607",
+    "melee_stats": {
+      "heavy_melee": 52,
+      "melee": 105
+    },
+    "name": "Springfield 1866 Compact Striker",
     "stats": {
+      "cycle_time": 3.3,
       "damage": 130,
       "effective_range": "204m",
-      "rpm": 19,
-      "cycle_time": 3.3,
       "muzzle_velocity": 440,
       "reload_speed": 3,
+      "rpm": 19,
       "spread": 40,
       "sway": 133,
       "vertical_recoil": 21
@@ -2440,25 +2446,25 @@
       "weapon",
       "medium slot",
       "medium"
-    ],
-    "cost": 43,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 52,
-      "melee": 105
-    }
+    ]
   },
   {
-    "name": "Springfield 1866 Marksman",
-    "desc": "A shorter, scoped version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges, quick fire rate, and stock. The scope is ideal to aid long-range shots.",
     "capacity": "1/24",
+    "cost": 73,
+    "desc": "A shorter, scoped version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges, quick fire rate, and stock. The scope is ideal to aid long-range shots.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/64/Springfield_1866_Marksman.png/revision/latest/scale-to-width-down/1000?cb=20191129234608",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    },
+    "name": "Springfield 1866 Marksman",
     "stats": {
+      "cycle_time": 3.3,
       "damage": 132,
       "effective_range": "212m",
-      "rpm": 19,
-      "cycle_time": 3.3,
       "muzzle_velocity": 490,
       "reload_speed": 3,
+      "rpm": 19,
       "spread": 37.5,
       "sway": 69,
       "vertical_recoil": 25
@@ -2467,52 +2473,25 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 73,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 54
-    }
+    ]
   },
   {
-    "name": "Springfield M1892 Krag",
-    "desc": "The Springfield M1892 Krag is a bolt-action rifle that holds five rounds in its internal magazine, and one in its chamber. Its magazine lid allows the wielder to top it up from the side, without opening the bolt, and ejecting the round.",
     "capacity": "5+1/12",
-    "stats": {
-      "damage": 126,
-      "effective_range": "291m",
-      "rpm": 23,
-      "cycle_time": 1.4,
-      "muzzle_velocity": 610,
-      "reload_speed": 11.1,
-      "spread": 30,
-      "sway": 77,
-      "vertical_recoil": 25
-    },
-    "type": [
-      "weapon",
-      "large slot",
-      "long"
-    ],
     "cost": 376,
-    "image_url": "null",
+    "desc": "The Springfield M1892 Krag is a bolt-action rifle that holds five rounds in its internal magazine, and one in its chamber. Its magazine lid allows the wielder to top it up from the side, without opening the bolt, and ejecting the round.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fkrag.png?alt=media&token=1532b96b-120d-4895-99e9-3bf8fd529806",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
-    "name": "Springfield M1892 Krag Bayonet",
-    "desc": "The easy-reloading Springfield M1892 Krag bolt-action rifle, with bayonet attached for close quarters combat.",
-    "capacity": "5+1/12",
+    },
+    "name": "Springfield M1892 Krag",
     "stats": {
+      "cycle_time": 1.4,
       "damage": 126,
       "effective_range": "291m",
-      "rpm": 23,
-      "cycle_time": 1.4,
       "muzzle_velocity": 610,
       "reload_speed": 11.1,
+      "rpm": 23,
       "spread": 30,
       "sway": 77,
       "vertical_recoil": 25
@@ -2521,25 +2500,52 @@
       "weapon",
       "large slot",
       "long"
-    ],
+    ]
+  },
+  {
+    "capacity": "5+1/12",
     "cost": 386,
-    "image_url": "null",
+    "desc": "The easy-reloading Springfield M1892 Krag bolt-action rifle, with bayonet attached for close quarters combat.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fkrag%20bayonet.png?alt=media&token=f43d2570-985e-4c7f-bb8c-e9b523fe360e",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 168
-    }
-  },
-  {
-    "name": "Springfield M1892 Krag Sniper",
-    "desc": "The original repeating, bolt-action Springfield M1892 Krag with a sniper scope attached to it, making the rifle even more efficient over longer ranges.",
-    "capacity": "5+1/12",
+    },
+    "name": "Springfield M1892 Krag Bayonet",
     "stats": {
+      "cycle_time": 1.4,
       "damage": 126,
       "effective_range": "291m",
-      "rpm": 23,
-      "cycle_time": 1.4,
       "muzzle_velocity": 610,
       "reload_speed": 11.1,
+      "rpm": 23,
+      "spread": 30,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "long"
+    ]
+  },
+  {
+    "capacity": "5+1/12",
+    "cost": 579,
+    "desc": "The original repeating, bolt-action Springfield M1892 Krag with a sniper scope attached to it, making the rifle even more efficient over longer ranges.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fkrag%20sniper.png?alt=media&token=c8a36e37-c4fa-42d2-b8f8-d99e078e3411",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    },
+    "name": "Springfield M1892 Krag Sniper",
+    "stats": {
+      "cycle_time": 1.4,
+      "damage": 126,
+      "effective_range": "291m",
+      "muzzle_velocity": 610,
+      "reload_speed": 11.1,
+      "rpm": 23,
       "spread": 60,
       "sway": 69,
       "vertical_recoil": 25
@@ -2548,52 +2554,25 @@
       "weapon",
       "large slot",
       "long"
-    ],
-    "cost": 579,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 54
-    }
+    ]
   },
   {
-    "name": "Vetterli 71 Karabiner",
-    "desc": "Swiss military, bolt-action carbine with internal magazine. Powerful at medium distances. Reloading is inspired by the Winfield repeater rifle, making it easy to top up ammunition.",
     "capacity": "6+1/20",
-    "stats": {
-      "damage": 130,
-      "effective_range": "204m",
-      "rpm": 24,
-      "cycle_time": 1.5,
-      "muzzle_velocity": 410,
-      "reload_speed": 12.1,
-      "spread": 22.5,
-      "sway": 77,
-      "vertical_recoil": 25
-    },
-    "type": [
-      "weapon",
-      "large slot",
-      "medium"
-    ],
     "cost": 105,
-    "image_url": "null",
+    "desc": "Swiss military, bolt-action carbine with internal magazine. Powerful at medium distances. Reloading is inspired by the Winfield repeater rifle, making it easy to top up ammunition.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/ac/Vetterli_71_Karabiner.png/revision/latest/scale-to-width-down/1000?cb=20180219163559",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
-    "name": "Vetterli 71 Karabiner Bayonet",
-    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached bayonet makes this a great choice for close combat.",
-    "capacity": "6+1/20",
+    },
+    "name": "Vetterli 71 Karabiner",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 130,
       "effective_range": "204m",
-      "rpm": 24,
-      "cycle_time": 1.5,
       "muzzle_velocity": 410,
       "reload_speed": 12.1,
+      "rpm": 24,
       "spread": 22.5,
       "sway": 77,
       "vertical_recoil": 25
@@ -2602,25 +2581,52 @@
       "weapon",
       "large slot",
       "medium"
-    ],
+    ]
+  },
+  {
+    "capacity": "6+1/20",
     "cost": 115,
-    "image_url": "null",
+    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached bayonet makes this a great choice for close combat.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/74/Vetterli_71_Karabiner_Bayonet.png/revision/latest/scale-to-width-down/1000?cb=20180219163619",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 168
-    }
+    },
+    "name": "Vetterli 71 Karabiner Bayonet",
+    "stats": {
+      "cycle_time": 1.5,
+      "damage": 130,
+      "effective_range": "204m",
+      "muzzle_velocity": 410,
+      "reload_speed": 12.1,
+      "rpm": 24,
+      "spread": 22.5,
+      "sway": 77,
+      "vertical_recoil": 25
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "medium"
+    ]
   },
   {
-    "name": "Vetterli 71 Karabiner Cyclone",
-    "desc": "Swiss military, semi-automatic carbine with a reduced internal magazine to compensate for its self-loading mechanism. Powerful at medium distances.",
     "capacity": "3+1/20",
+    "cost": 535,
+    "desc": "Swiss military, semi-automatic carbine with a reduced internal magazine to compensate for its self-loading mechanism. Powerful at medium distances.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fkarabiner%20cyclone.png?alt=media&token=c0f8c1c6-0dde-4a56-a920-56f8b040e5e8",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    },
+    "name": "Vetterli 71 Karabiner Cyclone",
     "stats": {
+      "cycle_time": 0.6,
       "damage": 124,
       "effective_range": "185m",
-      "rpm": 27,
-      "cycle_time": 0.6,
       "muzzle_velocity": 410,
       "reload_speed": 8.4,
+      "rpm": 27,
       "spread": 47.5,
       "sway": 77,
       "vertical_recoil": 25
@@ -2629,25 +2635,25 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 535,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "6+1/20",
+    "cost": 130,
+    "desc": "Swiss military, bolt-action carbine with internal magazine. A short scope makes this weapon very effective at longer ranges.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/8/88/Vetterli_71_Karabiner_Deadeye.png/revision/latest/scale-to-width-down/1000?cb=20190108012726",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Vetterli 71 Karabiner Deadeye",
-    "desc": "Swiss military, bolt-action carbine with internal magazine. A short scope makes this weapon very effective at longer ranges.",
-    "capacity": "6+1/20",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 130,
       "effective_range": "204m",
-      "rpm": 24,
-      "cycle_time": 1.5,
       "muzzle_velocity": 410,
       "reload_speed": 12.1,
+      "rpm": 24,
       "spread": 32.5,
       "sway": 77,
       "vertical_recoil": 25
@@ -2656,25 +2662,25 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 130,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "6+1/20",
+    "cost": 190,
+    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached medium scope makes this excel at a distance.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fkarabiner%20marksman.png?alt=media&token=7f195d12-6238-4b07-b5db-00898b9fad1a",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Vetterli 71 Karabiner Marksman",
-    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached medium scope makes this excel at a distance.",
-    "capacity": "6+1/20",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 130,
       "effective_range": "204m",
-      "rpm": 24,
-      "cycle_time": 1.5,
       "muzzle_velocity": 410,
       "reload_speed": 12.1,
+      "rpm": 24,
       "spread": 42.5,
       "sway": 69,
       "vertical_recoil": 25
@@ -2683,25 +2689,25 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 190,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "6+1/20",
+    "cost": 150,
+    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached silencer makes this ideal for stealth.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fkarabiner%20silencer.png?alt=media&token=58ed17e2-30f5-42b2-9d45-7ca78d5c78aa",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Vetterli 71 Karabiner Silencer",
-    "desc": "Swiss military, bolt-action carbine with internal magazine. The attached silencer makes this ideal for stealth.",
-    "capacity": "6+1/20",
     "stats": {
+      "cycle_time": 1.5,
       "damage": 130,
       "effective_range": "162m",
-      "rpm": 24,
-      "cycle_time": 1.5,
       "muzzle_velocity": 280,
       "reload_speed": 12.1,
+      "rpm": 24,
       "spread": 22.5,
       "sway": 77,
       "vertical_recoil": 25
@@ -2710,25 +2716,25 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 150,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "6+1/8",
+    "cost": 238,
+    "desc": "Seminal lever-action repeating shotgun. Boasting a balance between power and rate-of-fire, this became an icon of the era. Chamber 5+2 shells.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fterminus.png?alt=media&token=161d45d0-d02d-4e1d-b383-56b9862f7b2e",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Winfield 1887 Terminus",
-    "desc": "Seminal lever-action repeating shotgun. Boasting a balance between power and rate-of-fire, this became an icon of the era. Chamber 5+2 shells.",
-    "capacity": "6+1/8",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 190,
       "effective_range": "14m",
-      "rpm": 21,
-      "cycle_time": 1.6,
       "muzzle_velocity": 425,
       "reload_speed": 12.2,
+      "rpm": 21,
       "spread": 85,
       "sway": 77,
       "vertical_recoil": 25
@@ -2737,25 +2743,25 @@
       "weapon",
       "large slot",
       "shotgun"
-    ],
-    "cost": 238,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 54
-    }
+    ]
   },
   {
-    "name": "Winfield 1887 Terminus Handcannon",
-    "desc": "Seminal sawn-off lever-action repeating shotgun. Shortened to reduce size and increase lethality at close range, this packs high power for its size. Chambers 4+2 shells.",
     "capacity": "5+1/6",
+    "cost": 218,
+    "desc": "Seminal sawn-off lever-action repeating shotgun. Shortened to reduce size and increase lethality at close range, this packs high power for its size. Chambers 4+2 shells.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fterminus%20handcannon.png?alt=media&token=448d8b7e-b755-4238-b382-6f9e2ab9b4f5",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    },
+    "name": "Winfield 1887 Terminus Handcannon",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 105,
       "effective_range": "10m",
-      "rpm": 19,
-      "cycle_time": 1.6,
       "muzzle_velocity": 350,
       "reload_speed": 10.6,
+      "rpm": 19,
       "spread": 115,
       "sway": 133,
       "vertical_recoil": 27
@@ -2764,25 +2770,25 @@
       "weapon",
       "medium slot",
       "shotgun"
-    ],
-    "cost": 218,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 13,
-      "melee": 31
-    }
+    ]
   },
   {
-    "name": "Winfield 1893 Slate",
-    "desc": "An exposed hammer shotgun that replaces lever-action with pump-action, this Winfield Model 93 holds several 12-gauge rounds to cause devastating damage to opponents.",
     "capacity": "5+1/6",
+    "cost": 333,
+    "desc": "An exposed hammer shotgun that replaces lever-action with pump-action, this Winfield Model 93 holds several 12-gauge rounds to cause devastating damage to opponents.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fslate.png?alt=media&token=889ffaa7-925a-4b6e-a335-84224b1c49a5",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    },
+    "name": "Winfield 1893 Slate",
     "stats": {
+      "cycle_time": 1,
       "damage": 203,
       "effective_range": "13m",
-      "rpm": 23,
-      "cycle_time": 1,
       "muzzle_velocity": 425,
       "reload_speed": 9.6,
+      "rpm": 23,
       "spread": 70,
       "sway": 77,
       "vertical_recoil": 27
@@ -2791,25 +2797,25 @@
       "weapon",
       "large slot",
       "shotgun"
-    ],
-    "cost": 333,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 54
-    }
+    ]
   },
   {
-    "name": "Winfield 1893 Slate Riposte",
-    "desc": "Exposed hammer, pump-action Winfield Model 93 shotgun with bayonet affixed for mastery of close quarter combat.",
     "capacity": "5+1/6",
+    "cost": 343,
+    "desc": "Exposed hammer, pump-action Winfield Model 93 shotgun with bayonet affixed for mastery of close quarter combat.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fslate%20riposte.png?alt=media&token=a08b1deb-b19d-4b52-86b1-27b67eadf47c",
+    "melee_stats": {
+      "heavy_melee": 82,
+      "melee": 168
+    },
+    "name": "Winfield 1893 Slate Riposte",
     "stats": {
+      "cycle_time": 1,
       "damage": 203,
       "effective_range": "13m",
-      "rpm": 23,
-      "cycle_time": 1,
       "muzzle_velocity": 425,
       "reload_speed": 9.6,
+      "rpm": 23,
       "spread": 70,
       "sway": 77,
       "vertical_recoil": 26
@@ -2818,25 +2824,25 @@
       "weapon",
       "large slot",
       "shotgun"
-    ],
-    "cost": 343,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 82,
-      "melee": 168
-    }
+    ]
   },
   {
-    "name": "Winfield M1873",
-    "desc": "Iconic repeating rifle with very large internal magazine, capable of firing compact bullets at rapid speed. Reload is very simple, making an ammo top-up a quick job.",
     "capacity": "15+1/20",
+    "cost": 75,
+    "desc": "Iconic repeating rifle with very large internal magazine, capable of firing compact bullets at rapid speed. Reload is very simple, making an ammo top-up a quick job.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/08/Winfield_M1873.png/revision/latest/scale-to-width-down/1000?cb=20180219163710",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    },
+    "name": "Winfield M1873",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 110,
       "effective_range": "151m",
-      "rpm": 31,
-      "cycle_time": 1.2,
       "muzzle_velocity": 400,
       "reload_speed": 16.4,
+      "rpm": 31,
       "spread": 17.5,
       "sway": 77,
       "vertical_recoil": 4
@@ -2845,25 +2851,25 @@
       "weapon",
       "large slot",
       "compact"
-    ],
-    "cost": 75,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "15+1/20",
+    "cost": 80,
+    "desc": "Modified iconic repeating rifle with very large internal magazine. The aperture sight makes it easier to aim more precisely at medium ranges, and can be toggled.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/60/Winfield_M1873_Aperture.png/revision/latest?cb=20190107204703",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Winfield M1873 Aperture",
-    "desc": "Modified iconic repeating rifle with very large internal magazine. The aperture sight makes it easier to aim more precisely at medium ranges, and can be toggled.",
-    "capacity": "15+1/20",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 110,
       "effective_range": "151m",
-      "rpm": 31,
-      "cycle_time": 1.2,
       "muzzle_velocity": 400,
       "reload_speed": 16.4,
+      "rpm": 31,
       "spread": 17.5,
       "sway": 69,
       "vertical_recoil": 4
@@ -2872,25 +2878,25 @@
       "weapon",
       "large slot",
       "compact"
-    ],
-    "cost": 80,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "17+1/20",
+    "cost": 85,
+    "desc": "An iconic repeating rifle with an enlarged internal magazine that is equipped to fire compact bullets at rapid speed. In combination with its increased length, the bayonet makes this a formidable weapon against any foe that gets too close.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/ae/Winfield_M1873_Musket_Bayonet.png/revision/latest/scale-to-width-down/1000?cb=20201208212212",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Winfield M1873 Musket Bayonet",
-    "desc": "An iconic repeating rifle with an enlarged internal magazine that is equipped to fire compact bullets at rapid speed. In combination with its increased length, the bayonet makes this a formidable weapon against any foe that gets too close.",
-    "capacity": "17+1/20",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 110,
       "effective_range": "151m",
-      "rpm": 35,
-      "cycle_time": 1.2,
       "muzzle_velocity": 400,
       "reload_speed": 17.9,
+      "rpm": 35,
       "spread": 17.5,
       "sway": 77,
       "vertical_recoil": 3
@@ -2899,25 +2905,25 @@
       "weapon",
       "large slot",
       "compact"
-    ],
-    "cost": 85,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "15+1/20",
+    "cost": 128,
+    "desc": "Modified iconic repeating rifle with very large internal magazine. Reloading is quickened with a speed loader mechanism.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/1/11/Winfield_M1873_Swift.png/revision/latest/scale-to-width-down/1000?cb=20180219163812",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Winfield M1873 Swift",
-    "desc": "Modified iconic repeating rifle with very large internal magazine. Reloading is quickened with a speed loader mechanism.",
-    "capacity": "15+1/20",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 110,
       "effective_range": "151m",
-      "rpm": 41,
-      "cycle_time": 1.2,
       "muzzle_velocity": 400,
       "reload_speed": 8.4,
+      "rpm": 41,
       "spread": 17.5,
       "sway": 77,
       "vertical_recoil": 4
@@ -2926,52 +2932,52 @@
       "weapon",
       "large slot",
       "compact"
-    ],
-    "cost": 128,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 54
-    }
+    ]
   },
   {
-    "name": "Winfield M1873 Talon",
-    "desc": "Modified iconic repeating rifle with very large internal magazine. The stock is mounted with blades for melee combat.",
     "capacity": "15+1/20",
-    "stats": {
-      "damage": 110,
-      "effective_range": "151m",
-      "rpm": 31,
-      "cycle_time": 1.2,
-      "muzzle_velocity": 400,
-      "reload_speed": 16.4,
-      "spread": 17.5,
-      "sway": 77,
-      "vertical_recoil": 4
-    },
-    "type": [
-      "weapon",
-      "large slot",
-      "compact"
-    ],
     "cost": 128,
-    "image_url": "null",
+    "desc": "Modified iconic repeating rifle with very large internal magazine. The stock is mounted with blades for melee combat.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/4/4b/Winfield_M1873_Talon.png/revision/latest/scale-to-width-down/1000?cb=20180219163855",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 330
-    }
-  },
-  {
-    "name": "Winfield M1873C",
-    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed.",
-    "capacity": "7+1/28",
+    },
+    "name": "Winfield M1873 Talon",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 110,
       "effective_range": "151m",
-      "rpm": 29,
+      "muzzle_velocity": 400,
+      "reload_speed": 16.4,
+      "rpm": 31,
+      "spread": 17.5,
+      "sway": 77,
+      "vertical_recoil": 4
+    },
+    "type": [
+      "weapon",
+      "large slot",
+      "compact"
+    ]
+  },
+  {
+    "capacity": "7+1/28",
+    "cost": 41,
+    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/0/00/Winfield_M1873C.png/revision/latest/scale-to-width-down/1000?cb=20180219163735",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    },
+    "name": "Winfield M1873C",
+    "stats": {
       "cycle_time": 1.2,
+      "damage": 110,
+      "effective_range": "151m",
       "muzzle_velocity": 400,
       "reload_speed": 10.1,
+      "rpm": 29,
       "spread": 17.5,
       "sway": 77,
       "vertical_recoil": 5
@@ -2980,25 +2986,25 @@
       "weapon",
       "large slot",
       "compact"
-    ],
-    "cost": 41,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "7+1/28",
+    "cost": 56,
+    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed. Mounted with a medium scope for enhanced precision.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/77/Winfield_M1873C_Marksman.png/revision/latest?cb=20190108153922",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Winfield M1873C Marksman",
-    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed. Mounted with a medium scope for enhanced precision.",
-    "capacity": "7+1/28",
     "stats": {
+      "cycle_time": 1.3,
       "damage": 110,
       "effective_range": "151m",
-      "rpm": 29,
-      "cycle_time": 1.3,
       "muzzle_velocity": 400,
       "reload_speed": 10.1,
+      "rpm": 29,
       "spread": 25,
       "sway": 69,
       "vertical_recoil": 5
@@ -3007,25 +3013,25 @@
       "weapon",
       "large slot",
       "compact"
-    ],
-    "cost": 56,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "7+1/28",
+    "cost": 55,
+    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed. Comes with a silencer.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c8/Winfield_M1873C_Silencer.png/revision/latest/scale-to-width-down/1000?cb=20190108154058",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Winfield M1873C Silencer",
-    "desc": "Lightened repeating rifle with demi-size internal magazine, capable of firing compact bullets at rapid speed. Comes with a silencer.",
-    "capacity": "7+1/28",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 110,
       "effective_range": "136m",
-      "rpm": 29,
-      "cycle_time": 1.2,
       "muzzle_velocity": 250,
       "reload_speed": 10.1,
+      "rpm": 29,
       "spread": 25,
       "sway": 87,
       "vertical_recoil": 5
@@ -3034,25 +3040,25 @@
       "weapon",
       "large slot",
       "compact"
-    ],
-    "cost": 55,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 54
-    }
+    ]
   },
   {
-    "name": "Winfield M1873C Vandal",
-    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed.",
     "capacity": "6+1/28",
+    "cost": 35,
+    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/f8/Winfield_M1873C_Vandal.png/revision/latest/scale-to-width-down/1000?cb=20201002190312",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    },
+    "name": "Winfield M1873C Vandal",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 107,
       "effective_range": "141m",
-      "rpm": 28,
-      "cycle_time": 1.2,
       "muzzle_velocity": 370,
       "reload_speed": 9.4,
+      "rpm": 28,
       "spread": 30,
       "sway": 133,
       "vertical_recoil": 10
@@ -3061,25 +3067,25 @@
       "weapon",
       "medium slot",
       "compact"
-    ],
-    "cost": 35,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "6+1/28",
+    "cost": 45,
+    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed. A Deadeye scope improves performance at midrange.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/aa/Winfield_M1873C_Vandal_Deadeye.png/revision/latest/scale-to-width-down/1000?cb=20201002190302",
     "melee_stats": {
       "heavy_melee": 13,
       "melee": 31
-    }
-  },
-  {
+    },
     "name": "Winfield M1873C Vandal Deadeye",
-    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed. A Deadeye scope improves performance at midrange.",
-    "capacity": "6+1/28",
     "stats": {
+      "cycle_time": 1.2,
       "damage": 107,
       "effective_range": "141m",
-      "rpm": 28,
-      "cycle_time": 1.2,
       "muzzle_velocity": 370,
       "reload_speed": 9.4,
+      "rpm": 28,
       "spread": 45,
       "sway": 93,
       "vertical_recoil": 10
@@ -3088,25 +3094,25 @@
       "weapon",
       "medium slot",
       "compact"
-    ],
-    "cost": 45,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 13,
-      "melee": 31
-    }
+    ]
   },
   {
-    "name": "Winfield M1873C Vandal Striker",
-    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed. Attached blade makes it deadly in melee.",
     "capacity": "6+1/28",
+    "cost": 45,
+    "desc": "A shortened Winfield M1873C, fires compact bullets at rapid speed. Attached blade makes it deadly in melee.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/6/62/Winfield_M1873C_Vandal_Striker.png/revision/latest/scale-to-width-down/1000?cb=20201001212002",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 105
+    },
+    "name": "Winfield M1873C Vandal Striker",
     "stats": {
+      "cycle_time": 1.3,
       "damage": 107,
       "effective_range": "141m",
-      "rpm": 28,
-      "cycle_time": 1.3,
       "muzzle_velocity": 370,
       "reload_speed": 9.4,
+      "rpm": 28,
       "spread": 30,
       "sway": 133,
       "vertical_recoil": 10
@@ -3115,25 +3121,25 @@
       "weapon",
       "medium slot",
       "compact"
-    ],
-    "cost": 45,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 13,
-      "melee": 105
-    }
+    ]
   },
   {
-    "name": "Winfield M1876 Centennial",
-    "desc": "Powerful repeating rifle chambered for larger ammunition than previous models. The magazine holds 9 rounds.",
     "capacity": "9+1/12",
+    "cost": 157,
+    "desc": "Powerful repeating rifle chambered for larger ammunition than previous models. The magazine holds 9 rounds.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fwinfield%20centennial.png?alt=media&token=bdd8e7e6-fa16-4774-9da2-9f1c64bcb4e4",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 54
+    },
+    "name": "Winfield M1876 Centennial",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 123,
       "effective_range": "180m",
-      "rpm": 23,
-      "cycle_time": 1.6,
       "muzzle_velocity": 600,
       "reload_speed": 15.5,
+      "rpm": 23,
       "spread": 25,
       "sway": 77,
       "vertical_recoil": 11
@@ -3142,25 +3148,25 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 157,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "9+1/12",
+    "cost": 229,
+    "desc": "Powerful repeating rifle with good stopping power and an attached scope, highly effective at long range. The magazine holds nine rounds.",
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/7/78/Winfield_M1876_Centennial_Sniper.png/revision/latest/scale-to-width-down/1000?cb=20210511202752",
     "melee_stats": {
       "heavy_melee": 27,
       "melee": 54
-    }
-  },
-  {
+    },
     "name": "Winfield M1876 Centennial Sniper",
-    "desc": "Powerful repeating rifle with good stopping power and an attached scope, highly effective at long range. The magazine holds nine rounds.",
-    "capacity": "9+1/12",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 123,
       "effective_range": "180m",
-      "rpm": 23,
-      "cycle_time": 1.6,
       "muzzle_velocity": 600,
       "reload_speed": 15.4,
+      "rpm": 23,
       "spread": 37.5,
       "sway": 69,
       "vertical_recoil": 11
@@ -3169,25 +3175,25 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 229,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 54
-    }
+    ]
   },
   {
-    "name": "Winfield M1876 Centennial Shorty",
-    "desc": "This particular version of the Winfield M1876 Centennial is shortened for more dynamic shooting ability without sacrificing magazine capacity or firing power.",
     "capacity": "5+1/12",
+    "cost": 103,
+    "desc": "This particular version of the Winfield M1876 Centennial is shortened for more dynamic shooting ability without sacrificing magazine capacity or firing power.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fcen%20shorty.png?alt=media&token=105b8534-4890-471d-ac48-030c50de0c22",
+    "melee_stats": {
+      "heavy_melee": 13,
+      "melee": 31
+    },
+    "name": "Winfield M1876 Centennial Shorty",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 120,
       "effective_range": "170m",
-      "rpm": 24,
-      "cycle_time": 1.6,
       "muzzle_velocity": 540,
       "reload_speed": 10.9,
+      "rpm": 24,
       "spread": 42.5,
       "sway": 133,
       "vertical_recoil": 15
@@ -3196,25 +3202,25 @@
       "weapon",
       "medium slot",
       "medium"
-    ],
-    "cost": 103,
-    "image_url": "null",
+    ]
+  },
+  {
+    "capacity": "5+1/12",
+    "cost": 137,
+    "desc": "This particular version of the Winfield M1876 Centennial features a suppressor to mask the volume of the powerful repeating rifle.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fcen%20shorty%20silencer.png?alt=media&token=f2c3f61d-e6e9-4a72-9f49-0783577e24f3",
     "melee_stats": {
       "heavy_melee": 13,
       "melee": 31
-    }
-  },
-  {
+    },
     "name": "Winfield M1876 Centennial Shorty Silencer",
-    "desc": "This particular version of the Winfield M1876 Centennial features a suppressor to mask the volume of the powerful repeating rifle.",
-    "capacity": "5+1/12",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 120,
       "effective_range": "145m",
-      "rpm": 24,
-      "cycle_time": 1.6,
       "muzzle_velocity": 390,
       "reload_speed": 10.9,
+      "rpm": 24,
       "spread": 42.5,
       "sway": 133,
       "vertical_recoil": 15
@@ -3223,25 +3229,25 @@
       "weapon",
       "medium slot",
       "medium"
-    ],
-    "cost": 137,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 13,
-      "melee": 31
-    }
+    ]
   },
   {
-    "name": "Winfield M1876 Centennial Trauma",
-    "desc": "This particular version of the Winfield M1876 Centennial features a reinforced stock that delivers a hit as heavy and deadly as a sledgehammer, which makes the rifle viable in melee combat.",
     "capacity": "9+1/12",
+    "cost": 167,
+    "desc": "This particular version of the Winfield M1876 Centennial features a reinforced stock that delivers a hit as heavy and deadly as a sledgehammer, which makes the rifle viable in melee combat.",
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/weapons%2Fcen%20trauma.png?alt=media&token=ab5fa020-a258-4f57-9f8f-0045ccd1a08c",
+    "melee_stats": {
+      "heavy_melee": 27,
+      "melee": 216
+    },
+    "name": "Winfield M1876 Centennial Trauma",
     "stats": {
+      "cycle_time": 1.6,
       "damage": 123,
       "effective_range": "180m",
-      "rpm": 23,
-      "cycle_time": 1.6,
       "muzzle_velocity": 600,
       "reload_speed": 15.5,
+      "rpm": 23,
       "spread": 25,
       "sway": 77,
       "vertical_recoil": 12.5
@@ -3250,20 +3256,6 @@
       "weapon",
       "large slot",
       "medium"
-    ],
-    "cost": 167,
-    "image_url": "null",
-    "melee_stats": {
-      "heavy_melee": 27,
-      "melee": 216
-    }
+    ]
   }
-
-
-
-
-
-
-
-
 ]
