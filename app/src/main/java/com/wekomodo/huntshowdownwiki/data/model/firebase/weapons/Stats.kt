@@ -2,7 +2,7 @@ package com.wekomodo.huntshowdownwiki.data.model.firebase.weapons
 
 data class Stats(
     val cycle_time: Double? = null,
-    val damage: Int? = null,
+    val damage: Int = 0,
     val effective_range: String? = null,
     val muzzle_velocity: Int? = null,
     val reload_speed: Double? = null,

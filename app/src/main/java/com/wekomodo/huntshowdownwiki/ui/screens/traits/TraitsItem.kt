@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
@@ -27,64 +28,78 @@ import com.wekomodo.huntshowdownwiki.R
 @Composable
 fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
 
-        Box(
+    Box(
+        modifier = Modifier
+            .fillMaxWidth(),
+        contentAlignment = Alignment.TopStart
+    ) {
+        Card(
             modifier = Modifier
-                .fillMaxWidth(),
-            contentAlignment = Alignment.TopStart
+                .fillMaxWidth()
+                .height(200.dp)
+                .padding(10.dp)
         ) {
-            Card(
+            Image(
+                painter = painterResource(id = R.drawable.items_bg),
+                contentDescription = "",
+                contentScale = ContentScale.Crop
+            )
+        }
+        Column {
+            Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(200.dp)
-                    .padding(10.dp)
+                    .padding(top = 20.dp),
+                horizontalArrangement = Arrangement.Absolute.SpaceAround,
+                verticalAlignment = Alignment.CenterVertically
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.items_bg),
-                    contentDescription = "",
-                    contentScale = ContentScale.Crop
+                AsyncImage(
+                    modifier = Modifier.size(100.dp),
+                    model = link,
+                    contentDescription = ""
                 )
-            }
-            Column {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(top = 20.dp),
-                    horizontalArrangement = Arrangement.Absolute.SpaceAround,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    AsyncImage(
-                        modifier = Modifier.size(100.dp),
-                        model = link,
-                        contentDescription = ""
+                Column {
+                    Text(
+                        text = name,
+                        color = Color.White,
+                        style = MaterialTheme.typography.titleLarge
                     )
-                    Column {
-                        Text(text = name, color = Color.White, style = MaterialTheme.typography.titleLarge)
-                        Row(
-                            horizontalArrangement = Arrangement.End,
-                            verticalAlignment = Alignment.CenterVertically,
-                        ) {
-                            Text(text = cost.toString(), color = Color(0xFFfff5dc), style = MaterialTheme.typography.bodyLarge)
-                            Icon(
-                                painterResource(id = R.drawable.ic_upgrade_points),
-                                contentDescription = "upgrade_points",
-                                tint = Color.Unspecified,
-                                modifier = Modifier.size(32.dp)
-                            )
-                        }
-                        Text(text = "Rank : $rank", color = Color.White, style = MaterialTheme.typography.bodyLarge)
-
+                    Row(
+                        horizontalArrangement = Arrangement.End,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Text(
+                            text = cost.toString(),
+                            color = Color(0xFFfff5dc),
+                            style = MaterialTheme.typography.bodyLarge
+                        )
+                        Icon(
+                            painterResource(id = R.drawable.ic_upgrade_points),
+                            contentDescription = "upgrade_points",
+                            tint = Color.Unspecified,
+                            modifier = Modifier.size(32.dp)
+                        )
                     }
+                    Text(
+                        text = "Rank : $rank",
+                        color = Color.White,
+                        style = MaterialTheme.typography.bodyLarge
+                    )
 
                 }
-                Text(
-                    modifier = Modifier.padding(start = 18.dp, bottom = 10.dp, end = 18.dp),
-                    text = desc, color = Color.White, style = MaterialTheme.typography.bodySmall
 
-                )
             }
-
+            Text(
+                modifier = Modifier.padding(start = 18.dp, bottom = 10.dp, end = 18.dp),
+                text = desc,
+                color = Color.White,
+                style = MaterialTheme.typography.bodySmall,
+                overflow = TextOverflow.Ellipsis,
+                )
         }
+
     }
+}
 
 
 @Preview
