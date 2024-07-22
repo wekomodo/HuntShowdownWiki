@@ -37,7 +37,7 @@ fun TraitsScreen(
     var loading by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf(false) }
 //    var traitsList = emptyList<Trait>()
-    val result by viewModel.response.collectAsStateWithLifecycle(
+    val result by viewModel.traits.collectAsStateWithLifecycle(
         initialValue = Resource.Loading(
             null
         )

@@ -1,4 +1,4 @@
-package com.wekomodo.huntshowdownwiki.data.model.firebase.weapons
+package com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons
 
 data class AmmoType(
     val capacity: String = "",

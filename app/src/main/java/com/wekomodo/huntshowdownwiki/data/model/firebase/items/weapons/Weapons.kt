@@ -1,4 +1,7 @@
-package com.wekomodo.huntshowdownwiki.data.model.firebase.weapons
+package com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons
+
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.MeleeStats
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.Stats
 
 data class Weapons(
     val ammo_types: ArrayList<AmmoType>? = null,

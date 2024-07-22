@@ -1,7 +1,6 @@
 package com.wekomodo.huntshowdownwiki.ui.screens.arsenal
 
 import android.util.Log
-import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -26,11 +25,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.google.firebase.Firebase
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
-import com.wekomodo.huntshowdownwiki.data.model.firebase.weapons.Weapons
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
 
@@ -71,68 +67,61 @@ fun ArsenalScreen() {
             ArsenalDetailScreen(item = selectedItem)
         }
     }
-        //var filteredList: List<Item> = emptyList()
-        LaunchedEffect(Unit) {
-            val database = Firebase.database.reference.child("items").child("weapons")
-            Log.d("firebaseResult", database.toString())
-            database.addListenerForSingleValueEvent(object : ValueEventListener {
-                override fun onDataChange(p0: DataSnapshot) {
-                    loading = false
-                    for (items in p0.children) {
-                        Log.d("firebaseItems", items.value.toString())
-                        val item = items.getValue(Weapons::class.java)
-                        itemList.remove(emptyObject)
-                        item?.let {
-                            itemList.add(item)
-                        }
-                        //   filteredList = itemList.toList()
-                        // Log.d("firebaseItems", item.toString())
-                    }
-
+    //var filteredList: List<Item> = emptyList()
+    LaunchedEffect(Unit) {
+        val database = Firebase.database.reference.child("items")
+        Log.d("firebaseResult", database.toString())
+        database.child("weapons").get().addOnSuccessListener {
+            loading = false
+            for (items in it.children) {
+                Log.d("firebaseItems", items.value.toString())
+                val item = items.getValue(Weapons::class.java)
+                itemList.remove(emptyObject)
+                item?.let {
+                    itemList.add(item)
                 }
-
-                override fun onCancelled(p0: DatabaseError) {
-                    Toast.makeText(context, "Some Error Occurred", Toast.LENGTH_SHORT).show()
-                }
-            })
-        }
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(10.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceAround
-            ) {
-                FilterChipComp(enabled = weapons, name = "Weapons") {
-                    weapons = it
-                }
-                FilterChipComp(enabled = tools, name = "Tools") {
-                    tools = it
-                }
-                FilterChipComp(enabled = consumables, name = "Consumables") {
-                    consumables = it
-                }
+                //   filteredList = itemList.toList()
+                // Log.d("firebaseItems", item.toString())
             }
-            LoadingUiState(loading = loading)
-            if (itemList.size > 1)
-                LazyColumn {
-                    itemsIndexed(itemList) { _, item ->
-                        ArsenalItem(
-                            name = item.name,
-                            image = item.image_url,
-                            desc = item.desc,
-                            cost = item.cost
-                        ) {
-                            selectedItem = item
-                            showBottomSheet = true
-                        }
-                    }
-                }
         }
     }
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(10.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceAround
+        ) {
+            FilterChipComp(enabled = weapons, name = "Weapons") {
+                weapons = it
+            }
+            FilterChipComp(enabled = tools, name = "Tools") {
+                tools = it
+            }
+            FilterChipComp(enabled = consumables, name = "Consumables") {
+                consumables = it
+            }
+        }
+        LoadingUiState(loading = loading)
+        if (itemList.size > 1)
+            LazyColumn {
+                itemsIndexed(itemList) { _, item ->
+                    ArsenalItem(
+                        name = item.name,
+                        image = item.image_url,
+                        desc = item.desc,
+                        cost = item.cost
+                    ) {
+                        selectedItem = item
+                        showBottomSheet = true
+                    }
+                }
+            }
+    }
+}
 
 @Preview
 @Composable
