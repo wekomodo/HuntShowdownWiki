@@ -15,45 +15,37 @@ import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.google.firebase.Firebase
-import com.google.firebase.database.database
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
+import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
+import com.wekomodo.huntshowdownwiki.util.Resource
+import com.wekomodo.huntshowdownwiki.util.Status
 
+
+private var filteringCriteria = setOf("weapon", "tools", "consumable")
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ArsenalScreen() {
-    val context = LocalContext.current
-    val emptyObject = Weapons()
-    val itemList = remember {
-        mutableStateListOf(emptyObject)
-    }
-    var weapons by remember {
-        mutableStateOf(true)
-    }
-    var tools by remember {
-        mutableStateOf(true)
-    }
-    var consumables by remember {
-        mutableStateOf(true)
-    }
-    var loading by remember {
-        mutableStateOf(true)
-    }
-    var selectedItem by remember {
-        mutableStateOf(Weapons())
-    }
+fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
+    val arsenal by viewModel.arsenal.collectAsStateWithLifecycle(
+        initialValue = Resource.Loading(
+            null
+        )
+    )
+    var error by remember { mutableStateOf(false) }
+    var uiState by remember { mutableStateOf(ArsenalUiState()) }
+    var loading by remember { mutableStateOf(true) }
+    var selectedItem by remember { mutableStateOf(Weapons()) }
     val sheetState = rememberModalBottomSheetState(true)
     var showBottomSheet by remember { mutableStateOf(false) }
     if (showBottomSheet) {
@@ -68,23 +60,70 @@ fun ArsenalScreen() {
         }
     }
     //var filteredList: List<Item> = emptyList()
-    LaunchedEffect(Unit) {
-        val database = Firebase.database.reference.child("items")
-        Log.d("firebaseResult", database.toString())
-        database.child("weapons").get().addOnSuccessListener {
-            loading = false
-            for (items in it.children) {
-                Log.d("firebaseItems", items.value.toString())
-                val item = items.getValue(Weapons::class.java)
-                itemList.remove(emptyObject)
-                item?.let {
-                    itemList.add(item)
+    LaunchedEffect(arsenal) {
+        if (arsenal is Resource.Success) {
+            val data = arsenal.data
+            data?.let {
+                uiState = uiState.copy(
+                    displayedList = data.arsenal,
+                    cacheList = data.arsenal,
+                    weaponsList = data.weapons,
+                    toolsList = data.tools,
+                    consumablesList = data.consumables
+                )
+
+            }
+
+        }
+        when (arsenal.status) {
+            Status.SUCCESS -> {
+                loading = false
+                error = false
+                val data = arsenal.data
+                data?.let {
+                    uiState = uiState.copy(
+                        displayedList = data.arsenal,
+                        cacheList = data.arsenal,
+                        weaponsList = data.weapons,
+                        toolsList = data.tools,
+                        consumablesList = data.consumables
+                    )
+
                 }
-                //   filteredList = itemList.toList()
-                // Log.d("firebaseItems", item.toString())
+            }
+
+            Status.LOADING -> {
+                loading = true
+                error = false
+                Log.d("ARSENAL", "LOADING")
+            }
+
+            Status.ERROR -> {
+                error = true
+                loading = false
+                Log.d("ARSENAL", "FAILED")
             }
         }
     }
+    // reacts when changes to filters are made
+    LaunchedEffect(uiState.activeFilters) {
+        uiState = if (uiState.activeFilters.isNotEmpty()) {
+            // normal filtering
+            uiState.copy(
+                displayedList = uiState.cacheList.filter {
+                    if(it.type.isNotEmpty())
+                    it.type[0] in uiState.activeFilters
+                   else
+                     false}
+            )
+        } else {
+            // will come in handy if somebody selects a filter and unselects it after
+            uiState.copy(
+                displayedList = uiState.cacheList
+            )
+        }
+    }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -95,31 +134,33 @@ fun ArsenalScreen() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceAround
         ) {
-            FilterChipComp(enabled = weapons, name = "Weapons") {
-                weapons = it
-            }
-            FilterChipComp(enabled = tools, name = "Tools") {
-                tools = it
-            }
-            FilterChipComp(enabled = consumables, name = "Consumables") {
-                consumables = it
+            filteringCriteria.forEach { filter ->
+                val isSelected = filter in uiState.activeFilters
+                FilterChipComp(enabled = isSelected, name = filter) {
+                    val tempSet = uiState.activeFilters.toMutableSet()
+                    if (it) tempSet.add(filter) else tempSet.remove(filter)
+                    uiState = uiState.copy(
+                        activeFilters = tempSet // will be cast to Set<>
+                    )
+                }
             }
         }
         LoadingUiState(loading = loading)
-        if (itemList.size > 1)
-            LazyColumn {
-                itemsIndexed(itemList) { _, item ->
-                    ArsenalItem(
-                        name = item.name,
-                        image = item.image_url,
-                        desc = item.desc,
-                        cost = item.cost
-                    ) {
-                        selectedItem = item
-                        showBottomSheet = true
-                    }
+        LazyColumn {
+            itemsIndexed(uiState.displayedList) { _, item ->
+                ArsenalItem(
+                    name = item.name,
+                    image = item.image_url,
+                    desc = item.desc,
+                    cost = item.cost
+                ) {
+                    selectedItem = uiState.weaponsList.find {
+                        it.name == item.name
+                    }!!
+                    showBottomSheet = true
                 }
             }
+        }
     }
 }
 

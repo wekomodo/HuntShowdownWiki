@@ -8,6 +8,10 @@
       "heavy_melee": 27
     },
     "cost": 65,
+    "type": [
+      "consumable",
+      "utility"
+    ],
     "image_url": "null"
   },
   {
@@ -19,6 +23,10 @@
       "heavy_melee": 27
     },
     "cost": 35,
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "image_url": "null"
   },
   {
@@ -35,6 +43,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 22,
     "image_url": "null"
   },
@@ -48,6 +60,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 30,
     "image_url": "null"
   },
@@ -61,6 +77,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 55,
     "image_url": "null"
   },
@@ -72,6 +92,10 @@
       "melee": 31,
       "heavy_melee": 90
     },
+    "type": [
+      "consumable",
+      "utility"
+    ],
     "cost": 70,
     "image_url": "null"
   },
@@ -88,6 +112,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 64,
     "image_url": "null"
   },
@@ -101,6 +129,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 40,
     "image_url": "null"
   },
@@ -114,6 +146,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 105,
     "image_url": "null"
   },
@@ -127,6 +163,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 60,
     "image_url": "null"
   },
@@ -140,6 +180,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 100,
     "image_url": "null"
   },
@@ -151,6 +195,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 40,
     "image_url": "null"
   },
@@ -162,6 +210,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "healing"
+    ],
     "cost": 85,
     "image_url": "null"
   },
@@ -178,6 +230,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 30,
     "image_url": "null"
   },
@@ -194,6 +250,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 35,
     "image_url": "null"
   },
@@ -209,6 +269,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 70,
     "image_url": "null"
   },
@@ -225,6 +289,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 57,
     "image_url": "null"
   },
@@ -241,6 +309,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 45,
     "image_url": "null"
   },
@@ -256,6 +328,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 40,
     "image_url": "null"
   },
@@ -272,16 +348,24 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 25,
     "image_url": "null"
   },
   {
-    "item_name": "Concertina Bomb",
-    "description": "Spring-loaded razorwire coil that unfolds violently when thrown. Shreds and entangles anything that tries to move through.",
+    "name": "Concertina Bomb",
+    "desc": "Spring-loaded razorwire coil that unfolds violently when thrown. Shreds and entangles anything that tries to move through.",
     "stats": {
       "damage": 158,
       "throw_range": 7
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "melee_stats" : {
       "melee": 52,
       "heavy_melee": 112
@@ -301,6 +385,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 25,
     "image_url": "null"
   },
@@ -316,6 +404,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 15,
     "image_url": "null"
   },
@@ -348,6 +440,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 75,
     "image_url": "null"
   },
@@ -364,6 +460,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 18,
     "image_url": "null"
   },
@@ -380,6 +480,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 103,
     "image_url": "null"
   },
@@ -396,6 +500,10 @@
       "melee": 13,
       "heavy_melee": 27
     },
+    "type": [
+      "consumable",
+      "throwable"
+    ],
     "cost": 24,
     "image_url": "null"
   }

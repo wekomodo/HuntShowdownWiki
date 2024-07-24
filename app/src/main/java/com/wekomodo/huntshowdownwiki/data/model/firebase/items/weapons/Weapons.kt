@@ -10,7 +10,7 @@ data class Weapons(
     val desc: String = "",
     val image_url: String = "",
     val melee_stats: MeleeStats? = null,
-    val name: String = "",
+    var name: String = "",
     val stats: Stats? = null,
     val type: List<String> = emptyList()
 )

@@ -110,7 +110,7 @@
     "capacity": "2/2",
     "stats": {
       "damage": 21,
-      "effective_range": 6,
+      "effective_range": "6m",
       "rpm": 12,
       "cycle_time": 0.6,
       "spread": 200,
@@ -273,7 +273,7 @@
     "capacity": "4/12",
     "stats": {
       "damage": 74,
-      "effective_range": 60,
+      "effective_range": "60m",
       "rpm": 40,
       "cycle_time": 0.4,
       "spread": 40.0,
@@ -286,7 +286,6 @@
       "melee": 13,
       "heavy_melee": 27
     },
-    "effect_stats": null,
     "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/d/dd/Quad_Derringer.png/revision/latest/scale-to-width-down/1000?cb=20191002180308"
   },
   {
@@ -302,7 +301,6 @@
       "melee": 13,
       "heavy_melee": 27
     },
-    "effect_stats": null,
     "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/c/c1/Spyglass.png/revision/latest?cb=20191002164747"
   },
   {
@@ -325,7 +323,6 @@
       "stamina_used_heavy": 55,
       "stamina_used_throw": 20
     },
-    "effect_stats": null,
     "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/tools%2Fthrowing_axes.png?alt=media&token=1efca955-89e6-45b8-b73a-f047983e3138"
   },
   {
@@ -348,7 +345,6 @@
       "stamina_used_heavy": 25,
       "stamina_used_throw": 15
     },
-    "effect_stats": null,
     "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/fa/Throwing_Knives.png/revision/latest/scale-to-width-down/1000?cb=20191208143648"
   }
 ]

@@ -1,4 +1,4 @@
-package com.wekomodo.huntshowdownwiki.domain.firebase.viewmodel
+package com.wekomodo.huntshowdownwiki.domain.firebase
 
 import com.wekomodo.huntshowdownwiki.data.model.firebase.traits.Trait
 

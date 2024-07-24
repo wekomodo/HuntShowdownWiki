@@ -18,7 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.wekomodo.huntshowdownwiki.domain.firebase.viewmodel.FirebaseViewModel
+import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
 import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
@@ -32,22 +32,14 @@ private var filteringCriteria = setOf("Base Trait", "Burn Trait", "Event Trait")
 fun TraitsScreen(
     viewModel: FirebaseViewModel = viewModel()
 ) {
-    //  val context = LocalContext.current
     var uiState by remember { mutableStateOf(TraitsUiState()) }
     var loading by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf(false) }
-//    var traitsList = emptyList<Trait>()
     val result by viewModel.traits.collectAsStateWithLifecycle(
         initialValue = Resource.Loading(
             null
         )
     )
-//    val filteredList = remember {
-//        mutableStateListOf<Trait>()
-//    }
-//    val activeFilters = remember { mutableSetOf<String>() }
-
-    // val result = viewModel.response.collectAsStateWithLifecycle()
 
     // just to react when the results come in
     LaunchedEffect(result) {
@@ -76,7 +68,6 @@ fun TraitsScreen(
             Status.ERROR -> {
                 error = true
                 loading = false
-                // Toast.makeText(context, "Some error occurred", Toast.LENGTH_SHORT).show()
             }
         }
     }
