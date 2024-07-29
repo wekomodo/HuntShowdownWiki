@@ -1,5 +1,6 @@
 package com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables
 
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.MeleeStats
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.Stats
 
 data class Consumables(
@@ -7,6 +8,7 @@ data class Consumables(
     val desc: String = "",
     val image_url: String = "",
     val name: String = "",
-    val stats: Stats = Stats(),
+    val melee_stats : MeleeStats? = null,
+    val stats: Stats? = null,
     val type : List<String> = emptyList()
 )

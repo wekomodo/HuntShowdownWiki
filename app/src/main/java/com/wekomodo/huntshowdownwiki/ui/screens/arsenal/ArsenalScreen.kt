@@ -24,6 +24,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables.Consumables
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.tools.Tools
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
 import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
@@ -45,7 +47,9 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
     var error by remember { mutableStateOf(false) }
     var uiState by remember { mutableStateOf(ArsenalUiState()) }
     var loading by remember { mutableStateOf(true) }
-    var selectedItem by remember { mutableStateOf(Weapons()) }
+    var selectedWeapon by remember { mutableStateOf<Weapons?>(null) }
+    var selectedTool by remember { mutableStateOf<Tools?>(null) }
+    var selectedConsumable by remember { mutableStateOf<Consumables?>(null) }
     val sheetState = rememberModalBottomSheetState(true)
     var showBottomSheet by remember { mutableStateOf(false) }
     if (showBottomSheet) {
@@ -56,7 +60,16 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
             sheetState = sheetState
         ) {
             // Sheet content
-            ArsenalDetailScreen(item = selectedItem)
+            selectedWeapon?.let {
+                ArsenalDetailScreen(item = it)
+            }
+            selectedTool?.let {
+                ArsenalDetailScreen(item = it)
+            }
+            selectedConsumable?.let {
+                ArsenalDetailScreen(item = it)
+            }
+
         }
     }
     //var filteredList: List<Item> = emptyList()
@@ -111,10 +124,11 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
             // normal filtering
             uiState.copy(
                 displayedList = uiState.cacheList.filter {
-                    if(it.type.isNotEmpty())
-                    it.type[0] in uiState.activeFilters
-                   else
-                     false}
+                    if (it.type.isNotEmpty())
+                        it.type[0] in uiState.activeFilters
+                    else
+                        false
+                }
             )
         } else {
             // will come in handy if somebody selects a filter and unselects it after
@@ -154,9 +168,18 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
                     desc = item.desc,
                     cost = item.cost
                 ) {
-                    selectedItem = uiState.weaponsList.find {
-                        it.name == item.name
-                    }!!
+                    selectedWeapon = if (item.type.contains("weapon"))
+                        uiState.weaponsList.find { it.name == item.name }
+                    else
+                        null
+                    selectedTool = if (item.type.contains("tools"))
+                        uiState.toolsList.find { it.name == item.name }
+                    else
+                        null
+                    selectedConsumable = if (item.type.contains("consumable"))
+                        uiState.consumablesList.find { it.name == item.name }
+                    else
+                        null
                     showBottomSheet = true
                 }
             }

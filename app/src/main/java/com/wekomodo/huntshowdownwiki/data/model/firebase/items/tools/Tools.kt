@@ -8,8 +8,8 @@ data class Tools(
     val cost: Int = 0,
     val desc: String = "",
     val image_url: String = "",
-    val melee_stats: MeleeStats = MeleeStats(),
+    val melee_stats: MeleeStats? = null,
     val name: String = "",
-    val stats: Stats = Stats(),
+    val stats: Stats? = null,
     val type: List<String> = emptyList()
 )

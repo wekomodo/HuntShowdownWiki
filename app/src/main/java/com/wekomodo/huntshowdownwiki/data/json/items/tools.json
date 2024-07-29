@@ -2,7 +2,10 @@
   {
     "name": "Alert Trip Mines",
     "desc": "This portable tripwire mine releases firecrackers and a small flare, alerting others to its location. Comes in a pack of four.",
-    "type": ["tools","Placeable"],
+    "type": [
+      "tools",
+      "Placeable"
+    ],
     "stats": {
       "damage": 10
     },
@@ -17,47 +20,53 @@
   {
     "name": "Blank Fire Decoys",
     "desc": "A decoy that imitates the sound of a gunshot on impact. Useful to distract and confuse enemies.",
-    "type": ["tools","throwable"],
+    "type": [
+      "tools",
+      "throwable"
+    ],
     "stats": {
-      "damage": 20
+      "damage": 20,
+      "throw_range": 22
     },
     "cost": 45,
     "capacity": "6",
     "melee_stats": {
       "melee": 13,
-      "heavy_melee": 27,
-      "throw_range": 22
+      "heavy_melee": 27
     },
     "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/3/3d/Blank_Fire_Decoys.png/revision/latest/scale-to-width-down/1920?cb=20191002164744"
   },
   {
     "name": "Choke Bombs",
     "desc": "The Choke Bomb exudes a gas that extinguishes any flames within its radius while active-as well as preventing new fires from being lit-and induces heavy coughing. Comes in a pack of two.",
-    "type": ["tools","throwable"],
+    "type": [
+      "tools",
+      "throwable"
+    ],
     "stats": {
       "damage": 1,
       "duration": 120,
       "radius": 3,
-      "fuse_duration": null
+      "throw_range": 22
     },
     "cost": 25,
     "capacity": "2",
     "melee_stats": {
       "melee": 13,
-      "heavy_melee": 27,
-      "throw_range": 22
+      "heavy_melee": 27
     },
-    "image_url": "https://huntshowdown.fandom.com/wiki/Tools#/media/File:Choke_Bomb.png"
+    "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/2/20/Choke_Bomb.png/revision/latest/scale-to-width-down/1920?cb=20191011193521"
   },
   {
     "name": "Concertina Trip Mines",
     "desc": "This portable tripwire mine deploys a small concertina bundle perfect for blocking doors and windows. Comes in a pack of two.",
-    "type": ["tools","Placeable"],
+    "type": [
+      "tools",
+      "Placeable"
+    ],
     "stats": {
       "damage": 32,
-      "duration": null,
-      "radius": 2,
-      "fuse_duration": null
+      "radius": 2
     },
     "cost": 90,
     "capacity": "2",
@@ -70,12 +79,15 @@
   {
     "name": "Decoy Fuses",
     "desc": "Pack of decoy fuses that can be used to breach closed doors and window shutters. It can also imitate the behavior of a lit bomb and can fool your enemies in clearing a space.",
-    "type": ["tools","Throwable"],
+    "type": [
+      "tools",
+      "Throwable"
+    ],
     "stats": {
       "damage": 40,
       "duration": null,
       "radius": 2,
-      "fuse_duration": 6
+      "fuse_timer": 6
     },
     "cost": 30,
     "capacity": "3",
@@ -88,24 +100,29 @@
   {
     "name": "Decoys",
     "desc": "A bag of scrap metal and glass. When thrown the noise can be effectively used to distract or divert enemies.",
-    "type": ["tools","Throwable"],
+    "type": [
+      "tools",
+      "Throwable"
+    ],
     "stats": {
-      "damage": 20
+      "damage": 20,
+      "throw_range": 22
     },
     "cost": 6,
     "capacity": "12",
     "melee_stats": {
       "melee": 13,
-      "heavy_melee": 27,
-      "throw_range": 22
+      "heavy_melee": 27
     },
-
     "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/a/a7/Decoys.png/revision/latest/scale-to-width-down/1000?cb=20191002164740"
   },
   {
     "name": "Derringer Pennyshot",
     "desc": "A small, light pistol tool that holds two Penny Shot Ammo rounds. Perfect in a pinch.",
-    "type": ["tools","Pistol"],
+    "type": [
+      "tools",
+      "Pistol"
+    ],
     "cost": 63,
     "capacity": "2/2",
     "stats": {
@@ -123,18 +140,21 @@
       "melee": 13,
       "heavy_melee": 27
     },
-    "image_url": "null"
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/tools%2Fpennyshot.png?alt=media&token=54bd711e-1bcc-4f68-8334-719c05831b8a"
   },
   {
     "name": "Dusters",
     "desc": "A row of metal rings worn on the hand in order to increase the damage caused in hand-to-hand combat.",
-    "type": ["tools","melee"],
+    "type": [
+      "tools",
+      "melee"
+    ],
     "cost": 30,
     "capacity": "1",
     "stats": null,
     "melee_stats": {
-      "melee": 13,
-      "heavy_melee": 27,
+      "melee": 31,
+      "heavy_melee": 72,
       "stamina_used_light": 8,
       "stamina_used_heavy": 21
     },
@@ -143,7 +163,10 @@
   {
     "name": "Electric Lamp",
     "desc": "A battery-powered light worn on the shoulder. Increases visibility and can be used to blind nearby enemies during night.",
-    "type": ["tools","light"],
+    "type": [
+      "tools",
+      "light"
+    ],
     "cost": 5,
     "capacity": "1",
     "stats": null,
@@ -153,7 +176,10 @@
   {
     "name": "First Aid kit",
     "desc": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
-    "type": ["tools","healing"],
+    "type": [
+      "tools",
+      "healing"
+    ],
     "cost": 30,
     "capacity": "3",
     "stats": null,
@@ -166,7 +192,10 @@
   {
     "name": "Flare Pistol",
     "desc": "A small pistol for firing flares into the air, illuminating the area. Can ignite flammable materials.",
-    "type": ["tools","Pistol"],
+    "type": [
+      "tools",
+      "Pistol"
+    ],
     "cost": 36,
     "capacity": "1/2",
     "stats": {
@@ -189,12 +218,15 @@
   {
     "name": "Fusees",
     "desc": "Handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials. Comes in a pack of three.",
-    "type": ["tools","Throwable"],
+    "type": [
+      "tools",
+      "Throwable"
+    ],
     "cost": 10,
     "capacity": "3",
     "stats": {
       "damage": 11,
-      "duration" : 300
+      "duration": 300
     },
     "melee_stats": {
       "melee": 13,
@@ -206,7 +238,10 @@
   {
     "name": "Heavy Knife",
     "desc": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
-    "type": ["tools","melee"],
+    "type": [
+      "tools",
+      "melee"
+    ],
     "cost": 10,
     "capacity": "1",
     "stats": null,
@@ -221,7 +256,10 @@
   {
     "name": "Knife",
     "desc": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
-    "type": ["tools","melee"],
+    "type": [
+      "tools",
+      "melee"
+    ],
     "cost": 40,
     "capacity": "1",
     "stats": null,
@@ -236,7 +274,10 @@
   {
     "name": "Knuckle Knife",
     "desc": "The savage knuckle knife is a roughshod specialization for close quarters combat, suited for both bludgeoning and brutal thrusting deathblows.",
-    "type": ["tools","melee"],
+    "type": [
+      "tools",
+      "melee"
+    ],
     "cost": 50,
     "capacity": "1",
     "stats": null,
@@ -251,11 +292,14 @@
   {
     "name": "Poison Trip Mines",
     "desc": "This portable tripwire mine releases a cloud of poison when triggered, disorienting enemies. Comes in a pack of two.damage 5/s",
-    "type": ["tools","placeable"],
+    "type": [
+      "tools",
+      "placeable"
+    ],
     "stats": {
+      "damage" : 5,
       "duration": 30,
-      "radius": 1,
-      "fuse_duration": null
+      "radius": 1
     },
     "cost": 30,
     "capacity": "2",
@@ -268,7 +312,10 @@
   {
     "name": "Quad Derringer",
     "desc": "A small, light pistol that is easy to carry and conceal. Holds four shots. Twelve additional rounds carried.",
-    "type": ["tools","pistol"],
+    "type": [
+      "tools",
+      "pistol"
+    ],
     "cost": 30,
     "capacity": "4/12",
     "stats": {
@@ -291,7 +338,10 @@
   {
     "name": "SpyGlass",
     "desc": "A monocular optical instrument for seeing things far away as if they were nearby.",
-    "type": ["tools","throwable"],
+    "type": [
+      "tools",
+      "throwable"
+    ],
     "cost": 8,
     "capacity": "1",
     "stats": {
@@ -306,19 +356,22 @@
   {
     "name": "Throwing Axes",
     "desc": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.\t",
-    "type": ["tools","throwable"],
+    "type": [
+      "tools",
+      "throwable"
+    ],
     "cost": 50,
     "capacity": "2",
     "stats": {
       "damage": 162,
       "spread": 15.0,
       "muzzle_velocity": 30,
-      "sighted_range": 6
+      "sighted_range": 6,
+      "throw_range": 85
     },
     "melee_stats": {
       "melee": 75,
       "heavy_melee": 142,
-      "throw_range": 85,
       "stamina_used_light": 40,
       "stamina_used_heavy": 55,
       "stamina_used_throw": 20
@@ -328,24 +381,51 @@
   {
     "name": "Throwing Knives",
     "desc": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
-    "type": ["tools","throwable"],
+    "type": [
+      "tools",
+      "throwable"
+    ],
     "cost": 30,
     "capacity": "6",
     "stats": {
       "damage": 130,
       "spread": 15.0,
       "muzzle_velocity": 30,
-      "sighted_range": 7.5
+      "sighted_range": 7.5,
+      "throw_range": 115
     },
     "melee_stats": {
       "melee": 75,
       "heavy_melee": 142,
-      "throw_range": 115,
       "stamina_used_light": 10,
       "stamina_used_heavy": 25,
       "stamina_used_throw": 15
     },
     "image_url": "https://static.wikia.nocookie.net/hunthorrorsofthegildedage_gamepedia/images/f/fa/Throwing_Knives.png/revision/latest/scale-to-width-down/1000?cb=20191208143648"
+  },
+  {
+    "name": "Throwing Spear",
+    "desc": "Two-handed melee weapon, also balanced for throwing straight and true. Can be retrieved and reused.",
+    "cost": 65,
+    "capacity": "1",
+    "type": [
+      "tools",
+      "throwable"
+    ],
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/huntshowdown-wiki.appspot.com/o/tools%2Fspear.png?alt=media&token=9b8b9dac-0772-47d7-b0c7-e21a6dcae813",
+    "stats": {
+      "damage": 325,
+      "effective_range": 9,
+      "spread": 5,
+      "muzzle_velocity": 60,
+      "throw_range": 290
+    },
+    "melee_stats" : {
+      "melee": 105,
+      "heavy_melee": 280
+    }
   }
 ]
+
+
 
