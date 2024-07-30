@@ -4,11 +4,16 @@ import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Close
+import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.rememberModalBottomSheetState
@@ -28,25 +33,29 @@ import com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables.Consu
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.tools.Tools
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
 import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
+import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
+import com.wekomodo.huntshowdownwiki.ui.components.SearchComponent
+import com.wekomodo.huntshowdownwiki.ui.theme.displayFontFamily
 import com.wekomodo.huntshowdownwiki.util.Resource
 import com.wekomodo.huntshowdownwiki.util.Status
+import kotlin.math.acos
 
 
 private var filteringCriteria = setOf("weapon", "tools", "consumable")
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
-    val arsenal by viewModel.arsenal.collectAsStateWithLifecycle(
-        initialValue = Resource.Loading(
-            null
-        )
-    )
-    var error by remember { mutableStateOf(false) }
-    var uiState by remember { mutableStateOf(ArsenalUiState()) }
-    var loading by remember { mutableStateOf(true) }
+fun ArsenalScreen(navUiState: ArsenalUiState) {
+    /*    val arsenal by viewModel.arsenal.collectAsStateWithLifecycle(
+            initialValue = Resource.Loading(
+                null
+            )
+        )*/
+    var searchText by remember { mutableStateOf("") }
+    var searchActive by remember { mutableStateOf(false) }
+    var uiState by remember { mutableStateOf(navUiState) }
     var selectedWeapon by remember { mutableStateOf<Weapons?>(null) }
     var selectedTool by remember { mutableStateOf<Tools?>(null) }
     var selectedConsumable by remember { mutableStateOf<Consumables?>(null) }
@@ -72,52 +81,6 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
 
         }
     }
-    //var filteredList: List<Item> = emptyList()
-    LaunchedEffect(arsenal) {
-        if (arsenal is Resource.Success) {
-            val data = arsenal.data
-            data?.let {
-                uiState = uiState.copy(
-                    displayedList = data.arsenal,
-                    cacheList = data.arsenal,
-                    weaponsList = data.weapons,
-                    toolsList = data.tools,
-                    consumablesList = data.consumables
-                )
-
-            }
-
-        }
-        when (arsenal.status) {
-            Status.SUCCESS -> {
-                loading = false
-                error = false
-                val data = arsenal.data
-                data?.let {
-                    uiState = uiState.copy(
-                        displayedList = data.arsenal,
-                        cacheList = data.arsenal,
-                        weaponsList = data.weapons,
-                        toolsList = data.tools,
-                        consumablesList = data.consumables
-                    )
-
-                }
-            }
-
-            Status.LOADING -> {
-                loading = true
-                error = false
-                Log.d("ARSENAL", "LOADING")
-            }
-
-            Status.ERROR -> {
-                error = true
-                loading = false
-                Log.d("ARSENAL", "FAILED")
-            }
-        }
-    }
     // reacts when changes to filters are made
     LaunchedEffect(uiState.activeFilters) {
         uiState = if (uiState.activeFilters.isNotEmpty()) {
@@ -137,7 +100,6 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
             )
         }
     }
-
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -148,6 +110,7 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceAround
         ) {
+            if(searchText.isEmpty())
             filteringCriteria.forEach { filter ->
                 val isSelected = filter in uiState.activeFilters
                 FilterChipComp(enabled = isSelected, name = filter) {
@@ -159,7 +122,29 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
                 }
             }
         }
-        LoadingUiState(loading = loading)
+        SearchComponent(
+            text = searchText,
+            onValueChange = {
+                searchText = it
+            },
+            onSearch = {
+                uiState = uiState.copy(
+                    displayedList = uiState.cacheList.filter {
+                        it.name.contains(searchText, ignoreCase = true)
+                    }
+                )
+                searchActive = false
+            },
+            active = searchActive,
+            onActiveChange = {
+                searchActive = it
+            },
+            leadingIcon = Icons.Rounded.Search,
+            trailingIcon = Icons.Rounded.Close
+        )
+        Spacer(modifier = Modifier.size(16.dp))
+        LoadingUiState(uiState.loading)
+        ErrorUiState(uiState.error)
         LazyColumn {
             itemsIndexed(uiState.displayedList) { _, item ->
                 ArsenalItem(
@@ -190,5 +175,5 @@ fun ArsenalScreen(viewModel: FirebaseViewModel = viewModel()) {
 @Preview
 @Composable
 fun ItemScreenPreview() {
-    ArsenalScreen()
+    ArsenalScreen(ArsenalUiState())
 }
