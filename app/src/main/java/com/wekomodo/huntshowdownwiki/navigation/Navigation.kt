@@ -12,6 +12,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.wekomodo.huntshowdownwiki.data.model.firebase.traits.Trait
 import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
 import com.wekomodo.huntshowdownwiki.ui.screens.arsenal.ArsenalScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.arsenal.ArsenalUiState
@@ -19,12 +20,14 @@ import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapDetailScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.news.NewsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.traits.TraitsScreen
+import com.wekomodo.huntshowdownwiki.ui.screens.traits.TraitsUiState
 import com.wekomodo.huntshowdownwiki.util.Resource
 import com.wekomodo.huntshowdownwiki.util.Status
 
 @Composable
-fun Navigation(navController : NavHostController, viewModel: FirebaseViewModel = viewModel()) {
-    val uiState = readArsenalData(viewModel)
+fun Navigation(navController: NavHostController, viewModel: FirebaseViewModel = viewModel()) {
+    val arsenalUiState = readArsenalData(viewModel)
+    val traitsUiState = readTraitsData(viewModel)
     NavHost(navController = navController, startDestination = Route.NEWS) {
         composable(route = Route.NEWS) {
             NewsScreen()
@@ -32,22 +35,63 @@ fun Navigation(navController : NavHostController, viewModel: FirebaseViewModel =
         composable(
             route = Route.ARSENAL
         ) {
-            ArsenalScreen(uiState)
+            ArsenalScreen(arsenalUiState)
         }
         composable(route = Route.TRAITS) {
-            TraitsScreen()
+            TraitsScreen(traitsUiState)
         }
         composable(route = Route.MAPS) {
             MapsScreen(navController)
         }
         composable(route = "${Route.MAPDETAILS}/mapName={mapName}",
-            arguments = listOf(navArgument("mapName") { defaultValue = "Lawson Delta" })) {
+            arguments = listOf(navArgument("mapName") { defaultValue = "Lawson Delta" })
+        ) {
             val arguments = requireNotNull(it.arguments)
             val mapName = arguments.getString("mapName") ?: error("Missing mapName argument")
             MapDetailScreen(mapName = mapName)
         }
 
     }
+}
+
+@Composable
+fun readTraitsData(viewModel: FirebaseViewModel): TraitsUiState {
+    var uiState by remember {
+        mutableStateOf(TraitsUiState())
+    }
+    val traits by viewModel.traits.collectAsStateWithLifecycle(
+        initialValue = Resource.Loading(
+            null
+        )
+    )
+    LaunchedEffect(traits) {
+        when (traits.status) {
+            Status.SUCCESS -> {
+                val data = traits.data?.toList() ?: emptyList()
+                uiState = uiState.copy(
+                    traitList = data,
+                    displayedList = data,
+                    loading = false,
+                    error = false
+                )
+            }
+
+            Status.LOADING -> {
+                uiState = uiState.copy(
+                    loading = true,
+                    error = false
+                )
+            }
+
+            Status.ERROR -> {
+                uiState = uiState.copy(
+                    loading = false,
+                    error = true
+                )
+            }
+        }
+    }
+    return uiState
 }
 
 @Composable
@@ -61,12 +105,12 @@ fun readArsenalData(viewModel: FirebaseViewModel): ArsenalUiState {
         )
     )
     LaunchedEffect(arsenal) {
-        when(arsenal.status){
+        when (arsenal.status) {
             Status.LOADING -> {
-              uiState = uiState.copy(
-                  loading = true,
-                  error = false
-              )
+                uiState = uiState.copy(
+                    loading = true,
+                    error = false
+                )
             }
 
             Status.ERROR -> {
@@ -75,6 +119,7 @@ fun readArsenalData(viewModel: FirebaseViewModel): ArsenalUiState {
                     error = true
                 )
             }
+
             Status.SUCCESS -> {
                 val data = arsenal.data
                 data?.let {
@@ -85,7 +130,7 @@ fun readArsenalData(viewModel: FirebaseViewModel): ArsenalUiState {
                         toolsList = data.tools,
                         consumablesList = data.consumables,
                         error = false,
-                        loading =  false
+                        loading = false
                     )
                 }
             }
