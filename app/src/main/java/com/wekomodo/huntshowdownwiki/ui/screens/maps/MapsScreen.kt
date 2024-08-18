@@ -26,9 +26,12 @@ import com.wekomodo.huntshowdownwiki.data.model.local.ItemMap
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MapsScreen(navController: NavController) {
-    val maps = listOf(ItemMap("Lawson Delta", R.drawable.lawson_delta_cover),
+    val maps = listOf(
+        ItemMap("Mammon's Gulch", R.drawable.mammons_gulch_cover),
+        ItemMap("Lawson Delta", R.drawable.lawson_delta_cover),
         ItemMap("StillWater Bayou",R.drawable.still_water_bayou_cover),
-        ItemMap("DeSalle",R.drawable.desalle_cover)
+        ItemMap("DeSalle",R.drawable.desalle_cover),
+
     )
     var selectedItem by remember {
         mutableStateOf("")

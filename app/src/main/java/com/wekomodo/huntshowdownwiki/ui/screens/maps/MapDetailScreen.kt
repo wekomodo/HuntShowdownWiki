@@ -36,11 +36,12 @@ fun MapDetailScreen(
     mapName: String
 ) {
     val context = LocalContext.current
-    val mapImage: Int
-    val locationsImage: Int
-    val spawnsImage: Int
-    val towersImage: Int
-    val beetleImage: Int
+    var mapImage: Int = 0
+    var locationsImage: Int = 0
+    var spawnsImage: Int = 0
+    var towersImage: Int = 0
+    var beetleImage: Int = 0
+    var legend = true
     when (mapName) {
         "Lawson Delta" -> {
             mapImage = R.drawable.lawson_delta
@@ -48,6 +49,7 @@ fun MapDetailScreen(
             spawnsImage = R.drawable.lawson_delta_spawn_locations
             towersImage = R.drawable.lawson_delta_towers
             beetleImage = R.drawable.lawson_delta_beetle
+            legend = true
         }
 
         "StillWater Bayou" -> {
@@ -56,6 +58,7 @@ fun MapDetailScreen(
             spawnsImage = R.drawable.still_water_bayou_spawn_locations
             towersImage = R.drawable.still_water_bayou_towers
             beetleImage = R.drawable.still_water_bayou_beetle
+            legend = true
         }
 
         "DeSalle" -> {
@@ -64,7 +67,14 @@ fun MapDetailScreen(
             spawnsImage = R.drawable.desalle_spawn_locations
             towersImage = R.drawable.desalle_towers
             beetleImage = R.drawable.desalle_beetle
+            legend = true
         }
+
+        "Mammon's Gulch" ->{
+            mapImage = R.drawable.mammons_gulch
+            legend = false
+        }
+
 
         else -> {
             Toast.makeText(context, "some error occurred", Toast.LENGTH_SHORT).show()
@@ -131,34 +141,37 @@ fun MapDetailScreen(
                         offsetX = offsetX,
                         offsetY = offsetY
                     )
-                    if (names)
-                        ZoomableImage(
-                            image = locationsImage,
-                            scale = scale,
-                            offsetX = offsetX,
-                            offsetY = offsetY
-                        )
-                    if (spawnLocation)
-                        ZoomableImage(
-                            image = spawnsImage,
-                            scale = scale,
-                            offsetX = offsetX,
-                            offsetY = offsetY
-                        )
-                    if (towers)
-                        ZoomableImage(
-                            image = towersImage,
-                            scale = scale,
-                            offsetX = offsetX,
-                            offsetY = offsetY
-                        )
-                    if (beetle)
-                        ZoomableImage(
-                            image = beetleImage,
-                            scale = scale,
-                            offsetX = offsetX,
-                            offsetY = offsetY
-                        )
+                    if(legend){
+                        if (names)
+                            ZoomableImage(
+                                image = locationsImage,
+                                scale = scale,
+                                offsetX = offsetX,
+                                offsetY = offsetY
+                            )
+                        if (spawnLocation)
+                            ZoomableImage(
+                                image = spawnsImage,
+                                scale = scale,
+                                offsetX = offsetX,
+                                offsetY = offsetY
+                            )
+                        if (towers)
+                            ZoomableImage(
+                                image = towersImage,
+                                scale = scale,
+                                offsetX = offsetX,
+                                offsetY = offsetY
+                            )
+                        if (beetle)
+                            ZoomableImage(
+                                image = beetleImage,
+                                scale = scale,
+                                offsetX = offsetX,
+                                offsetY = offsetY
+                            )
+                    }
+
                 }
             }
         }
@@ -167,20 +180,28 @@ fun MapDetailScreen(
                 .fillMaxWidth()
                 .padding(8.dp)
         ) {
-            Text(
+
+            if(legend) {
+                Text(
+                    modifier = Modifier.padding(8.dp),
+                    text = "Map Legend",
+                    style = MaterialTheme.typography.titleLarge
+                )
+                MapLegendButton(names, R.drawable.ic_location_names, "Locations") { names = it }
+                MapLegendButton(
+                    spawnLocation,
+                    R.drawable.ic_spawn_location,
+                    "Spawn Locations"
+                ) { spawnLocation = it }
+                MapLegendButton(towers, R.drawable.ic_towers, "Tower Locations") { towers = it }
+                MapLegendButton(beetle, R.drawable.ic_beetle, "Beetle Locations") { beetle = it }
+                MapLegend(icon = R.drawable.ic_resupply, name = "Resupply")
+            }
+            else  Text(
                 modifier = Modifier.padding(8.dp),
-                text = "Map Legend",
+                text = "Still in progress!",
                 style = MaterialTheme.typography.titleLarge
             )
-            MapLegendButton(names, R.drawable.ic_location_names, "Locations") { names = it }
-            MapLegendButton(
-                spawnLocation,
-                R.drawable.ic_spawn_location,
-                "Spawn Locations"
-            ) { spawnLocation = it }
-            MapLegendButton(towers, R.drawable.ic_towers, "Tower Locations") { towers = it }
-            MapLegendButton(beetle, R.drawable.ic_beetle, "Beetle Locations") { beetle = it }
-            MapLegend(icon = R.drawable.ic_resupply, name = "Resupply")
         }
 
 

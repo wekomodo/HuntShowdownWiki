@@ -37,7 +37,7 @@ class FirebaseViewModel : ViewModel() {
 
     private fun fetchTraits() {
         val tempList = mutableListOf(Trait())
-        FirebaseDatabase.getInstance().getReference().child("traits").get().addOnSuccessListener {
+        FirebaseDatabase.getInstance().getReference().child("traits").orderByChild("name").get().addOnSuccessListener {
             for (traits in it.children){
                 val trait = traits.getValue(Trait::class.java)
                 tempList.remove(Trait())
@@ -45,6 +45,8 @@ class FirebaseViewModel : ViewModel() {
                     tempList.add(trait)
                 }
             }
+            tempList.sortBy { sort ->
+                sort.name }
             _traits.value = Resource.Success(tempList)
         }
     }

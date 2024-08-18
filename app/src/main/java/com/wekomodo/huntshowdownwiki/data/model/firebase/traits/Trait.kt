@@ -9,5 +9,6 @@ data class Trait(
     val pact: String = "",
     val rank_unlocked: Int = 0,
     val stack_limit: Int = 0,
-    val type: String = ""
+    val type: List<String> = emptyList(),
+    val event_effect : String = ""
 )

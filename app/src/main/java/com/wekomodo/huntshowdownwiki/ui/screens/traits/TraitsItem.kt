@@ -16,17 +16,22 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.wekomodo.huntshowdownwiki.R
+import java.util.Locale
 
 @Composable
-fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
+fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int, event_effect : String, pact : String) {
 
     Box(
         modifier = Modifier
@@ -36,7 +41,7 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
         Card(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(200.dp)
+                .height(220.dp)
                 .padding(10.dp)
         ) {
             Image(
@@ -60,7 +65,19 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
                 )
                 Column {
                     Text(
-                        text = name,
+                        text = buildAnnotatedString {
+                            append(name+"\n")
+                            withStyle(
+                                SpanStyle(
+                                    brush = Brush.linearGradient(
+                                        colors = listOf(Color.Yellow, Color.Red)
+                                    )
+                                )
+                            ){
+                                if(pact != "NONE")
+                                    append(pact.lowercase(Locale.ROOT))
+                            }
+                        },
                         color = Color.White,
                         style = MaterialTheme.typography.titleLarge
                     )
@@ -85,13 +102,25 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
                         color = Color.White,
                         style = MaterialTheme.typography.bodyLarge
                     )
-
                 }
 
             }
             Text(
                 modifier = Modifier.padding(start = 18.dp, bottom = 10.dp, end = 18.dp),
-                text = desc,
+                text = buildAnnotatedString {
+                    append(desc+"\n")
+                    withStyle(
+                        SpanStyle(
+                            brush = Brush.linearGradient(
+                                colors = listOf(Color.Yellow,Color.Red)
+                            )
+                        )
+                    ) {
+                        if(event_effect.isNotEmpty())
+                            append(event_effect)
+                    }
+
+                },
                 color = Color.White,
                 style = MaterialTheme.typography.bodySmall,
                 overflow = TextOverflow.Ellipsis,
@@ -99,6 +128,9 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
         }
 
     }
+
+
+
 }
 
 
@@ -107,5 +139,5 @@ fun TraitsItem(link: String, name: String, desc: String, cost: Int, rank: Int) {
 fun TraitsItemPreview() {
     val link =
         "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/WELNetworks-logo.svg/1200px-WELNetworks-logo.svg.png"
-    TraitsItem(link, "Assiliant", "BLEH BLEH BLEH", 1, 42)
+    TraitsItem(link, "Assiliant", "BLEH BLEH BLEH", 1, 42, " YEA STOOPID", " DEMENTED PACT")
 }
