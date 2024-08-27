@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.google.android.gms.ads.nativead.NativeAd
 import com.wekomodo.huntshowdownwiki.data.model.steam.Newsitem
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
 import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
@@ -28,6 +29,7 @@ import com.wekomodo.huntshowdownwiki.util.Status
 @Composable
 fun NewsScreen(
     viewModel: SteamNewsViewModel = hiltViewModel(),
+    nativeAd: NativeAd?
 ) {
     var refresh = false
     val context = LocalContext.current
@@ -71,8 +73,10 @@ fun NewsScreen(
             refresh=!refresh
         }
         LazyColumn {
+            var c = 0
             if(newsList.size>1)
             itemsIndexed(newsList) { _, item ->
+                c++
                 if(item.feedlabel == "Community Announcements")
                 NewsItemUi(
                     item
@@ -86,6 +90,13 @@ fun NewsScreen(
                     )
                  //   uriHandler.openUri(item.url)
                 }
+                    // to show ads (STILL FIGURING IT OUT!)
+                /*if(c/5 == 0){
+                    if (nativeAd != null) {
+                        CallNativeAd(nativeAd)
+                    }
+                }*/
+
             }
         }
 
