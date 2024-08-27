@@ -5,12 +5,14 @@ import androidx.compose.animation.scaleOut
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.wekomodo.huntshowdownwiki.R
@@ -31,7 +33,7 @@ fun LoadingUiState( loading : Boolean){
 }
 
 @Composable
-fun ErrorUiState(error : Boolean){
+fun ErrorUiState(error : Boolean, refresh: ()-> Unit){
     AnimatedVisibility(visible = error,
         exit = scaleOut()
     )
@@ -40,7 +42,9 @@ fun ErrorUiState(error : Boolean){
             Text(text = "Mr Frog has some wisdom for you", style = MaterialTheme.typography.titleLarge)
             AnimatedPreloader(rawRes = R.raw.frog_bones, Modifier.size(150.dp))
             Text(text = "Check your internet connection?")
-
+            Button(onClick = refresh) {
+                Text(text = stringResource(id = R.string.refresh))
+            }
         }
 
     }
@@ -57,4 +61,6 @@ fun LoadingUiStatePreview(){
 @Composable
 fun ErrorUiStatePreview(){
     ErrorUiState(error = true)
-}
+    {
+
+    }}

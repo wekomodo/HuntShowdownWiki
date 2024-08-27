@@ -27,12 +27,13 @@ import com.wekomodo.huntshowdownwiki.util.Status
 
 @Composable
 fun NewsScreen(
-    viewModel: SteamNewsViewModel = hiltViewModel()
+    viewModel: SteamNewsViewModel = hiltViewModel(),
 ) {
+    var refresh = false
     val context = LocalContext.current
     var loading by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf(false) }
-    LaunchedEffect(Unit) {
+    LaunchedEffect(Unit, refresh) {
         viewModel.getNews("594650", "10", "500", "json")
     }
     val result = viewModel.steamNews.collectAsStateWithLifecycle()
@@ -66,7 +67,9 @@ fun NewsScreen(
     ) {
 
        LoadingUiState(loading = loading)
-        ErrorUiState(error = error)
+        ErrorUiState(error = error){
+            refresh=!refresh
+        }
         LazyColumn {
             if(newsList.size>1)
             itemsIndexed(newsList) { _, item ->

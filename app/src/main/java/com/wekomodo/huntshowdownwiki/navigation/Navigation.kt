@@ -12,7 +12,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.wekomodo.huntshowdownwiki.data.model.firebase.traits.Trait
 import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
 import com.wekomodo.huntshowdownwiki.ui.screens.arsenal.ArsenalScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.arsenal.ArsenalUiState
@@ -23,6 +22,8 @@ import com.wekomodo.huntshowdownwiki.ui.screens.traits.TraitsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.traits.TraitsUiState
 import com.wekomodo.huntshowdownwiki.util.Resource
 import com.wekomodo.huntshowdownwiki.util.Status
+
+var refresh = false
 
 @Composable
 fun Navigation(navController: NavHostController, viewModel: FirebaseViewModel = viewModel()) {
@@ -35,10 +36,14 @@ fun Navigation(navController: NavHostController, viewModel: FirebaseViewModel = 
         composable(
             route = Route.ARSENAL
         ) {
-            ArsenalScreen(arsenalUiState)
+            ArsenalScreen(arsenalUiState) {
+                refresh=!refresh
+            }
         }
         composable(route = Route.TRAITS) {
-            TraitsScreen(traitsUiState)
+            TraitsScreen(traitsUiState) {
+                refresh=!refresh
+            }
         }
         composable(route = Route.MAPS) {
             MapsScreen(navController)
@@ -64,7 +69,7 @@ fun readTraitsData(viewModel: FirebaseViewModel): TraitsUiState {
             null
         )
     )
-    LaunchedEffect(traits) {
+    LaunchedEffect(traits, refresh) {
         when (traits.status) {
             Status.SUCCESS -> {
                 val data = traits.data?.toList() ?: emptyList()
@@ -104,7 +109,7 @@ fun readArsenalData(viewModel: FirebaseViewModel): ArsenalUiState {
             null
         )
     )
-    LaunchedEffect(arsenal) {
+    LaunchedEffect(arsenal,refresh) {
         when (arsenal.status) {
             Status.LOADING -> {
                 uiState = uiState.copy(

@@ -30,7 +30,8 @@ private var filteringCriteria = setOf("Base Trait", "Scarce Trait", "Event Trait
 
 @Composable
 fun TraitsScreen(
-    navUiState: TraitsUiState
+    navUiState: TraitsUiState,
+    refresh : () -> Unit
 ) {
     var TAG = "TRAITS SCREEN"
     var uiState by remember { mutableStateOf(navUiState) }
@@ -43,7 +44,7 @@ fun TraitsScreen(
             // normal filtering
             uiState.copy(
                 displayedList = uiState.traitList.filter {
-                    it.type.contains(uiState.activeFilters.first(), ignoreCase = true)
+                    it.type[0] in uiState.activeFilters || if(it.type.size >1)it.type[1] in uiState.activeFilters else false
                 }
             )
         } else {
@@ -96,7 +97,7 @@ fun TraitsScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             LoadingUiState(uiState.loading)
-            ErrorUiState(uiState.error)
+            ErrorUiState(uiState.error, refresh)
             LazyColumn {
                 itemsIndexed(uiState.displayedList) { _, item ->
                     TraitsItem(
@@ -122,5 +123,5 @@ fun List<String>.contains(s: String, ignoreCase: Boolean = true): Boolean {
 @Preview
 @Composable
 fun TraitsScreenPreview() {
-    TraitsScreen(TraitsUiState())
+    TraitsScreen(TraitsUiState()) {}
 }

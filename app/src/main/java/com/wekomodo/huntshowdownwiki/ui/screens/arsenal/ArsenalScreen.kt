@@ -1,6 +1,5 @@
 package com.wekomodo.huntshowdownwiki.ui.screens.arsenal
 
-import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -27,27 +26,20 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables.Consumables
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.tools.Tools
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
-import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
 import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
 import com.wekomodo.huntshowdownwiki.ui.components.SearchComponent
-import com.wekomodo.huntshowdownwiki.ui.theme.displayFontFamily
-import com.wekomodo.huntshowdownwiki.util.Resource
-import com.wekomodo.huntshowdownwiki.util.Status
-import kotlin.math.acos
 
 
 private var filteringCriteria = setOf("weapon", "tools", "consumable")
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ArsenalScreen(navUiState: ArsenalUiState) {
+fun ArsenalScreen(navUiState: ArsenalUiState, refresh : ()-> Unit) {
     /*    val arsenal by viewModel.arsenal.collectAsStateWithLifecycle(
             initialValue = Resource.Loading(
                 null
@@ -144,7 +136,7 @@ fun ArsenalScreen(navUiState: ArsenalUiState) {
         )
         Spacer(modifier = Modifier.size(16.dp))
         LoadingUiState(uiState.loading)
-        ErrorUiState(uiState.error)
+        ErrorUiState(uiState.error, refresh)
         LazyColumn {
             itemsIndexed(uiState.displayedList) { _, item ->
                 ArsenalItem(
@@ -175,5 +167,7 @@ fun ArsenalScreen(navUiState: ArsenalUiState) {
 @Preview
 @Composable
 fun ItemScreenPreview() {
-    ArsenalScreen(ArsenalUiState())
+    ArsenalScreen(ArsenalUiState()) {
+
+    }
 }
