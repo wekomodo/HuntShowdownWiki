@@ -1,15 +1,18 @@
 package com.wekomodo.huntshowdownwiki.ui.screens.arsenal
 
+import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Close
 import androidx.compose.material.icons.rounded.Search
@@ -29,8 +32,10 @@ import androidx.compose.ui.unit.dp
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables.Consumables
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.tools.Tools
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
+import com.wekomodo.huntshowdownwiki.ui.components.CallNativeAd
 import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
+import com.wekomodo.huntshowdownwiki.ui.components.LoadSimpleAd
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
 import com.wekomodo.huntshowdownwiki.ui.components.SearchComponent
 
@@ -122,7 +127,7 @@ fun ArsenalScreen(navUiState: ArsenalUiState, refresh : ()-> Unit) {
             onSearch = {
                 uiState = uiState.copy(
                     displayedList = uiState.cacheList.filter {
-                        it.name.contains(searchText, ignoreCase = true)
+                        it.name.contains(searchText, ignoreCase = true)/* || if(it.type.size > 2)it.type[1].contains(searchText, ignoreCase = true)  else false*/
                     }
                 )
                 searchActive = false
@@ -137,7 +142,7 @@ fun ArsenalScreen(navUiState: ArsenalUiState, refresh : ()-> Unit) {
         Spacer(modifier = Modifier.size(16.dp))
         LoadingUiState(uiState.loading)
         ErrorUiState(uiState.error, refresh)
-        LazyColumn {
+        LazyColumn(state = rememberLazyListState()) {
             itemsIndexed(uiState.displayedList) { _, item ->
                 ArsenalItem(
                     name = item.name,

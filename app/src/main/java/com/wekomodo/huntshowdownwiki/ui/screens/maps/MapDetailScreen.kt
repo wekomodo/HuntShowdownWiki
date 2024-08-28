@@ -70,7 +70,7 @@ fun MapDetailScreen(
             legend = true
         }
 
-        "Mammon's Gulch" ->{
+        "Mammon's Gulch" -> {
             mapImage = R.drawable.mammons_gulch
             legend = false
         }
@@ -136,40 +136,33 @@ fun MapDetailScreen(
                 ZoomableBox(
                 ) {
                     ZoomableImage(
-                        image = mapImage,
-                        scale = scale,
-                        offsetX = offsetX,
-                        offsetY = offsetY
+                        image = mapImage, scale = scale, offsetX = offsetX, offsetY = offsetY
                     )
-                    if(legend){
-                        if (names)
-                            ZoomableImage(
-                                image = locationsImage,
-                                scale = scale,
-                                offsetX = offsetX,
-                                offsetY = offsetY
-                            )
-                        if (spawnLocation)
-                            ZoomableImage(
-                                image = spawnsImage,
-                                scale = scale,
-                                offsetX = offsetX,
-                                offsetY = offsetY
-                            )
-                        if (towers)
-                            ZoomableImage(
-                                image = towersImage,
-                                scale = scale,
-                                offsetX = offsetX,
-                                offsetY = offsetY
-                            )
-                        if (beetle)
-                            ZoomableImage(
-                                image = beetleImage,
-                                scale = scale,
-                                offsetX = offsetX,
-                                offsetY = offsetY
-                            )
+                    if (legend) {
+                        ZoomableImage(
+                            image = when {
+                                names -> locationsImage
+                                spawnLocation -> spawnsImage
+                                towers -> towersImage
+                                beetle -> beetleImage
+                                else -> R.drawable.app_icon
+                            }, scale = scale, offsetX = offsetX, offsetY = offsetY
+                        )
+                       /* if (names) ZoomableImage(
+                            image = locationsImage,
+                            scale = scale,
+                            offsetX = offsetX,
+                            offsetY = offsetY
+                        )
+                        if (spawnLocation) ZoomableImage(
+                            image = spawnsImage, scale = scale, offsetX = offsetX, offsetY = offsetY
+                        )
+                        if (towers) ZoomableImage(
+                            image = towersImage, scale = scale, offsetX = offsetX, offsetY = offsetY
+                        )
+                        if (beetle) ZoomableImage(
+                            image = beetleImage, scale = scale, offsetX = offsetX, offsetY = offsetY
+                        )*/
                     }
 
                 }
@@ -181,7 +174,7 @@ fun MapDetailScreen(
                 .padding(8.dp)
         ) {
 
-            if(legend) {
+            if (legend) {
                 Text(
                     modifier = Modifier.padding(8.dp),
                     text = "Map Legend",
@@ -189,15 +182,12 @@ fun MapDetailScreen(
                 )
                 MapLegendButton(names, R.drawable.ic_location_names, "Locations") { names = it }
                 MapLegendButton(
-                    spawnLocation,
-                    R.drawable.ic_spawn_location,
-                    "Spawn Locations"
+                    spawnLocation, R.drawable.ic_spawn_location, "Spawn Locations"
                 ) { spawnLocation = it }
                 MapLegendButton(towers, R.drawable.ic_towers, "Tower Locations") { towers = it }
                 MapLegendButton(beetle, R.drawable.ic_beetle, "Beetle Locations") { beetle = it }
                 MapLegend(icon = R.drawable.ic_resupply, name = "Resupply")
-            }
-            else  Text(
+            } else Text(
                 modifier = Modifier.padding(8.dp),
                 text = "Still in progress!",
                 style = MaterialTheme.typography.titleLarge

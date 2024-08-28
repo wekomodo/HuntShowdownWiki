@@ -15,5 +15,6 @@ data class Stats(
     val sighted_range: Int? = null,
     val spread: Double? = null,
     val sway: Int? = null,
-    val vertical_recoil: Double? = null
+    val vertical_recoil: Double? = null,
+    val drop_range : Int = 0
 )

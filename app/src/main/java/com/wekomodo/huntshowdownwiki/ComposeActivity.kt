@@ -14,6 +14,8 @@ import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.navigation.compose.rememberNavController
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.RequestConfiguration
 import com.wekomodo.huntshowdownwiki.navigation.Navigation
 import com.wekomodo.huntshowdownwiki.ui.components.NavBar
 import com.wekomodo.huntshowdownwiki.ui.components.TopBar
@@ -26,18 +28,7 @@ class ComposeActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var arr = intArrayOf(0)
-        arr.size 
-        // appId is huntShowdown SteamApp id
-
-       /* lifecycleScope.launch {
-            viewModel.steamNews.collect {
-                if (it.status == Status.SUCCESS) {
-                    Log.d("data",it.data.toString())
-                   // Toast.makeText(this@ComposeActivity, it.data.toString(), Toast.LENGTH_SHORT).show()
-                }
-            }
-        }*/
+        MobileAds.initialize(this) {}
         setContent {
             HuntShowdownWikiTheme {
                 val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior(rememberTopAppBarState())

@@ -9,6 +9,7 @@ import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
@@ -30,27 +31,39 @@ import coil.compose.rememberAsyncImagePainter
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdRequest.Builder
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import com.google.android.gms.ads.nativead.NativeAdView
+import com.wekomodo.huntshowdownwiki.BuildConfig
 
 fun loadNativeAd(context: Context, adUnitId: String, callback: (NativeAd?) -> Unit) {
-    val builder = AdLoader.Builder(context, adUnitId)
-        .forNativeAd { nativeAd ->
-            callback(nativeAd)
+    val builder = AdLoader.Builder(context, adUnitId).forNativeAd { nativeAd ->
+        callback(nativeAd)
+    }
+
+    val adLoader = builder.withAdListener(object : AdListener() {
+        override fun onAdFailedToLoad(adError: LoadAdError) {
+            callback(null)
         }
+    }).withNativeAdOptions(NativeAdOptions.Builder().build()).build()
+    adLoader.loadAd(Builder().build())
+}
 
-    val adLoader = builder
-        .withAdListener(object : AdListener() {
-            override fun onAdFailedToLoad(adError: LoadAdError) {
-                callback(null)
-            }
-        })
-        .withNativeAdOptions(NativeAdOptions.Builder().build())
-        .build()
 
-    adLoader.loadAd(AdRequest.Builder().build())
+@Composable
+fun LoadSimpleAd(modifier: Modifier) {
+    AndroidView(modifier = modifier.fillMaxWidth(), factory = { context ->
+        AdView(context).apply {
+            setAdSize(AdSize.BANNER)
+           adUnitId = BuildConfig.BANNER_AD_ID
+            // calling load ad to load our ad.
+            loadAd(Builder().build())
+        }
+    })
 }
 
 @Composable
@@ -67,31 +80,28 @@ fun NativeAdView(
 ) {
     val contentViewId by remember { mutableIntStateOf(View.generateViewId()) }
     val adViewId by remember { mutableIntStateOf(View.generateViewId()) }
-    AndroidView(
-        factory = { context ->
-            val contentView = ComposeView(context).apply {
-                id = contentViewId
-            }
-            NativeAdView(context).apply {
-                id = adViewId
-                addView(contentView)
-            }
-        },
-        update = { view ->
-            val adView = view.findViewById<NativeAdView>(adViewId)
-            val contentView = view.findViewById<ComposeView>(contentViewId)
-
-            adView.setNativeAd(ad)
-            adView.callToActionView = contentView
-            contentView.setContent { adContent(ad, contentView) }
+    AndroidView(factory = { context ->
+        val contentView = ComposeView(context).apply {
+            id = contentViewId
         }
-    )
+        NativeAdView(context).apply {
+            id = adViewId
+            addView(contentView)
+        }
+    }, update = { view ->
+        val adView = view.findViewById<NativeAdView>(adViewId)
+        val contentView = view.findViewById<ComposeView>(contentViewId)
+
+        adView.setNativeAd(ad)
+        adView.callToActionView = contentView
+        contentView.setContent { adContent(ad, contentView) }
+    })
 }
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 private fun LoadAdContent(nativeAd: NativeAd?, composeView: View) {
-    val maxWithModifier : Modifier = Modifier
+    val maxWithModifier: Modifier = Modifier
     Card(
         modifier = maxWithModifier
             .padding(horizontal = 16.dp, vertical = 4.dp)
@@ -103,12 +113,10 @@ private fun LoadAdContent(nativeAd: NativeAd?, composeView: View) {
     ) {
         nativeAd?.let {
             Column(
-                modifier = maxWithModifier
-                    .padding(8.dp)
+                modifier = maxWithModifier.padding(8.dp)
             ) {
                 Row(
-                    modifier = maxWithModifier,
-                    horizontalArrangement = Arrangement.Start
+                    modifier = maxWithModifier, horizontalArrangement = Arrangement.Start
                 ) {
                     val icon: Drawable? = it.icon?.drawable
                     icon?.let { drawable ->
@@ -137,19 +145,15 @@ private fun LoadAdContent(nativeAd: NativeAd?, composeView: View) {
                 }
 
                 it.callToAction?.let { cta ->
-                    Button(
-                        modifier = maxWithModifier,
-                        onClick = {
-                            composeView.performClick()
-                        },
-                        content = {
-                            Text(
-                                text = cta.uppercase(),
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                style = MaterialTheme.typography.titleMedium
-                            )
-                        }
-                    )
+                    Button(modifier = maxWithModifier, onClick = {
+                        composeView.performClick()
+                    }, content = {
+                        Text(
+                            text = cta.uppercase(),
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            style = MaterialTheme.typography.titleMedium
+                        )
+                    })
                 }
             }
         } ?: run {

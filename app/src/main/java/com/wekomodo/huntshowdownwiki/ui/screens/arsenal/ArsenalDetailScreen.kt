@@ -32,6 +32,7 @@ import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.Stats
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables.Consumables
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.tools.Tools
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
+import com.wekomodo.huntshowdownwiki.ui.components.LoadSimpleAd
 
 
 @Composable
@@ -133,7 +134,7 @@ fun ArsenalDetailScreen(item: Consumables) {
 }
 
 @Composable
-fun ArsenalDetailedStats(stats : Stats){
+fun ArsenalDetailedStats(stats: Stats) {
     stats.damage?.let {
         DetailedItem(
             icon = R.drawable.ic_damage,
@@ -150,14 +151,13 @@ fun ArsenalDetailedStats(stats : Stats){
             maxValue = 7.3.toInt()
         )
     }
-    stats.effective_range?.let {
+    if (stats.drop_range != 0)
         DetailedItem(
             icon = R.drawable.ic_effective_range,
-            "Effective Range(meter)",
-            value = it.substringBefore("m"),
+            "Drop Range(meter)",
+            value = stats.drop_range.toString(),
             maxValue = 347
         )
-    }
     stats.muzzle_velocity?.let {
         DetailedItem(
             icon = R.drawable.ic_muzzle_velocity,
@@ -255,12 +255,11 @@ fun ArsenalDetailedStats(stats : Stats){
             maxValue = 150
         )
     }
-
 }
 
 
 @Composable
-fun ArsenalDetailedMeleeStats(meleeStats: MeleeStats?){
+fun ArsenalDetailedMeleeStats(meleeStats: MeleeStats?) {
     meleeStats?.let {
         DetailedItem(
             icon = R.drawable.ic_melee_light,
@@ -274,12 +273,8 @@ fun ArsenalDetailedMeleeStats(meleeStats: MeleeStats?){
             value = it.heavy_melee.toString(),
             360
         )
-    }
+        LoadSimpleAd(modifier = Modifier.height(90.dp))    }
 }
-
-
-
-
 
 
 @Composable

@@ -2,11 +2,15 @@ package com.wekomodo.huntshowdownwiki.ui.screens.news
 
 import android.content.Intent
 import android.net.Uri
+import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -16,12 +20,15 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.google.android.gms.ads.nativead.NativeAd
 import com.wekomodo.huntshowdownwiki.data.model.steam.Newsitem
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
+import com.wekomodo.huntshowdownwiki.ui.components.CallNativeAd
 import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
+import com.wekomodo.huntshowdownwiki.ui.components.LoadSimpleAd
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
 import com.wekomodo.huntshowdownwiki.util.Status
 
@@ -32,6 +39,7 @@ fun NewsScreen(
     nativeAd: NativeAd?
 ) {
     var refresh = false
+    var showAd = true
     val context = LocalContext.current
     var loading by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf(false) }
@@ -72,31 +80,32 @@ fun NewsScreen(
         ErrorUiState(error = error){
             refresh=!refresh
         }
-        LazyColumn {
-            var c = 0
+        LazyColumn(state = rememberLazyListState()){
+
             if(newsList.size>1)
             itemsIndexed(newsList) { _, item ->
-                c++
-                if(item.feedlabel == "Community Announcements")
-                NewsItemUi(
-                    item
-                ) {
-                    context.startActivity(
-                        Intent(
-                            Intent.ACTION_VIEW, Uri.parse(
-                              item.url
+                if(item.feedlabel == "Community Announcements") {
+                    if(showAd){
+                        if (nativeAd != null) {
+                            CallNativeAd(nativeAd)
+                        }
+                       // LoadSimpleAd(modifier = Modifier.height(90.dp))
+                        showAd = false
+                    }
+                    NewsItemUi(
+                        item
+                    ) {
+                        context.startActivity(
+                            Intent(
+                                Intent.ACTION_VIEW, Uri.parse(
+                                    item.url
+                                )
                             )
                         )
-                    )
-                 //   uriHandler.openUri(item.url)
+                        //   uriHandler.openUri(item.url)
+                    }
                 }
                     // to show ads (STILL FIGURING IT OUT!)
-                /*if(c/5 == 0){
-                    if (nativeAd != null) {
-                        CallNativeAd(nativeAd)
-                    }
-                }*/
-
             }
         }
 

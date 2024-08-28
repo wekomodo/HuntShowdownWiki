@@ -38,7 +38,6 @@ var refresh = false
 @Composable
 fun Navigation(navController: NavHostController, viewModel: FirebaseViewModel = viewModel()) {
     val context = LocalContext.current
-    val ad =  loadAd(context)
     var nativeAd by remember { mutableStateOf<NativeAd?>(null) }
     LaunchedEffect(null) {
         loadNativeAd(context, BuildConfig.NATIVE_AD_ID) {
