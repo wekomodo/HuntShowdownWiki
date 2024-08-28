@@ -78,7 +78,7 @@ fun Navigation(navController: NavHostController, viewModel: FirebaseViewModel = 
 }
 @Composable
 fun loadAd(context: Context): AdLoader {
-    val adLoader = AdLoader.Builder(context, "ca-app-pub-3940256099942544/2247696110}")
+    val adLoader = AdLoader.Builder(context, BuildConfig.NATIVE_AD_ID)
         .forNativeAd { ad : NativeAd ->
             // Show the ad.
         }
