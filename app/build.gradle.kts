@@ -106,5 +106,7 @@ dependencies {
     implementation("com.airbnb.android:lottie-compose:6.4.1")
     implementation("com.google.android.gms:play-services-ads:23.3.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.8")
+    // prefs manager
+    implementation("androidx.preference:preference:1.2.0")
 
 }

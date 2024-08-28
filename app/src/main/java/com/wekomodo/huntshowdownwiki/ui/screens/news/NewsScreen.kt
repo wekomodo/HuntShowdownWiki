@@ -23,6 +23,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.preference.PreferenceManager
 import com.google.android.gms.ads.nativead.NativeAd
 import com.wekomodo.huntshowdownwiki.data.model.steam.Newsitem
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
@@ -38,6 +39,8 @@ fun NewsScreen(
     viewModel: SteamNewsViewModel = hiltViewModel(),
     nativeAd: NativeAd?
 ) {
+    val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(LocalContext.current)
+    val ADS_ENABLED = sharedPreferences.getBoolean("ADS_ENABLED",true)
     var refresh = false
     var showAd = true
     val context = LocalContext.current
@@ -85,7 +88,7 @@ fun NewsScreen(
             if(newsList.size>1)
             itemsIndexed(newsList) { _, item ->
                 if(item.feedlabel == "Community Announcements") {
-                    if(showAd){
+                    if(showAd && ADS_ENABLED){
                         if (nativeAd != null) {
                             CallNativeAd(nativeAd)
                         }

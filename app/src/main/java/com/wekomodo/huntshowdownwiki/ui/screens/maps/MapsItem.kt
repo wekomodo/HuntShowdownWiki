@@ -5,6 +5,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -27,6 +29,7 @@ fun MapsItem(image: Int, name: String, onClick: () -> Unit) {
         modifier = Modifier.clickable {
             onClick()
         }
+
     ) {
 
         Row(
@@ -46,10 +49,12 @@ fun MapsItem(image: Int, name: String, onClick: () -> Unit) {
         }
         Image(
             painter = painterResource(id = image),
-            contentScale = ContentScale.Inside,
+            contentScale = ContentScale.FillBounds,
             contentDescription = name,
             modifier = Modifier
                 .padding(10.dp)
+                .aspectRatio(16f/9f)
+                .fillMaxWidth()
                 .clip(RoundedCornerShape(10.dp))
         )
     }

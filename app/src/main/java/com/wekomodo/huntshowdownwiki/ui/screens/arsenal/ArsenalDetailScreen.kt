@@ -21,10 +21,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.preference.PreferenceManager
 import coil.compose.AsyncImage
 import com.wekomodo.huntshowdownwiki.R
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.MeleeStats
@@ -37,6 +39,7 @@ import com.wekomodo.huntshowdownwiki.ui.components.LoadSimpleAd
 
 @Composable
 fun ArsenalDetailScreen(item: Weapons) {
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -260,6 +263,8 @@ fun ArsenalDetailedStats(stats: Stats) {
 
 @Composable
 fun ArsenalDetailedMeleeStats(meleeStats: MeleeStats?) {
+    val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(LocalContext.current)
+    val ADS_ENABLED = sharedPreferences.getBoolean("ADS_ENABLED",true)
     meleeStats?.let {
         DetailedItem(
             icon = R.drawable.ic_melee_light,
@@ -273,6 +278,7 @@ fun ArsenalDetailedMeleeStats(meleeStats: MeleeStats?) {
             value = it.heavy_melee.toString(),
             360
         )
+        if(ADS_ENABLED)
         LoadSimpleAd(modifier = Modifier.height(90.dp))    }
 }
 

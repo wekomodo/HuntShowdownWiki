@@ -139,7 +139,7 @@ fun MapDetailScreen(
                         image = mapImage, scale = scale, offsetX = offsetX, offsetY = offsetY
                     )
                     if (legend) {
-                        ZoomableImage(
+                        /*ZoomableImage(
                             image = when {
                                 names -> locationsImage
                                 spawnLocation -> spawnsImage
@@ -147,8 +147,8 @@ fun MapDetailScreen(
                                 beetle -> beetleImage
                                 else -> R.drawable.app_icon
                             }, scale = scale, offsetX = offsetX, offsetY = offsetY
-                        )
-                       /* if (names) ZoomableImage(
+                        )*/
+                        if (names) ZoomableImage(
                             image = locationsImage,
                             scale = scale,
                             offsetX = offsetX,
@@ -162,7 +162,7 @@ fun MapDetailScreen(
                         )
                         if (beetle) ZoomableImage(
                             image = beetleImage, scale = scale, offsetX = offsetX, offsetY = offsetY
-                        )*/
+                        )
                     }
 
                 }
