@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.material3.Button
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -27,6 +28,7 @@ import androidx.preference.PreferenceManager
 import com.google.android.gms.ads.nativead.NativeAd
 import com.wekomodo.huntshowdownwiki.data.model.steam.Newsitem
 import com.wekomodo.huntshowdownwiki.domain.steam.SteamNewsViewModel
+import com.wekomodo.huntshowdownwiki.navigation.loadAd
 import com.wekomodo.huntshowdownwiki.ui.components.CallNativeAd
 import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
 import com.wekomodo.huntshowdownwiki.ui.components.LoadSimpleAd
@@ -78,7 +80,6 @@ fun NewsScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
        LoadingUiState(loading = loading)
         ErrorUiState(error = error){
             refresh=!refresh
@@ -90,7 +91,7 @@ fun NewsScreen(
                 if(item.feedlabel == "Community Announcements") {
                     if(showAd && ADS_ENABLED){
                         if (nativeAd != null) {
-                            CallNativeAd(nativeAd)
+                            loadAd(context)
                         }
                        // LoadSimpleAd(modifier = Modifier.height(90.dp))
                         showAd = false
