@@ -36,12 +36,12 @@ fun MapDetailScreen(
     mapName: String
 ) {
     val context = LocalContext.current
-    var mapImage: Int = 0
-    var locationsImage: Int = 0
-    var spawnsImage: Int = 0
-    var towersImage: Int = 0
-    var beetleImage: Int = 0
-    var legend = true
+    val mapImage: Int
+    val locationsImage: Int
+    val spawnsImage: Int
+    val towersImage: Int
+    val beetleImage: Int
+    val legend: Boolean // incase I have  to disable legend for a single map
     when (mapName) {
         "Lawson Delta" -> {
             mapImage = R.drawable.lawson_delta
@@ -71,8 +71,12 @@ fun MapDetailScreen(
         }
 
         "Mammon's Gulch" -> {
-            mapImage = R.drawable.mammons_gulch
-            legend = false
+            mapImage = R.drawable.mammons
+            locationsImage = R.drawable.mammons_locations
+            spawnsImage = R.drawable.mammons_spawn_locations
+            towersImage = R.drawable.mammons_towers
+            beetleImage = R.drawable.mammons_beetle
+            legend = true
         }
 
 
