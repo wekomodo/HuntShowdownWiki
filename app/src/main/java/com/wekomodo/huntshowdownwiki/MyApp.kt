@@ -7,10 +7,10 @@ import coil.disk.DiskCache
 import coil.memory.MemoryCache
 import coil.util.DebugLogger
 import com.google.android.material.color.DynamicColors
+import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.analytics.ktx.analytics
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.analytics.analytics
+import com.google.firebase.database.database
 import dagger.hilt.android.HiltAndroidApp
 
 

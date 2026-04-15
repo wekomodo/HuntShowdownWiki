@@ -1,17 +1,19 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp")
-    id("com.google.dagger.hilt.android")
-    id("com.google.gms.google-services")
-    id("org.jetbrains.kotlin.plugin.compose")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.google.services)
+    alias { libs.plugins.hilt }
+    alias(libs.plugins.ksp)
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
     id("com.google.firebase.crashlytics")
 }
 
 android {
     namespace = "com.wekomodo.huntshowdownwiki"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.wekomodo.huntshowdownwiki"
@@ -35,20 +37,14 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
     buildFeatures {
         viewBinding = true
         compose = true
         buildConfig = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     packaging {
         resources {
@@ -57,59 +53,66 @@ android {
     }
 }
 
+kotlin {
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_17)
+    }
+}
+
 dependencies {
+    // Core & UI (Legacy/Mixed support)
+    implementation(libs.core.ktx)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.constraintlayout)
+    
+    // Firebase
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.crashlytics)
+    implementation(libs.firebase.analytics)
 
-    implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.google.firebase:firebase-database:21.0.0")
-    implementation("androidx.activity:activity-compose:1.9.1")
-    implementation(platform("androidx.compose:compose-bom:2024.08.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.4")
-    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.8")
-    implementation("com.google.firebase:firebase-crashlytics:19.0.3")
-    implementation("com.google.firebase:firebase-analytics:22.1.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.2.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    //Serialization
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
-    //GSON dependency
-    implementation("com.google.code.gson:gson:2.10.1")
-    //Retrofit Dependency
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    //Interceptor
-    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
-    // Dagger Hilt
-    implementation("com.google.dagger:hilt-android:2.49")
-    //hilt compose
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-    //noinspection BomWithoutPlatform
-    androidTestImplementation("androidx.compose:compose-bom:2024.08.00")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
-    ksp("com.google.dagger:hilt-android-compiler:2.47")
-   //coroutines
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    implementation("androidx.fragment:fragment-ktx:1.8.2")
-    val navVersion = "2.7.7"
-    implementation("androidx.navigation:navigation-compose:$navVersion")
-    // coil image loading
-    implementation("io.coil-kt:coil-compose:2.6.0")
-    //lottie animations
-    implementation("com.airbnb.android:lottie-compose:6.4.1")
-    implementation("com.google.android.gms:play-services-ads:23.3.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.8")
-    // prefs manager
-    implementation("androidx.preference:preference:1.2.0")
+    // Jetpack Compose
+    implementation(platform(libs.compose.bom))
+    implementation(libs.activity.compose)
+    implementation(libs.ui)
+    implementation(libs.ui.graphics)
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.material3)
+    implementation(libs.lifecycle.runtime.compose)
+    implementation(libs.ui.text.google.fonts)
+    
+    // Architecture & DI
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.android.compiler)
+    implementation(libs.hilt.navigation.compose)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.compose.material.icons)
+    
+    // Lifecycle & Coroutines
+    implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.androidx.fragment.ktx)
 
+    // Networking & Serialization
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.gson)
+    implementation(libs.retrofit2.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
+    // Utilities
+    implementation(libs.coil.compose)
+    implementation(libs.lottie.compose)
+    implementation(libs.play.services.ads)
+    implementation(libs.androidx.preference)
+
+    // Testing
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+    androidTestImplementation(platform(libs.compose.bom))
+    androidTestImplementation(libs.ui.test.junit4)
+    debugImplementation(libs.ui.tooling)
+    debugImplementation(libs.ui.test.manifest)
 }
