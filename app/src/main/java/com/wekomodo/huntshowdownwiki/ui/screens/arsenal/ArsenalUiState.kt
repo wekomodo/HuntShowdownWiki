@@ -1,12 +1,6 @@
 package com.wekomodo.huntshowdownwiki.ui.screens.arsenal
 
-import androidx.compose.runtime.Immutable
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.Arsenal
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables.Consumables
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.tools.Tools
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
-import com.wekomodo.huntshowdownwiki.util.Resource
-
+/*
 @Immutable
 data class ArsenalUiState(
     val weaponsList: List<Weapons> = emptyList(),
@@ -18,3 +12,4 @@ data class ArsenalUiState(
     val error : Boolean = false,
     val loading : Boolean = false
 )
+*/

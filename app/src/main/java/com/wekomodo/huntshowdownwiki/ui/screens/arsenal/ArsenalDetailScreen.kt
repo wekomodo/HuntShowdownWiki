@@ -29,16 +29,14 @@ import androidx.compose.ui.unit.dp
 import androidx.preference.PreferenceManager
 import coil.compose.AsyncImage
 import com.wekomodo.huntshowdownwiki.R
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.MeleeStats
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.common.Stats
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.consumables.Consumables
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.tools.Tools
-import com.wekomodo.huntshowdownwiki.data.model.firebase.items.weapons.Weapons
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.common.MeleeStats
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.weapons.Stats
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.weapons.Weapon
 import com.wekomodo.huntshowdownwiki.ui.components.LoadSimpleAd
 
 
 @Composable
-fun ArsenalDetailScreen(item: Weapons) {
+fun ArsenalDetailScreen(item: Weapon) {
 
     Column(
         modifier = Modifier
@@ -46,13 +44,13 @@ fun ArsenalDetailScreen(item: Weapons) {
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        AsyncImage(
+      /*  AsyncImage(
             modifier = Modifier
                 .height(250.dp)
                 .fillMaxWidth(),
             model = item.image_url,
             contentDescription = "weapon Image"
-        )
+        )*/
         Text(text = item.name, style = MaterialTheme.typography.headlineMedium)
         Log.d("ARSENAL", item.toString())
         Column(
@@ -63,7 +61,7 @@ fun ArsenalDetailScreen(item: Weapons) {
             item.stats?.let {
                 ArsenalDetailedStats(it)
             }
-            item.melee_stats?.let {
+            item.meleeStats?.let {
                 ArsenalDetailedMeleeStats(it)
             }
         }
@@ -327,26 +325,22 @@ fun DetailedItem(icon: Int, type: String, value: String, maxValue: Int) {
 @Composable
 fun PreviewWeapon() {
     ArsenalDetailScreen(
-        Weapons(
+        Weapon(
             name = "BASEBALL BAT",
             stats = Stats(
                 sway = 50,
-                vertical_recoil = 2.6,
+                verticalRecoil = 2.6,
                 spread = 65.4,
-                rpm = 50,
+                rateOfFire = 50,
                 damage = 120,
-                cycle_time = 1.4,
-                effective_range = "248m",
-                reload_speed = 4.2,
-                muzzle_velocity = 550,
-                control_range = 100,
-                throw_range = 10,
-                radius = 5,
-                fuse_timer = 5,
-                duration = 4,
-                sighted_range = 12,
+                cycleTime = 1.4,
+                dropRange = "248m",
+                reloadSpeed = 4.2,
+                muzzleVelocity = 550,
             ),
-            melee_stats = MeleeStats(melee = 57, heavy_melee = 120)
+            ammo = emptyList(),
+
+            meleeStats = MeleeStats(melee = 57, heavy_melee = 120)
         )
     )
 }
