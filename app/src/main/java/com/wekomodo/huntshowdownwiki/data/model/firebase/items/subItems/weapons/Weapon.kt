@@ -5,17 +5,17 @@ import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.common.M
 data class Weapon(
     val ammo: List<Ammo>,
     val ammoType: String,
-    val capacity: Capacity,
-    val cost: Int,
+    val capacity: Capacity?,
+    val cost: Int?,
     val description: String,
-    val family: Family,
+    val family: Family?,
     val id: String,
     val isVariant: Boolean,
-    val meleeStats: MeleeStats,
+    val meleeStats: MeleeStats?,
     val name: String,
-    val pageTitle: String,
+    val pageTitle: String?,
     val slot: String,
-    val stats: Stats,
-    val traits: List<String>,
-    val variant: Any
+    val stats: Stats?,
+    val traits: List<String>?,
+    val variant: String
 )

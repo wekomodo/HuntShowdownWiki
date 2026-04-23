@@ -24,7 +24,6 @@ import com.wekomodo.huntshowdownwiki.BuildConfig
 import com.wekomodo.huntshowdownwiki.domain.firebase.FirebaseViewModel
 import com.wekomodo.huntshowdownwiki.ui.components.loadNativeAd
 import com.wekomodo.huntshowdownwiki.ui.screens.arsenal.ArsenalScreen
-import com.wekomodo.huntshowdownwiki.ui.screens.arsenal.ArsenalUiState
 import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapDetailScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.maps.MapsScreen
 import com.wekomodo.huntshowdownwiki.ui.screens.news.NewsScreen
@@ -44,7 +43,7 @@ fun Navigation(navController: NavHostController, viewModel: FirebaseViewModel = 
             nativeAd = it
         }
     }
-    val arsenalUiState = readArsenalData(viewModel)
+    //val arsenalUiState = readArsenalData(viewModel)
     val traitsUiState = readTraitsData(viewModel)
     NavHost(navController = navController, startDestination = Route.NEWS) {
         composable(route = Route.NEWS) {
@@ -53,9 +52,9 @@ fun Navigation(navController: NavHostController, viewModel: FirebaseViewModel = 
         composable(
             route = Route.ARSENAL
         ) {
-            ArsenalScreen(arsenalUiState) {
+            /*ArsenalScreen(arsenalUiState) {
                 refresh=!refresh
-            }
+            }*/
         }
         composable(route = Route.TRAITS) {
             TraitsScreen(traitsUiState) {
@@ -137,7 +136,7 @@ fun readTraitsData(viewModel: FirebaseViewModel): TraitsUiState {
     return uiState
 }
 
-@Composable
+/*@Composable
 fun readArsenalData(viewModel: FirebaseViewModel): ArsenalUiState {
     var uiState by remember {
         mutableStateOf(ArsenalUiState())
@@ -180,7 +179,7 @@ fun readArsenalData(viewModel: FirebaseViewModel): ArsenalUiState {
         }
     }
     return uiState
-}
+}*/
 
 fun navigate(event: Events, navController: NavHostController) {
     when (event) {

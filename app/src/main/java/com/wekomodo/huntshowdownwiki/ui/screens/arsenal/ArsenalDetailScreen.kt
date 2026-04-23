@@ -30,6 +30,8 @@ import androidx.preference.PreferenceManager
 import coil.compose.AsyncImage
 import com.wekomodo.huntshowdownwiki.R
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.common.MeleeStats
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.consumables.Consumable
+import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.weapons.Capacity
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.weapons.Stats
 import com.wekomodo.huntshowdownwiki.data.model.firebase.items.subItems.weapons.Weapon
 import com.wekomodo.huntshowdownwiki.ui.components.LoadSimpleAd
@@ -327,6 +329,7 @@ fun PreviewWeapon() {
     ArsenalDetailScreen(
         Weapon(
             name = "BASEBALL BAT",
+            ammoType = "melee",
             stats = Stats(
                 sway = 50,
                 verticalRecoil = 2.6,
@@ -334,11 +337,16 @@ fun PreviewWeapon() {
                 rateOfFire = 50,
                 damage = 120,
                 cycleTime = 1.4,
-                dropRange = "248m",
+                dropRange = 248,
                 reloadSpeed = 4.2,
                 muzzleVelocity = 550,
             ),
             ammo = emptyList(),
+            cost = 20,
+            capacity = Capacity("1/5",1,5),
+            description = "its a bad",
+            family = "baseball bat"
+
 
             meleeStats = MeleeStats(melee = 57, heavy_melee = 120)
         )
@@ -371,7 +379,7 @@ fun PreviewTool() {
 @Composable
 fun PreviewConsumable() {
     ArsenalDetailScreen(
-        Consumables(
+        Consumable(
             name = "BASEBALL BAT",
             stats = Stats(
                 duration = 20,

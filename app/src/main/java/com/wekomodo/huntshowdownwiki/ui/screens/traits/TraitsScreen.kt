@@ -24,6 +24,7 @@ import com.wekomodo.huntshowdownwiki.ui.components.ErrorUiState
 import com.wekomodo.huntshowdownwiki.ui.components.FilterChipComp
 import com.wekomodo.huntshowdownwiki.ui.components.LoadingUiState
 import com.wekomodo.huntshowdownwiki.ui.components.SearchComponent
+import com.wekomodo.huntshowdownwiki.util.WIKI_IMAGE_URL
 
 
 private var filteringCriteria = setOf("Base Trait", "Scarce Trait", "Event Trait")
@@ -37,15 +38,16 @@ fun TraitsScreen(
     var uiState by remember { mutableStateOf(navUiState) }
     var searchText by remember { mutableStateOf("") }
     var searchActive by remember { mutableStateOf(false) }
+    val url = WIKI_IMAGE_URL
     Log.d(TAG,uiState.activeFilters.toString())
     // reacts when changes to filters are made
     LaunchedEffect(uiState.activeFilters) {
         uiState = if (uiState.activeFilters.isNotEmpty()) {
             // normal filtering
             uiState.copy(
-                displayedList = uiState.traitList.filter {
+               /* displayedList = uiState.traitList.filter {
                     it.type[0] in uiState.activeFilters || if(it.type.size >1)it.type[1] in uiState.activeFilters else false
-                }
+                }*/
             )
         } else {
             // will come in handy if somebody selects a filter and unselects it after
@@ -101,13 +103,13 @@ fun TraitsScreen(
             LazyColumn {
                 itemsIndexed(uiState.displayedList) { _, item ->
                     TraitsItem(
-                        link = item.image,
+                        link = url+"/${item.bigImageFile}",
                         name = item.name,
-                        item.desc,
+                        item.description,
                         item.cost,
-                        item.rank_unlocked,
-                        event_effect = item.event_effect,
-                        item.pact
+                        item.unlock,
+                        event_effect = item.type,
+                        "empty"
                     )
                 }
             }
